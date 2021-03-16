@@ -40,7 +40,13 @@ p {
 }
 
 @media screen and (max-width: 800px) {
+  h1 {
+    font-size: 20px;
+  }
+  h3 {
+    font-size: 16px;
+  }
   p {
-    font-size: 10px;
+    font-size: 12px;
   }
 }
