@@ -1,0 +1,46 @@
+* {
+  margin: 0;
+  box-border: box-sizing;
+  -webkit-font-smoothing: antialiased!important;
+  text-rendering: optimizeLegibility!important;
+}
+
+header {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  /* bring your own prefixes */
+  transform: translate(-50%, -50%);
+  margin: 0 auto;
+  text-align: center;
+}
+
+h1 {
+  font-weight: unset;
+}
+
+h3 {
+  font-weight: unset;
+  font-style: italic;
+  font-size: 1em;
+}
+
+p {
+  position: fixed;
+  padding: 20px;
+  font-size: 17px;
+}
+
+.right {
+  right: 0;
+}
+
+.bottom {
+  bottom: 0;
+}
+
+@media screen and (max-width: 800px) {
+  p {
+    font-size: 10px;
+  }
+}
