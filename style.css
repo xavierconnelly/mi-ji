@@ -57,6 +57,11 @@ header img {
     font-size: 20px;
   }
   
+  footer div {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+  
   footer div p {
     width: 100%;
     max-width: 100%;
