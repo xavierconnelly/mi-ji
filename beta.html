@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="/style.css">
+    <meta name="format-detection" content="telephone=no">
+    
+    
+    
+    <style>
+                * {
+            margin: 0;
+            box-border: box-sizing;
+            -webkit-font-smoothing: antialiased !important;
+            text-rendering: optimizeLegibility !important;
+          }
+
+          @font-face {
+            font-family: "Andale";
+            src: url("https://mi-ji.com.au/ANDALEMO.woff") format("woff");
+          }
+
+          * {
+            margin: 0;
+            box-sizing: border-box;
+            font-family: "Andale", times;
+            font-size: 0.9rem;
+          }
+
+          #scroll {
+            width: 100vw;
+            height: 500px;
+            overflow-x: scroll;
+          }
+
+          container {
+            height: ;
+            width: 2000px;
+            overflow: hidden;
+            display: inline-block;
+          }
+
+          container > div {
+            display: ;
+          }
+
+          footer {
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            transition: 2s;
+          }
+
+          footer div {
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: end;
+          }
+          footer div p {
+            width: 25%;
+            padding: 10px 10px 10px 10px;
+            text-align: left;
+          }
+
+          header {
+            height: 40px;
+            padding: 5px;
+            background: ;
+            border-bottom: px solid pink;
+            transition: 2s;
+          }
+
+          header p {
+            float: left;
+            line-height: 30px;
+          }
+
+          header img {
+            float: right;
+            height: 100%;
+          }
+
+          #office {
+            order: 1;
+          }
+
+          #millie {
+            order: 2;
+          }
+
+          #jimmy {
+            order: 3;
+          }
+
+          #rego {
+            order: 4;
+          }
+
+          @media only screen and (max-width: 600px) {
+            * {
+              font-size: 20px;
+            }
+
+            footer div {
+              align-items: flex-start;
+              flex-flow: row wrap;
+            }
+
+            footer div p {
+              padding: 10px;
+              flex: 1 50%;
+            }
+
+            #office {
+              order: 3;
+            }
+
+            #millie {
+              order: 1;
+            }
+
+            #jimmy {
+              order: 2;
+            }
+
+            #rego {
+              order: 4;
+            }
+          }
+    </style>
+    
+    <script>
+        function focusDetails() {
+        document.getElementById("scroll").style.display = "none";
+        document.querySelector("*").style.background = "rgb(255, 80, 0)";
+        document.querySelector("*").style.header = "black";
+        document.querySelector("*").style.color = "black";
+      }
+
+      function normalDetails() {
+        document.getElementById("scroll").style.display = "block";
+        document.querySelector("*").style.background = "unset";
+        document.querySelector("*").style.color = "unset";
+      }
+      </script>
+    
+  <head>
+
+  <body>
+<header onmouseover="focusDetails()" onmouseout="normalDetails()">
+  <p>
+    Office MI—JI is an architectural office
+  </p>
+  <img src="https://mi-ji.com.au/images/OM_Brand_Mark_Black_Small_F.png">
+</header>
+
+<div id="scroll">
+  <container>
+
+    <div class="red hello">
+      <div class="blurred-box">
+        <div class="blurred one"> </div>
+      </div>
+      <div class="words">
+        An exhibition that explores the broadened contemporary asceticism within its spatial lineage, “A Certain Kind of Life” exposes the typology of the charterhouse as an architecture of absolute rationality.
+      </div>
+    </div>
+
+  </container>
+</div>
+
+<footer onmouseover="focusDetails()" onmouseout="normalDetails()">
+  <div>
+    <p id="office">
+      Office MI—JI<br>
+      54 Johnston St <br>
+      Collingwood 3066
+    </p>
+    <p id="millie">
+      Millie Anderson<br>
+      millie@mi—ji.com.au<br>
+      0417 038 912
+    </p>
+    <p id="jimmy">
+      Jimmy Carter<br>
+      jimmy@mi—ji.com.au<br>
+      0452 055 948
+    </p>
+    <p id="rego">
+      <a href="">IG</a><br>
+      ARBV 52058
+    </p>
+  </div>
+</footer>
+  </body>
+</html>
