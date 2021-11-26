@@ -107,6 +107,95 @@
             order: 4;
           }
 
+
+/* scroll carousel*/
+
+body {
+  background: ;
+  min-height: 100vh;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: arial;
+  font-size: 0.9rem;
+}
+
+.red .words {
+  background: rgb(255, 80, 0);
+}
+.grey .words {
+  background: rgb(241, 241, 241);
+}
+.green .words {
+  background: rgb(0, 200, 80);
+}
+.cream .words {
+  background: rgb(245, 245, 200);
+}
+.yellow .words {
+  background: rgb(250, 240, 0);
+}
+.pink .words {
+  background: rgb(255, 175, 195);
+}
+
+.gallery {
+  position: absolute;
+  top: 40px;
+  width: 100%;
+  height: 100vh;
+  overflow: ;
+}
+
+.cards {
+  display: flex;
+  position: absolute;
+  width: 400px; /*14rem*/
+  height: 18rem;
+  top: 0;
+  left: 50%;
+/*  transform: translate(-50%, -50%);*/
+}
+
+.column {
+  width: 400px;
+  height: 100vh;
+/* */
+  padding: 0;
+  margin: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+div img {
+  width: 100%;
+}
+
+.carousel .horse {
+  display: block;
+}
+
+.carousel .active {
+  display: block;
+}
+
+img + .clear,
+.column:hover .blur,
+.column .words {
+  display: none;
+}
+
+.column .blur,
+.column:hover .clear,
+.column:hover .words {
+  display: block;
+}
+
+.words {
+  width: 100%;
+}
+
           @media only screen and (max-width: 600px) {
             * {
               font-size: 0.95em;
@@ -314,7 +403,7 @@
               <img class="clear" src="https://mi-ji.com.au/images/ACertainKindofLife/04_650.JPG">
             </div>
             <div class="horse plan">
-              <img class="clear" src="https://mi-ji.com.au/images/ACertainKindofLife/Plan_650.JPG">
+              <img class="clear" src="https://mi-ji.com.au/images/ACertainKindofLife/Plan_650.png">
             </div>
           </div>
           <div>
