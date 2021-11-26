@@ -27,6 +27,11 @@
             font-size: 0.9rem;
           }
       
+      body {
+        background: white;
+        transition: 2s;
+      }
+      
       a {
         color: initial;
     text-decoration: none;
@@ -142,15 +147,12 @@
     <script>
         function focusDetails() {
         document.getElementById("scroll").style.display = "none";
-        document.querySelector("*").style.background = "rgb(255, 80, 0)";
-        document.querySelector("*").style.header = "black";
-        document.querySelector("*").style.color = "black";
+        document.querySelector("body").style.background = "rgb(255, 80, 0)";
       }
 
       function normalDetails() {
         document.getElementById("scroll").style.display = "block";
-        document.querySelector("*").style.background = "unset";
-        document.querySelector("*").style.color = "unset";
+        document.querySelector("body").style.background = "";
       }
       </script>
     
