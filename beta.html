@@ -148,11 +148,13 @@
         function focusDetails() {
         document.getElementById("scroll").style.display = "none";
         document.querySelector("body").style.background = "rgb(255, 80, 0)";
+        document.querySelector(".highlight").style.background = "white";
       }
 
       function normalDetails() {
         document.getElementById("scroll").style.display = "block";
         document.querySelector("body").style.background = "";
+        document.querySelector(".highlight").style.background = "";
       }
       </script>
     
@@ -174,7 +176,7 @@
 
 <footer onmouseover="focusDetails()" onmouseout="normalDetails()">
   <div>
-    <p id="office">
+    <p id="office" class="highlight">
       Office MI—JI<br>
       54 Johnston St <br>
       Collingwood 3066
