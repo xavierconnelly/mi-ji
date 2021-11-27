@@ -99,7 +99,7 @@ footer div p {
 	position: absolute;
 	width: 400px; /*14rem*/
 	/*height: 18rem;*/
-	top: 40px;
+	top: 0;
 	left: 50%;
 	transform: translate(-50%, -50%);
 }
