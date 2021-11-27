@@ -155,26 +155,30 @@ img + .clear,
 
 @media only screen and (max-width: 600px) {
 	* {
-	  font-size: 0.95em;
+	  	font-size: 0.95em;
 	}
 
 	header p {
-	  line-height: unset;
-	  width: 50%; /* reduce this to increase image height*/
+	  	line-height: unset;
+	  	width: 50%; /* reduce this to increase image height*/
 	} 
 
 	footer div {
-	  align-items: flex-start;
-	  flex-flow: row wrap;
+	  	align-items: flex-start;
+	  	flex-flow: row wrap;
 	}
 
 	footer div p {
-	  padding: 10px;
-	  flex: 1 50%;
+	  	padding: 10px;
+	  	flex: 1 50%;
 	}
 
 	#millie {order: 1;}
 	#jimmy {order: 2;}
 	#office {order: 3;}
 	#rego {order: 4;}
+
+	.column {
+    	width: 70%;
+    }
 }
