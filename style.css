@@ -1,68 +1,170 @@
-* {
-  margin: 0;
-  box-border: box-sizing;
-  -webkit-font-smoothing: antialiased!important;
-  text-rendering: optimizeLegibility!important;
-}
+/***************************************** GLOBALS */
 
 @font-face {
-  font-family: 'Andale';
-  src: url('https://mi-ji.com.au/ANDALEMO.woff') format('woff');
+	font-family: "Andale";
+	src: url("https://mi-ji.com.au/ANDALEMO.woff") format("woff");
 }
 
 * {
-  margin: 0;
-  box-sizing: border-box;
-  font-family: 'Andale', times;
-  font-size: .9rem;
+	/*margin: 0;*/
+	box-sizing: border-box;
+	font-family: "Andale", times;
+	font-size: 0.9rem;
+	-webkit-font-smoothing: antialiased !important;
+	text-rendering: optimizeLegibility !important;
 }
 
-footer {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
+body {
+	background: white;
+	transition: 2s;
+	min-height: 100vh;
+	padding: 0;
+	margin: 0;
 }
 
-footer div {
-  width: 100%;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: end;
+a {
+	color: initial;
+	text-decoration: none;
 }
-footer div p {
-  width: 25%;
-  padding: 10px 10px 10px 10px;
-  text-align: left;
-}
+
+/***************************************** TOP */
 
 header {
-  height: 50px;
-  padding: 10px;
+	height: 40px;
+	padding: 5px 10px;
+	background: white;
+	transition: 2s;
 }
 
 header p {
-  float: left;
+	float: left;
+	line-height: 30px;
 }
 
 header img {
-  float: right;
-  height: 100%;
+	float: right;
+	height: 100%;
 }
 
-@media only screen and (max-width: 1000px) {
-  
-  * {
-    font-size: 20px;
-  }
-  
-  footer div {
-    align-items: flex-start;
-    flex-direction: column;
-  }
-  
-  footer div p {
-    width: 100%;
-    max-width: 100%;
-    padding: 10px;
-  }
+/***************************************** BOTTOM */
+
+footer {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	transition: 2s;
+}
+
+footer div {
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: end;
+}
+
+footer div p {
+	width: 25%;
+	padding: 10px 10px 10px 10px;
+	text-align: left;
+}
+
+#office {order: 1;}
+#millie {order: 2;}
+#jimmy {order: 3;}
+#rego {order: 4;}
+
+/***************************************** COLOURS */
+
+.red .words {background: rgb(255, 80, 0);}
+.grey .words {background: rgb(241, 241, 241);}
+.green .words {background: rgb(0, 200, 80);}
+.cream .words {background: rgb(245, 245, 200);}
+.yellow .words {background: rgb(250, 240, 0);}
+.pink .words {background: rgb(255, 175, 195);}
+
+/***************************************** SCROLL THINGS */
+
+
+.gallery {
+	position: absolute;
+	top: 40px;
+	width: 100%;
+	height: 100vh;
+	overflow: ;
+}
+
+.cards {
+	display: flex;
+	position: absolute;
+	width: 400px; /*14rem*/
+	height: 18rem;
+	top: 0;
+	left: 50%;
+	/*  transform: translate(-50%, -50%);*/
+}
+
+.column {
+	width: 400px;
+	height: 100vh;
+	padding: 0;
+	margin: 0;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+div img {
+	width: 100%;
+}
+
+.carousel .horse {
+  	display: block;
+}
+
+.carousel .active {
+  	display: block;
+}
+
+img + .clear,
+.column:hover .blur,
+.column .words {
+  	display: none;
+}
+
+.column .blur,
+.column:hover .clear,
+.column:hover .words {
+  	display: block;
+}
+
+.words {
+  	width: 100%;
+}
+
+/***************************************** MEDIA QUERY */
+
+@media only screen and (max-width: 600px) {
+	* {
+	  font-size: 0.95em;
+	}
+
+	header p {
+	  line-height: unset;
+	  width: 50%; /* reduce this to increase image height*/
+	} 
+
+	footer div {
+	  align-items: flex-start;
+	  flex-flow: row wrap;
+	}
+
+	footer div p {
+	  padding: 10px;
+	  flex: 1 50%;
+	}
+
+	#millie {order: 1;}
+	#jimmy {order: 2;}
+	#office {order: 3;}
+	#rego {order: 4;}
 }
