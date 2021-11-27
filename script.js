@@ -25,7 +25,7 @@ trigger = ScrollTrigger.create({
     }
   },
   end: "+=3000",
-  pin: ".gallery"
+  pin: "#gallery"
 });
 
 function wrapForward(trigger, progress) { // when the ScrollTrigger reaches the end, loop back to the beginning seamlessly
