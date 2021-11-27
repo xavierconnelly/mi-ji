@@ -1,7 +1,7 @@
-import { gsap } from "gsap";
-import { ScrollTriggerPlugin } from "gsap/ScrollTriggerPlugin.js";
+//import { gsap } from "gsap";
+//import { ScrollTriggerPlugin } from "gsap/ScrollTriggerPlugin.js";
 
-gsap.registerPlugin(ScrollTrigger);
+//gsap.registerPlugin(ScrollTrigger);
 
 let iteration = 0; // gets iterated when we scroll all the way to the end or start and wraps around - allows us to smoothly continue the playhead scrubbing in the correct direction.
 
