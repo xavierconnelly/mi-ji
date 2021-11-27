@@ -98,8 +98,8 @@ footer div p {
 	display: flex;
 	position: absolute;
 	width: 400px; /*14rem*/
-	height: 18rem;
-	top: 0;
+	/*height: 18rem;*/
+	top: 40px;
 	left: 50%;
 	transform: translate(-50%, -50%);
 }
@@ -124,6 +124,10 @@ div img {
 
 .carousel .active {
   	display: block;
+}
+
+.plan {
+	display: none;
 }
 
 img + .clear,
