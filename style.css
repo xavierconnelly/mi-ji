@@ -86,7 +86,7 @@ footer div p {
 /***************************************** SCROLL THINGS */
 
 
-.gallery {
+#gallery {
 	position: absolute;
 	top: 40px;
 	width: 100%;
