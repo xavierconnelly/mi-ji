@@ -89,12 +89,12 @@ footer div p {
 
 /***************************************** CURSORS */
 
-.red .div {cursor: url(images/assets/cursor_red.svg), pointer;}
-.grey .div {cursor: url(images/assets/cursor_grey.svg), pointer;}
-.green .div {cursor: url(images/assets/cursor_green.svg), pointer;}
-.cream .div {cursor: url(images/assets/cursor_cream.svg), pointer;}
-.yellow .div {cursor: url(images/assets/cursor_yellow.svg), pointer;}
-.pink .div {cursor: url(images/assets/cursor_pink.svg), pointer;}
+.red {cursor: url(images/assets/cursor_red.svg), pointer;}
+.grey {cursor: url(images/assets/cursor_grey.svg), pointer;}
+.green {cursor: url(images/assets/cursor_green.svg), pointer;}
+.cream {cursor: url(images/assets/cursor_cream.svg), pointer;}
+.yellow {cursor: url(images/assets/cursor_yellow.svg), pointer;}
+.pink {cursor: url(images/assets/cursor_pink.svg), pointer;}
 
 /***************************************** SCROLL THINGS */
 
