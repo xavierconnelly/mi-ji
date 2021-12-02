@@ -31,7 +31,7 @@ a {
 /***************************************** TOP */
 
 header {
-	height: 40px;
+	height: 30px;
 	width: 100%;
 	padding: 5px 10px;
 	background: white;
@@ -42,7 +42,7 @@ header {
 
 header p {
 	float: left;
-	line-height: 30px;
+	line-height: 20px;
 }
 
 header img {
@@ -89,12 +89,12 @@ footer div p {
 
 /***************************************** CURSORS */
 
-.red {cursor: url(images/assets/cursor_red.svg), pointer;}
-.grey {cursor: url(images/assets/cursor_grey.svg), pointer;}
-.green {cursor: url(images/assets/cursor_green.svg), pointer;}
-.cream {cursor: url(images/assets/cursor_cream.svg), pointer;}
-.yellow {cursor: url(images/assets/cursor_yellow.svg), pointer;}
-.pink {cursor: url(images/assets/cursor_pink.svg), pointer;}
+.red .active {cursor: url(images/assets/cursor_red.svg), pointer;}
+.grey .active {cursor: url(images/assets/cursor_grey.svg), pointer;}
+.green img {cursor: url(images/assets/cursor_green.svg), pointer;}
+.cream img {cursor: url(images/assets/cursor_cream.svg), pointer;}
+.yellow img {cursor: url(images/assets/cursor_yellow.svg), pointer;}
+.pink img {cursor: url(images/assets/cursor_pink.svg), pointer;}
 
 /***************************************** SCROLL THINGS */
 
