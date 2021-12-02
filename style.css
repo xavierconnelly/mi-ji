@@ -188,6 +188,17 @@ img + .clear,
 	#rego {order: 4;}
 
 	.column {
-    	width: 70%;
+    	/*width: 70%;*/
     }
+}
+
+
+@media only screen and (max-height: 700px) {
+	.cards {
+		width: 250px;
+	}
+
+	.column {
+		width: 250px;
+	}
 }
