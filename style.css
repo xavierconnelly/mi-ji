@@ -168,6 +168,12 @@ img + .clear,
 
 .words {
   	width: 100%;
+  	position: relative;
+}
+
+.words p {
+	position: absolute;
+	top: 10px;
 }
 
 /***************************************** MEDIA QUERY */
