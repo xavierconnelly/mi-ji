@@ -168,12 +168,9 @@ img + .clear,
 
 .words {
   	width: 100%;
-  	position: relative;
-}
-
-.words p {
-	position: absolute;
-	top: 10px;
+  	-webkit-box-shadow: inset 0px -3px 0px 0px #fff;
+    -moz-box-shadow: inset 0px -3px 0px 0px #fff;
+  	box-shadow: inset 0px -3px 0px 0px #fff;
 }
 
 /***************************************** MEDIA QUERY */
