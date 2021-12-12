@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="format-detection" content="telephone=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    
+    <style>
+      
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  float: left;
+}
+
+.column {
+  width: 300px;
+  transition: 2s;
+}
+
+.carousel {
+  transition: 10s;
+}
+
+img {
+  width: 100%;
+}
+
+    
+    </style>
+  <head>
+  <body>
+    
+    
+    <header>
+  <p>
+    Office MI—JI is an architectural office
+  </p>
+  <img src="https://mi-ji.com.au/images/OM_Brand_Mark_Black_Small_F.png">
+</header>
+
+<div class="column pink">
+  <div class="carousel" onclick="plusSlides(1, 0)">
+    <div class="photo mySlides1">
+      <img class="clear" src="https://mi-ji.com.au/images/ACertainKindofLife/01_650.JPG">
+    </div>
+    <div class="plan mySlides1">
+      <img class="clear" src="https://mi-ji.com.au/images/ACertainKindofLife/Plan_650.png">
+    </div>
+  </div>
+  <div>
+    <span class="words">Info
+    </span>
+    <span class="toggle" onclick="plusSlides(1, 0)">Plan
+    </span>
+  </div>
+</div>
+
+<footer onmouseover="focusDetails()" onmouseout="normalDetails()">
+  <div>
+    <p id="office" class="highlight">
+      Office MI—JI<br>
+      54 Johnston St <br>
+      Collingwood 3066
+    </p>
+    <p id="millie">
+      Millie Anderson<br>
+      millie@mi-ji.com.au<br>
+      0417 038 912
+    </p>
+    <p id="jimmy">
+      Jimmy Carter<br>
+      jimmy@mi-ji.com.au<br>
+      0452 055 948
+    </p>
+    <p id="rego">
+      <a href="https://instagram.com/office_mi.ji" target="none">IG</a><br>
+      ARBV 52058
+    </p>
+  </div>
+</footer>
+    
+    <script>
+var slideIndex = [1, 1];
+var slideId = ["mySlides1", "mySlides2", "mySlides3"];
+showSlides(1, 0);
+showSlides(1, 1);
+
+function plusSlides(n, no) {
+  showSlides((slideIndex[no] += n), no);
+}
+
+function showSlides(n, no) {
+  var i;
+  var x = document.getElementsByClassName(slideId[no]);
+  if (n > x.length) {
+    slideIndex[no] = 1;
+  }
+  if (n < 1) {
+    slideIndex[no] = x.length;
+  }
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  x[slideIndex[no] - 1].style.display = "block";
+}
+
+    </script>
+    
+    </body>
+    </html>
