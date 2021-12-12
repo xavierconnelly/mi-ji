@@ -296,14 +296,12 @@
 
 
     function focusDetails() {
-    document.getElementById("gallery").style.display = "none";
+    document.getElementById("gallery").style.opacity = "0";
     document.querySelector("body").style.background = "rgb(255, 80, 0)";
-    document.querySelector(".highlight").style.color = "white";
     }
     function normalDetails() {
-    document.getElementById("gallery").style.display = "block";
+    document.getElementById("gallery").style.opacity = "1";
     document.querySelector("body").style.background = "";
-    document.querySelector(".highlight").style.color = "";
     }
     </script>
 
