@@ -89,20 +89,20 @@ footer div p {
 
 /***************************************** CURSORS */
 
-.red .photo {cursor: url(/assets/cursor_red.svg), pointer;}
-.grey .photo {cursor: url(/assets/cursor_grey.svg), pointer;}
-.green .photo {cursor: url(/assets/cursor_green.svg), pointer;}
-.pistachio .photo {cursor: url(/assets/cursor_pistachio.svg), pointer;}
-.yellow .photo {cursor: url(/assets/cursor_yellow.svg), pointer;}
-.pink .photo {cursor: url(/assets/cursor_pink.svg), pointer;}
+.red .carousel {cursor: url(/assets/cursor_red.svg), pointer;}
+.grey .carousel {cursor: url(/assets/cursor_grey.svg), pointer;}
+.green .carousel {cursor: url(/assets/cursor_green.svg), pointer;}
+.pistachio .carousel {cursor: url(/assets/cursor_pistachio.svg), pointer;}
+.yellow .carousel {cursor: url(/assets/cursor_yellow.svg), pointer;}
+.pink .carousel {cursor: url(/assets/cursor_pink.svg), pointer;}
 
 
-.red .plan {cursor: url(/assets/cursor/plan/red.svg), pointer;}
-.grey .plan {cursor: url(/assets/cursor_grey.svg), pointer;}
-.green .plan {cursor: url(/assets/cursor_green.svg), pointer;}
-.pistachio .plan {cursor: url(/assets/cursor_pistachio.svg), pointer;}
-.yellow .plan {cursor: url(/assets/cursor_yellow.svg), pointer;}
-.pink .plan {cursor: url(/assets/cursor_pink.svg), pointer;}
+.red .plan {cursor: url(), pointer;}
+.grey .plan {cursor: url(), pointer;}
+.green .plan {cursor: url(), pointer;}
+.pistachio .plan {cursor: url(), pointer;}
+.yellow .plan {cursor: url(), pointer;}
+.pink .plan {cursor: url(), pointer;}
 
 
 /***************************************** SCROLL THINGS */
