@@ -89,12 +89,12 @@ footer div p {
 
 /***************************************** CURSORS */
 
-.red .carousel {cursor: url(/assets/cursor_red.svg), pointer;}
-.grey .carousel {cursor: url(/assets/cursor_grey.svg), pointer;}
-.green .carousel {cursor: url(/assets/cursor_green.svg), pointer;}
-.pistachio .carousel {cursor: url(/assets/cursor_pistachio.svg), pointer;}
-.yellow .carousel {cursor: url(/assets/cursor_yellow.svg), pointer;}
-.pink .carousel {cursor: url(/assets/cursor_pink.svg), pointer;}
+.red .slick-next {cursor: url(/assets/cursor_red.svg), pointer;}
+.grey .slick-next {cursor: url(/assets/cursor_grey.svg), pointer;}
+.green .slick-next {cursor: url(/assets/cursor_green.svg), pointer;}
+.pistachio .slick-next {cursor: url(/assets/cursor_pistachio.svg), pointer;}
+.yellow .slick-next {cursor: url(/assets/cursor_yellow.svg), pointer;}
+.pink .slick-next {cursor: url(/assets/cursor_pink.svg), pointer;}
 
 
 .red .plan {cursor: url(), pointer;}
@@ -115,6 +115,7 @@ footer div p {
 	height: 100vh;
 	overflow: ;
 	z-index: 1;
+	transition: 2s;
 }
 
 .cards {
@@ -172,14 +173,13 @@ img + .clear,
   font-size: 0;
   line-height: 0;
   position: absolute;
-  top: 10px;
+  top: 0px;
   left: 0px;
   display: block;
   width: 100%;
   height: 100%;
   margin-top: 0px; 
   padding: 0;
-  cursor: none;
   color: ;
   border: 0;
   outline: 0;
