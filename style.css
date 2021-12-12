@@ -176,6 +176,7 @@ img + .clear,
 
 /***************************************** SLIDER OVERRIDE THINGS */
 
+.slick-prev,
 .slick-next {
   top: 0px;
   left: 0px;
@@ -185,6 +186,7 @@ img + .clear,
   padding: 0;
 }
 
+.slick-prev:before,
 .slick-next:before {
   content: none;
 }
