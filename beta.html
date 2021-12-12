@@ -250,5 +250,33 @@
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-migrate/3.3.2/jquery-migrate.min.js"></script>
     <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 
+<script type="text/javascript">
+  $(document).ready(function () {
+  $(".carousel").slick({
+    dots: false,
+    fade: true,
+    infinite: true,
+    speed: 700,
+    slidesToShow: 1,
+    adaptiveHeight: true
+  });
+});
+//$('.duck').click(function () {
+//  $something.slick("slickNext");
+// });
+
+
+function focusDetails() {
+document.getElementById("gallery").style.display = "none";
+document.querySelector("body").style.background = "rgb(255, 80, 0)";
+document.querySelector(".highlight").style.color = "white";
+}
+function normalDetails() {
+document.getElementById("gallery").style.display = "block";
+document.querySelector("body").style.background = "";
+document.querySelector(".highlight").style.color = "";
+}
+</script>
+
   </body>
 </html>
