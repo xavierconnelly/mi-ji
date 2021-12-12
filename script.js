@@ -1,30 +1,3 @@
-$(document).ready(function () {
-  $(".carousel").slick({
-    dots: false,
-    fade: true,
-    infinite: true,
-    speed: 700,
-    slidesToShow: 1,
-    adaptiveHeight: true
-  });
-});
-//$('.duck').click(function () {
-//  $something.slick("slickNext");
-// });
-
-
-function focusDetails() {
-document.getElementById("gallery").style.display = "none";
-document.querySelector("body").style.background = "rgb(255, 80, 0)";
-document.querySelector(".highlight").style.color = "white";
-}
-function normalDetails() {
-document.getElementById("gallery").style.display = "block";
-document.querySelector("body").style.background = "";
-document.querySelector(".highlight").style.color = "";
-}
-
-
 let iteration = 0; // gets iterated when we scroll all the way to the end or start and wraps around - allows us to smoothly continue the playhead scrubbing in the correct direction.
 
 const spacing = 0.125,    // spacing of the cards (stagger)
