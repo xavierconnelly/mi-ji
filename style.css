@@ -80,12 +80,20 @@ footer div p {
 
 /***************************************** COLOURS */
 
+.red .carousel {background: rgb(255, 80, 0);}
+.grey .carousel {background: rgb(241, 241, 241);}
+.green .carousel {background: rgb(0, 200, 80);}
+.pistachio .carousel {background: rgb(245, 245, 200);}
+.yellow .carousel {background: rgb(250, 240, 0);}
+.pink .carousel {background: rgb(255, 175, 195);}
+
+/*
 .red .words {background: rgb(255, 80, 0);}
 .grey .words {background: rgb(241, 241, 241);}
 .green .words {background: rgb(0, 200, 80);}
 .pistachio .words {background: rgb(245, 245, 200);}
 .yellow .words {background: rgb(250, 240, 0);}
-.pink .words {background: rgb(255, 175, 195);}
+.pink .words {background: rgb(255, 175, 195);}*/
 
 /***************************************** CURSORS */
 
