@@ -89,21 +89,20 @@ footer div p {
 
 /***************************************** CURSORS */
 
-.red .active {cursor: url(/assets/cursor_red.svg), pointer;}
-.grey .active {cursor: url(/assets/cursor_grey.svg), pointer;}
-.green img {cursor: url(/assets/cursor_green.svg), pointer;}
-.pistachio img {cursor: url(/assets/cursor_pistachio.svg), pointer;}
-.yellow img {cursor: url(/assets/cursor_yellow.svg), pointer;}
-.pink img {cursor: url(/assets/cursor_pink.svg), pointer;}
+.red .photo {cursor: url(/assets/cursor_red.svg), pointer;}
+.grey .photo {cursor: url(/assets/cursor_grey.svg), pointer;}
+.green .photo {cursor: url(/assets/cursor_green.svg), pointer;}
+.pistachio .photo {cursor: url(/assets/cursor_pistachio.svg), pointer;}
+.yellow .photo {cursor: url(/assets/cursor_yellow.svg), pointer;}
+.pink .photo {cursor: url(/assets/cursor_pink.svg), pointer;}
 
 
-.red .active {cursor: url(/assets/cursor/plan/red.svg), pointer;}
-
-.grey .active {cursor: url(/assets/cursor_grey.svg), pointer;}
-.green img {cursor: url(/assets/cursor_green.svg), pointer;}
-.pistachio img {cursor: url(/assets/cursor_pistachio.svg), pointer;}
-.yellow img {cursor: url(/assets/cursor_yellow.svg), pointer;}
-.pink img {cursor: url(/assets/cursor_pink.svg), pointer;}
+.red .plan {cursor: url(/assets/cursor/plan/red.svg), pointer;}
+.grey .plan {cursor: url(/assets/cursor_grey.svg), pointer;}
+.green .plan {cursor: url(/assets/cursor_green.svg), pointer;}
+.pistachio .plan {cursor: url(/assets/cursor_pistachio.svg), pointer;}
+.yellow .plan {cursor: url(/assets/cursor_yellow.svg), pointer;}
+.pink .plan {cursor: url(/assets/cursor_pink.svg), pointer;}
 
 
 /***************************************** SCROLL THINGS */
@@ -142,16 +141,8 @@ div img {
 	width: 100%;
 }
 
-.carousel .horse {
+.photo {
   	display: block;
-}
-
-.carousel .active {
-  	display: block;
-}
-
-.plan {
-	display: none;
 }
 
 img + .clear,
