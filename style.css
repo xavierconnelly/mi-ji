@@ -178,7 +178,7 @@ img + .clear,
 
 .slick-prev,
 .slick-next {
-  /* font-size: 0; */
+  font-size: 0;
   line-height: 0;
   position: absolute;
   top: 10px;
@@ -186,9 +186,9 @@ img + .clear,
   display: block;
   width: 100%;
   height: 100%;
-  /* margin-top: -10px; */
+  margin-top: 0px; 
   padding: 0;
-  /* cursor: pointer; */
+  cursor: none;
   color: ;
   border: 0;
   outline: 0;
@@ -200,6 +200,9 @@ img + .clear,
   content: none;
 }
 
+.slick-slider {
+    margin-bottom: 0px;
+}
 
 /***************************************** MEDIA QUERY */
 
