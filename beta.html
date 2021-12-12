@@ -274,40 +274,43 @@
       </div>
     </footer>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.1.1/gsap.min.js"></script>
-    <script src="./scripts/ScrollTrigger.min.js"></script>    
-    <script type="text/javascript" src="script.js"></script>
+
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-migrate/3.3.2/jquery-migrate.min.js"></script>
     <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 
-<script type="text/javascript">
-  $(document).ready(function () {
-  $(".carousel").slick({
-    dots: false,
-    fade: true,
-    infinite: true,
-    speed: 700,
-    slidesToShow: 1,
-    adaptiveHeight: true
-  });
-});
-//$('.duck').click(function () {
-//  $something.slick("slickNext");
-// });
+    <script type="text/javascript">
+      $(document).ready(function () {
+      $(".carousel").slick({
+        dots: false,
+        fade: true,
+        infinite: true,
+        speed: 700,
+        slidesToShow: 1,
+        adaptiveHeight: true
+      });
+    });
+    //$('.duck').click(function () {
+    //  $something.slick("slickNext");
+    // });
 
 
-function focusDetails() {
-document.getElementById("gallery").style.display = "none";
-document.querySelector("body").style.background = "rgb(255, 80, 0)";
-document.querySelector(".highlight").style.color = "white";
-}
-function normalDetails() {
-document.getElementById("gallery").style.display = "block";
-document.querySelector("body").style.background = "";
-document.querySelector(".highlight").style.color = "";
-}
-</script>
+    function focusDetails() {
+    document.getElementById("gallery").style.display = "none";
+    document.querySelector("body").style.background = "rgb(255, 80, 0)";
+    document.querySelector(".highlight").style.color = "white";
+    }
+    function normalDetails() {
+    document.getElementById("gallery").style.display = "block";
+    document.querySelector("body").style.background = "";
+    document.querySelector(".highlight").style.color = "";
+    }
+    </script>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.1.1/gsap.min.js"></script>
+    <script src="./scripts/ScrollTrigger.min.js"></script>    
+    <script type="text/javascript" src="script.js"></script>
 
   </body>
 </html>
