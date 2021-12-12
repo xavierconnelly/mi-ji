@@ -6,31 +6,218 @@
     
     
     <style>
-      
 * {
+  margin: 0;
   box-sizing: border-box;
+  font-family: "Andale", times;
+  font-size: 0.9rem;
+  -webkit-font-smoothing: antialiased !important;
+  text-rendering: optimizeLegibility !important;
+}
+
+.slick-slider {
+  margin-bottom: 0px;
 }
 
 body {
+  background: rgb(255, 175, 195);
+  transition: 1.5s;
+  min-height: 100vh;
+  overflow: hidden;
+  padding: 0;
   margin: 0;
-  display: flex;
+}
+
+a {
+  color: initial;
+  text-decoration: none;
+}
+
+.pink .carousel {
+  background: rgb(255, 175, 195);
+}
+.pink .words {
+  background: rgb(255, 175, 195);
+}
+
+/***************************************** TOP */
+
+header {
+  height: 30px;
+  width: 100%;
+  padding: 1px 10px;
+  background: white;
+  transition: 2s;
+  position: fixed;
+  z-index: 2;
+}
+
+header p {
   float: left;
+  line-height: 20px;
+}
+
+header img {
+  float: right;
+  height: 100%;
+}
+
+/***************************************** BOTTOM */
+
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  transition: 2s;
+  z-index: 2;
+}
+
+footer div {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: end;
+}
+
+footer div p {
+  width: 25%;
+  padding: 10px 10px 10px 10px;
+  text-align: left;
+}
+
+#office {
+  order: 1;
+}
+#millie {
+  order: 2;
+}
+#jimmy {
+  order: 3;
+}
+#rego {
+  order: 4;
+}
+
+.slick-prev,
+.slick-next {
+  /* font-size: 0; */
+  line-height: 0;
+  position: absolute;
+  top: 10px;
+  left: 0px;
+  display: block;
+  width: 100%;
+  height: 100%;
+  /* margin-top: -10px; */
+  padding: 0;
+  /* cursor: pointer; */
+  color: ;
+  border: 0;
+  outline: 0;
+  background: ;
+}
+
+.slick-next:before,
+.slick-prev:before {
+  content: none;
+}
+
+#gallery {
+  position: absolute;
+  top: 15px;
+  width: 100%;
+  height: 100vh;
+  overflow: ;
+  z-index: 1;
+  transition: 3s;
+}
+
+.cards {
+  display: flex;
+  position: absolute;
+  width: 400px; /*14rem*/
+  /*height: 18rem;*/
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .column {
-  width: 300px;
-  transition: 2s;
+  width: 400px;
+  height: 600px; /* height: 100vh; */
+  padding: 0;
+  margin: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
-.carousel {
-  transition: 10s;
-}
-
-img {
+div img {
   width: 100%;
 }
 
-    
+.photo {
+  display: block;
+}
+
+/***************************************** MEDIA QUERY */
+
+@media only screen and (max-width: 600px) {
+  * {
+    font-size: 0.95em;
+  }
+
+  header {
+    bottom: 0;
+  }
+
+  header p {
+    line-height: unset;
+    width: 80%; /* reduce this to increase image height*/
+  }
+
+  footer {
+    transform: translate(0, 100%);
+  }
+
+  footer div {
+    align-items: flex-start;
+    flex-flow: row wrap;
+  }
+
+  footer div p {
+    padding: 10px;
+    flex: 1 50%;
+  }
+
+  #millie {
+    order: 1;
+  }
+  #jimmy {
+    order: 2;
+  }
+  #office {
+    order: 3;
+  }
+  #rego {
+    order: 4;
+  }
+
+  .column {
+    /*width: 70%;*/
+  }
+}
+
+@media only screen and (max-height: 700px) {
+  .cards {
+    width: 100%;
+  }
+
+  .column {
+    width: 95vw;
+  }
+}
+
     </style>
   <head>
   <body>
