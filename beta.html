@@ -1,313 +1,100 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta name="format-detection" content="telephone=no">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+let iteration = 0; // gets iterated when we scroll all the way to the end or start and wraps around - allows us to smoothly continue the playhead scrubbing in the correct direction.
 
-    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
-    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.8/slick-theme.min.css">
-    <link rel="stylesheet" href="/style.css">
-  <head>
-
-  <body>
-
-    <header>
-      <p>
-        Office MI—JI is an architectural office
-      </p>
-      <img src="https://mi-ji.com.au/images/OM_Brand_Mark_Black_Small_F.png">
-    </header>
-
-    <div id="gallery"> <!-- THIS IS BEING DOUBLED TO CREATE THE EFFECT AND IS REPEATING THE CSS -->
-      <div class="cards">
-
-        <div class="column pink">
-          <div class="carousel">
-            <div class="photo">
-              <img class="blur" src="https://mi-ji.com.au/images/ACertainKindofLife/01_650_blur.JPG">
-              <img class="clear" src="https://mi-ji.com.au/images/ACertainKindofLife/01_650.JPG">
-            </div>
-            <div class="plan">
-              <img class="clear" src="https://mi-ji.com.au/images/ACertainKindofLife/Plan_650.png">
-            </div>
-          </div>
-          <div>
-            <span class="words">A Certain Kind of Life - Lisbon, Portugal 2019 (Jimmy Carter with Abigail Chang, Francesco Marullo and Agata Siemionow in conjunction with the University of Illinois at Chicago.)
-            </span>
-          </div>
-        </div>
-
-        <div class="column grey">
-          <div class="carousel">
-            <div class="photo">
-              <img class="blur" src="https://mi-ji.com.au/images/ABHouse/02_650_blur.JPG">
-              <img class="clear" src="https://mi-ji.com.au/images/ABHouse/02_650.JPG">
-            </div>
-            <div class="plan">
-              <img class="clear" src="https://mi-ji.com.au/images/ABHouse/Plan_650.png">
-            </div>
-          </div>
-          <div>
-            <span class="words">A B House - Barwon Heads, Australia 2021</span>
-          </div>
-        </div>
-
-        <div class="column pink">
-          <div class="carousel">
-            <div class="photo">
-              <img class="blur" src="https://mi-ji.com.au/images/ACertainKindofLife/04_650_blur.JPG">
-              <img class="clear" src="https://mi-ji.com.au/images/ACertainKindofLife/04_650.JPG">
-            </div>
-            <div class="plan">
-              <img class="clear" src="https://mi-ji.com.au/images/ACertainKindofLife/Plan_650.png">
-            </div>
-          </div>
-          <div>
-            <span class="words">A Certain Kind of Life - Lisbon, Portugal 2019 (Jimmy Carter with Abigail Chang, Francesco Marullo and Agata Siemionow in conjunction with the University of Illinois at Chicago.)</span>
-          </div>
-        </div>
-
-        <div class="column green">
-          <div class="carousel">
-            <div class="photo">
-              <img class="blur" src="https://mi-ji.com.au/images/AHouseForOne/01_650_blur.JPG">
-              <img class="clear" src="https://mi-ji.com.au/images/AHouseForOne/01_650.JPG">
-            </div>
-            <div class="plan">
-              <img class="clear" src="https://mi-ji.com.au/images/AHouseForOne/Plan_650.png">
-            </div>
-          </div>
-          <div>
-            <span class="words">A House For One – Castlemaine, Australia 2016
-            </span>
-          </div>
-        </div>
-
-        <div class="column red">
-          <div class="carousel">
-            <div class="photo">
-              <img class="blur" src="https://mi-ji.com.au/images/TokyoTina/01_650_blur.JPG">
-              <img class="clear" src="https://mi-ji.com.au/images/TokyoTina/01_650.JPG">
-            </div>
-          </div>
-          <div>
-            <span class="words">Tokyo Tina – Prahran, Australia 2015</span>
-          </div>
-        </div>
-
-        <div class="column yellow">
-          <div class="carousel">
-            <div class="photo">
-              <img class="blur" src="https://mi-ji.com.au/images/APavilion/01_650_blur.JPG">
-              <img class="clear" src="https://mi-ji.com.au/images/APavilion/01_650.JPG">
-            </div>
-            <div class="plan">
-              <img class="clear" src="https://mi-ji.com.au/images/APavilion/Plan_650.png">
-            </div>
-          </div>
-          <div>
-            <span class="words">A Pavilion - Collingwood, Australia 2021 (in collaboration with Molly Younger and Omid Jaffari)</span>
-          </div>
-        </div>
-
-        <div class="column grey">
-          <div class="carousel">
-            <div class="photo">
-              <img class="blur" src="https://mi-ji.com.au/images/ABHouse/01_650_blur.JPG">
-              <img class="clear" src="https://mi-ji.com.au/images/ABHouse/01_650.JPG">
-            </div>
-            <div class="plan">
-              <img class="clear" src="https://mi-ji.com.au/images/ABHouse/Plan_650.png">
-            </div>
-          </div>
-          <div>
-            <span class="words">A B House - Barwon Heads, Australia 2021</span>
-          </div>
-        </div>
-
-        <div class="column green">
-          <div class="carousel">
-            <div class="photo">
-              <img class="blur" src="https://mi-ji.com.au/images/AHouseForOne/02_650_blur.JPG">
-              <img class="clear" src="https://mi-ji.com.au/images/AHouseForOne/02_650.JPG">
-            </div>
-            <div class="plan">
-              <img class="clear" src="https://mi-ji.com.au/images/AHouseForOne/Plan_650.png">
-            </div>
-          </div>
-          <div>
-            <span class="words">A House For One – Castlemaine, Australia 2016
-            </span>
-          </div>
-        </div>
-
-        <div class="column pink">
-          <div class="carousel">
-            <div class="photo">
-              <img class="blur" src="https://mi-ji.com.au/images/ACertainKindofLife/02_650_blur.JPG">
-              <img class="clear" src="https://mi-ji.com.au/images/ACertainKindofLife/02_650.JPG">
-            </div>
-            <div class="plan">
-              <img class="clear" src="https://mi-ji.com.au/images/ACertainKindofLife/Plan_650.png">
-            </div>
-          </div>
-          <div>
-            <span class="words">A Certain Kind of Life - Lisbon, Portugal 2019 (Jimmy Carter with Abigail Chang, Francesco Marullo and Agata Siemionow in conjunction with the University of Illinois at Chicago.)</span>
-          </div>
-        </div>
-
-        <div class="column grey">
-          <div class="carousel">
-            <div class="photo">
-              <img class="blur" src="https://mi-ji.com.au/images/ABHouse/03_650_blur.JPG">
-              <img class="clear" src="https://mi-ji.com.au/images/ABHouse/03_650.JPG">
-            </div>
-            <div class="plan">
-              <img class="clear" src="https://mi-ji.com.au/images/ABHouse/Plan_650.png">
-            </div>
-          </div>
-          <div>
-            <span class="words">A B House - Barwon Heads, Australia 2021</span>
-          </div>
-        </div>
-
-        <div class="column green">
-          <div class="carousel">
-            <div class="photo">
-              <img class="blur" src="https://mi-ji.com.au/images/AHouseForOne/03_650_blur.JPG">
-              <img class="clear" src="https://mi-ji.com.au/images/AHouseForOne/03_650.JPG">
-            </div>
-            <div class="plan">
-              <img class="clear" src="https://mi-ji.com.au/images/AHouseForOne/Plan_650.png">
-            </div>
-          </div>
-          <div>
-            <span class="words">A House For One – Castlemaine, Australia 2016
-            </span>
-          </div>
-        </div>
-
-        <div class="column yellow">
-          <div class="carousel">
-            <div class="photo">
-              <img class="blur" src="https://mi-ji.com.au/images/APavilion/02_650_blur.JPG">
-              <img class="clear" src="https://mi-ji.com.au/images/APavilion/02_650.JPG">
-            </div>
-            <div class="plan">
-              <img class="clear" src="https://mi-ji.com.au/images/APavilion/Plan_650.png">
-            </div>
-          </div>
-          <div>
-            <span class="words">A Pavilion - Collingwood, Australia 2021 (in collaboration with Molly Younger and Omid Jaffari)</span>
-          </div>
-        </div>
-
-        <div class="column pink">
-          <div class="carousel">
-            <div class="photo">
-              <img class="blur" src="https://mi-ji.com.au/images/ACertainKindofLife/03_650_blur.JPG">
-              <img class="clear" src="https://mi-ji.com.au/images/ACertainKindofLife/03_650.JPG">
-            </div>
-            <div class="plan">
-              <img class="clear" src="https://mi-ji.com.au/images/ACertainKindofLife/Plan_650.png">
-            </div>
-          </div>
-          <div>
-            <span class="words">A Certain Kind of Life - Lisbon, Portugal 2019 (Jimmy Carter with Abigail Chang, Francesco Marullo and Agata Siemionow in conjunction with the University of Illinois at Chicago.)</span>
-          </div>
-        </div>
-
-        <div class="column grey">
-          <div class="carousel">
-            <div class="photo">
-              <img class="blur" src="https://mi-ji.com.au/images/ABHouse/04_650_blur.JPG">
-              <img class="clear" src="https://mi-ji.com.au/images/ABHouse/04_650.JPG">
-            </div>
-            <div class="plan">
-              <img class="clear" src="https://mi-ji.com.au/images/ABHouse/Plan_650.png">
-            </div>
-          </div>
-          <div>
-            <span class="words">A B House - Barwon Heads, Australia 2021</span>
-          </div>
-        </div>
-
-        <div class="column yellow">
-          <div class="carousel">
-            <div class="photo">
-              <img class="blur" src="https://mi-ji.com.au/images/APavilion/03_650_blur.JPG">
-              <img class="clear" src="https://mi-ji.com.au/images/APavilion/03_650.JPG">
-            </div>
-            <div class="plan">
-              <img class="clear" src="https://mi-ji.com.au/images/APavilion/Plan_650.png">
-            </div>
-          </div>
-          <div>
-            <span class="words">A Pavilion - Collingwood, Australia 2021 (in collaboration with Molly Younger and Omid Jaffari)</span>
-          </div>
-        </div>       
-
-      </div>
-    </div>
-
-    <footer onmouseover="focusDetails()" onmouseout="normalDetails()">
-      <div>
-        <p id="office" class="highlight">
-          Office MI—JI<br>
-          54 Johnston St <br>
-          Collingwood 3066
-        </p>
-        <p id="millie">
-          Millie Anderson<br>
-          millie@mi-ji.com.au<br>
-          0417 038 912
-        </p>
-        <p id="jimmy">
-          Jimmy Carter<br>
-          jimmy@mi-ji.com.au<br>
-          0452 055 948
-        </p>
-        <p id="rego">
-          <a href="https://instagram.com/office_mi.ji" target="none">IG</a><br>
-          ARBV 52058
-        </p>
-      </div>
-    </footer>
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.1.1/gsap.min.js"></script>
-    <script src="./scripts/ScrollTrigger.min.js"></script>    
-    <script type="text/javascript" src="script.js"></script>
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-migrate/3.3.2/jquery-migrate.min.js"></script>
-    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-
-<script type="text/javascript">
-  $(document).ready(function () {
-  $(".carousel").slick({
-    dots: false,
-    fade: true,
-    infinite: true,
-    speed: 700,
-    slidesToShow: 1,
-    adaptiveHeight: true
-  });
+const spacing = 0.125,    // spacing of the cards (stagger)
+//snap = gsap.utils.snap(spacing), // we'll use this to snap the playhead on the seamlessLoop
+cards = gsap.utils.toArray('.cards .column'),
+seamlessLoop = buildSeamlessLoop(cards, spacing),
+wrapProgress = gsap.utils.wrap(0, 1),
+scrub = gsap.to(seamlessLoop, { // we reuse this tween to smoothly scrub the playhead on the seamlessLoop
+  totalTime: 0,
+  duration: 0.5,
+  ease: "power3",
+  paused: true
+}),
+trigger = ScrollTrigger.create({
+  start: 0,
+  onUpdate(self) {
+    if (self.progress === 1 && self.direction > 0 && !self.wrapping) {
+      wrapForward(self);
+    } else if (self.progress < 1e-5 && self.direction < 0 && !self.wrapping) {
+      wrapBackward(self);
+    } else {
+      scrub.vars.totalTime = (iteration + self.progress) * seamlessLoop.duration();
+      scrub.invalidate().restart(); // to improve performance, we just invalidate and restart the same tween. No need for overwrites or creating a new tween on each update.
+      self.wrapping = false;
+    }
+  },
+  end: "+=3000",
+  pin: "#gallery"
 });
-//$('.duck').click(function () {
-//  $something.slick("slickNext");
-// });
 
-
-function focusDetails() {
-document.getElementById("gallery").style.display = "none";
-document.querySelector("body").style.background = "rgb(255, 80, 0)";
-document.querySelector(".highlight").style.color = "white";
+function wrapForward(trigger, progress) { // when the ScrollTrigger reaches the end, loop back to the beginning seamlessly
+iteration++;
+trigger.wrapping = true;
+trigger.scroll(progress ? trigger.start + progress * (trigger.end - trigger.start) : trigger.start + 1);
 }
-function normalDetails() {
-document.getElementById("gallery").style.display = "block";
-document.querySelector("body").style.background = "";
-document.querySelector(".highlight").style.color = "";
-}
-</script>
 
-  </body>
-</html>
+function wrapBackward(trigger, progress) { // when the ScrollTrigger reaches the start again (in reverse), loop back to the end seamlessly
+iteration--;
+if (iteration < 0) { // to keep the playhead from stopping at the beginning, we jump ahead 10 iterations
+  iteration = 9;
+  seamlessLoop.totalTime(seamlessLoop.totalTime() + seamlessLoop.duration() * 10);
+  scrub.pause(); // otherwise it may update the totalTime right before the trigger updates, making the starting value different than what we just set above.
+}
+trigger.wrapping = true;
+trigger.scroll(progress ? trigger.start + progress * (trigger.end - trigger.start) : trigger.end - 1);
+}
+
+function scrubTo(totalTime) { // moves the scroll position to the place that corresponds to the totalTime value of the seamlessLoop, and wraps if necessary.
+let progress = (totalTime - seamlessLoop.duration() * iteration) / seamlessLoop.duration();
+if (progress > 1) {
+  wrapForward(trigger, wrapProgress(progress));
+} else if (progress < 0) {
+  wrapBackward(trigger, wrapProgress(progress));
+} else {
+  trigger.scroll(trigger.start + progress * (trigger.end - trigger.start));
+}
+}
+
+
+function buildSeamlessLoop(items, spacing) {
+let overlap = Math.ceil(1 / spacing), // number of EXTRA animations on either side of the start/end to accommodate the seamless looping
+  startTime = items.length * spacing + 0.5, // the time on the rawSequence at which we'll start the seamless loop
+  loopTime = (items.length + overlap) * spacing + 1, // the spot at the end where we loop back to the startTime 
+  rawSequence = gsap.timeline({paused: true}), // this is where all the "real" animations live
+  seamlessLoop = gsap.timeline({ // this merely scrubs the playhead of the rawSequence so that it appears to seamlessly loop
+    paused: true,
+    repeat: -1, // to accommodate infinite scrolling/looping
+    onRepeat() { // works around a super rare edge case bug that's fixed GSAP 3.6.1
+      this._time === this._dur && (this._tTime += this._dur - 0.01);
+    }
+  }),
+  l = items.length + overlap * 2,
+  time = 0,
+  i, index, item;
+
+// set initial state of items
+gsap.set(items, {xPercent: 300});
+
+// now loop through and create all the animations in a staggered fashion. Remember, we must create EXTRA animations at the end to accommodate the seamless looping.
+for (i = 0; i < l; i++) {
+  index = i % items.length;
+  item = items[index];
+  time = i * spacing;
+  rawSequence.fromTo(item, {xPercent: 400}, {xPercent: -400, duration: 1, ease: "none", immediateRender: false}, time);
+}
+
+// here's where we set up the scrubbing of the playhead to make it appear seamless. 
+rawSequence.time(startTime);
+seamlessLoop.to(rawSequence, {
+  time: loopTime,
+  duration: loopTime - startTime,
+  ease: "none"
+}).fromTo(rawSequence, {time: overlap * spacing + 1}, {
+  time: startTime,
+  duration: startTime - (overlap * spacing + 1),
+  immediateRender: false,
+  ease: "none"
+});
+return seamlessLoop;
+}
