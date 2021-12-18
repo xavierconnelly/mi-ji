@@ -38,11 +38,13 @@ header {
 	transition: 2s;
 	position: fixed;
 	z-index: 2;
+	/* display: flex; */
+  /* align-items: center; */
 }
 
 header p {
 	float: left;
-	line-height: 20px;
+	line-height: 30px;
 }
 
 header img {
@@ -154,11 +156,31 @@ div img {
   	display: block;
 }
 
+.blur-box {
+    overflow: hidden;
+}
+
 img + .clear,
 .column:hover .blur,
 .column .words {
   	display: none;
 }
+
+.trial {
+	filter: blur(4px);
+  z-index: -1;
+ /* height: calc(100% + 40px);*/
+  width: calc(100% + 10px);
+  position: relative;
+  top: -2px;
+  left: -5px;
+  display:  block;
+}
+
+.blur-box:hover .trial {
+    filter: blur(0px);
+}
+
 
 .column .blur,
 .column:hover .clear,
@@ -167,12 +189,12 @@ img + .clear,
 }
 
 .words {
-  	width: 100%;
-  	-webkit-box-shadow: inset 0px -3px 0px 0px #fff;
-    -moz-box-shadow: inset 0px -3px 0px 0px #fff;
-  	box-shadow: inset 0px -3px 0px 0px #fff;
+    width: 100%;
+    box-shadow: rgb(255 255 255) 0px -6px 0px -3px inset;
+    position: relative;
+    top: -3px;
+    z-index: -1;
 }
-
 
 /***************************************** SLIDER OVERRIDE THINGS */
 
