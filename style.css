@@ -188,12 +188,20 @@ img + .clear,
   	display: block;
 }
 
+.words-box {
+	  background: pink;
+    position: relative;
+    top: -2px;
+    box-shadow: rgb(255 255 255) 0px -6px 0px 0px inset;
+}
+
 .words {
     width: 100%;
-    box-shadow: rgb(255 255 255) 0px -6px 0px -3px inset;
+    /* height: calc(100% - 30px); */
+    /* box-shadow: rgb(255 175 195) 1px 5px 0px 0px inset; */
     position: relative;
     top: -3px;
-    z-index: -1;
+    z-index: 2;
 }
 
 /***************************************** SLIDER OVERRIDE THINGS */
