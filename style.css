@@ -199,6 +199,7 @@ img + .clear,
 .plan {
 	border:  1px solid white;
 	box-sizing: content-box;
+	width: calc(100% - 2px);
 }
 
 /***************************************** SLIDER OVERRIDE THINGS */
