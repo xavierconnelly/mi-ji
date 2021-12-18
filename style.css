@@ -154,9 +154,6 @@ div img {
 
 .photo {
   	display: block;
-}
-
-.blur-box {
     overflow: hidden;
 }
 
@@ -166,7 +163,7 @@ img + .clear,
   	display: none;
 }
 
-.trial {
+.photo img {
 	filter: blur(4px);
   z-index: -1;
  /* height: calc(100% + 40px);*/
