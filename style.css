@@ -177,7 +177,7 @@ img + .clear,
   display:  block;
 }
 
-.blur-box:hover .trial {
+.column:hover .trial {
     filter: blur(0px);
 }
 
