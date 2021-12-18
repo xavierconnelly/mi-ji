@@ -80,14 +80,14 @@ footer div p {
 #jimmy {order: 3;}
 #rego {order: 4;}
 
-/***************************************** COLOURS
+/***************************************** COLOURS*/
 
 .red .carousel {background: rgb(255, 80, 0);}
 .grey .carousel {background: rgb(241, 241, 241);}
 .green .carousel {background: rgb(0, 200, 80);}
 .pistachio .carousel {background: rgb(245, 245, 200);}
 .yellow .carousel {background: rgb(250, 240, 0);}
-.pink .carousel {background: rgb(255, 175, 195);} */
+.pink .carousel {background: rgb(255, 175, 195);} 
 
 
 .red .words-box {background: rgb(255, 80, 0);}
@@ -157,15 +157,14 @@ div img {
     overflow: hidden;
 }
 
-.carousel .photo {
-	filter: blur(4px);
+.blur .photo {
+	filter: blur(2px);
   z-index: -1;
  /* height: calc(100% + 40px);*/
-  width: 420px !important; 
+  width: 406px !important; 
   position: relative;
   top: 2px;
-  left: -5px;
-  display:  block;
+  left: -3px;
 }
 
 .column:hover .photo  {
@@ -203,8 +202,8 @@ div img {
 }
 */
 
-.plan img {
-	border:  5px solid white
+.blur, .plan img {
+	border:  5px solid white;
 }
 
 /***************************************** SLIDER OVERRIDE THINGS */
