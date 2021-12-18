@@ -152,17 +152,12 @@ div img {
 	width: 100%;
 }
 
-.photo {
+.carousel {
   	display: block;
     overflow: hidden;
 }
 
-img + .clear,
-.column .words {
-  	display: none;
-}
-
-.photo img {
+.carousel .photo {
 	filter: blur(4px);
   z-index: -1;
  /* height: calc(100% + 40px);*/
@@ -173,8 +168,12 @@ img + .clear,
   display:  block;
 }
 
-.column:hover .photo img  {
+.column:hover .photo  {
     filter: blur(0px);
+}
+
+.column .words {
+  	display: none;
 }
 
 .column:hover .words {
