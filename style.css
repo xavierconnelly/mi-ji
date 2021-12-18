@@ -158,7 +158,6 @@ div img {
 }
 
 img + .clear,
-.column:hover .blur,
 .column .words {
   	display: none;
 }
@@ -195,6 +194,11 @@ img + .clear,
     position: relative;
     top: -3px;
     z-index: 2;
+}
+
+.plan {
+	border:  1px solid white;
+	box-sizing: content-box;
 }
 
 /***************************************** SLIDER OVERRIDE THINGS */
