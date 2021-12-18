@@ -196,10 +196,16 @@ img + .clear,
     z-index: 2;
 }
 
+/*
 .plan {
 	border:  1px solid white;
 	box-sizing: content-box;
 	width: calc(100% - 2px);
+}
+*/
+
+.plan img {
+	border:  5px solid white
 }
 
 /***************************************** SLIDER OVERRIDE THINGS */
