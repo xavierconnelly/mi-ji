@@ -80,22 +80,22 @@ footer div p {
 #jimmy {order: 3;}
 #rego {order: 4;}
 
-/***************************************** COLOURS 
+/***************************************** COLOURS
 
 .red .carousel {background: rgb(255, 80, 0);}
 .grey .carousel {background: rgb(241, 241, 241);}
 .green .carousel {background: rgb(0, 200, 80);}
 .pistachio .carousel {background: rgb(245, 245, 200);}
 .yellow .carousel {background: rgb(250, 240, 0);}
-.pink .carousel {background: rgb(255, 175, 195);}
+.pink .carousel {background: rgb(255, 175, 195);} */
 
 
-.red .words {background: rgb(255, 80, 0);}
-.grey .words {background: rgb(241, 241, 241);}
-.green .words {background: rgb(0, 200, 80);}
-.pistachio .words {background: rgb(245, 245, 200);}
-.yellow .words {background: rgb(250, 240, 0);}
-.pink .words {background: rgb(255, 175, 195);}
+.red .words-box {background: rgb(255, 80, 0);}
+.grey .words-box {background: rgb(241, 241, 241);}
+.green .words-box {background: rgb(0, 200, 80);}
+.pistachio .words-box {background: rgb(245, 245, 200);}
+.yellow .words-box {background: rgb(250, 240, 0);}
+.pink .words-box {background: rgb(255, 175, 195);}
 
 /***************************************** CURSORS */
 
@@ -167,26 +167,22 @@ img + .clear,
 	filter: blur(4px);
   z-index: -1;
  /* height: calc(100% + 40px);*/
-  width: calc(100% + 8px);
+  width: calc(100% + 10px);
   position: relative;
   top: 2px;
-  left: -4px;
+  left: -5px;
   display:  block;
 }
 
-.column:hover .trial {
+.column:hover .photo img  {
     filter: blur(0px);
 }
 
-
-.column .blur,
-.column:hover .clear,
 .column:hover .words {
   	display: block;
 }
 
 .words-box {
-	  background: pink;
     position: relative;
     top: -2px;
     box-shadow: rgb(255 255 255) 0px -6px 0px 0px inset;
