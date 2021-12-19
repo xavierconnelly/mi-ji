@@ -157,8 +157,15 @@ div img {
     overflow: hidden;
 }
 
+.carousel div {
+	 overflow: hidden;
+	 transition: height 0.5s ease-out;
+	 height: auto;
+}
+
 .blur .photo {
 	filter: blur(2px);
+	-webkit-transform: translate3d(0, 0, 0);
   z-index: -1;
  /* height: calc(100% + 40px);*/
   width: 406px !important; 
@@ -202,7 +209,7 @@ div img {
 }
 */
 
-.blur, .plan img {
+.blur, .plan {
 	border:  5px solid white;
 }
 
