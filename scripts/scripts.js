@@ -75,7 +75,7 @@ function bluify(e) {
 }
 
 // Get a list of every element in the document
-var elements = document.getElementsByClassName("carousel");
+var elements = document.getElementsByClassName("column");
 
 // Add bluify as a click listener so when the
 // element is clicked on, it turns blue
