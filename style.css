@@ -80,14 +80,14 @@ footer div p {
 #jimmy {order: 3;}
 #rego {order: 4;}
 
-/***************************************** COLOURS*/
+/***************************************** COLOURS
 
 .red .carousel {background: rgb(255, 80, 0);}
 .grey .carousel {background: rgb(241, 241, 241);}
 .green .carousel {background: rgb(0, 200, 80);}
 .pistachio .carousel {background: rgb(245, 245, 200);}
 .yellow .carousel {background: rgb(250, 240, 0);}
-.pink .carousel {background: rgb(255, 175, 195);} 
+.pink .carousel {background: rgb(255, 175, 195);} */
 
 
 .red .words-box {background: rgb(255, 80, 0);}
@@ -125,7 +125,7 @@ footer div p {
 	height: 100vh;
 	overflow: ;
 	z-index: 1;
-	transition: 3s;
+	transition: 1.5s;
 }
 
 .cards {
@@ -140,7 +140,7 @@ footer div p {
 
 .column {
 	width: 400px;
-	height: max-content; 
+	height: ; 
 	padding: 0;
 	margin: 0;
 	position: absolute;
@@ -148,39 +148,40 @@ footer div p {
 	left: 0;
 }
 
+.carousel {
+		width: 400px;
+  	display: flex;
+  	flex-direction: column;
+}
+
 div img {
 	width: 100%;
 }
 
-.carousel {
-  	display: ;
-    overflow: hidden;
-}
-
 .photo, .plan   {
 	 overflow: hidden;
-	 transition: height 0.5s ease-out;
+	 transition: height 1s ease-out;
 	 height: auto;
 }
 
-/*
+
 .blur .photo {
 	filter: blur(2px);
 	-webkit-transform: translate3d(0, 0, 0);
   z-index: -1;
- /* height: calc(100% + 40px);*//*
+ /* height: calc(100% + 40px);*/
   width: 406px !important; 
   position: relative;
   top: 2px;
   left: -3px;
 }
-*/
 
-/*
+
+
 .column:hover .photo  {
     filter: blur(0px);
 }
-*/
+
 
 .column .words {
   	display: none;
