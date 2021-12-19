@@ -110,5 +110,5 @@ for (var i = 0; i < elements.length; i++) {
 
 
 window.addEventListener('load', (event) => {
- var promise = getElementsByClassName(".plan").decode();
+ var promise = getElementsByClassName("plan").decode();
 });
