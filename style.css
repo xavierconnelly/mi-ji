@@ -140,7 +140,7 @@ footer div p {
 
 .column {
 	width: 400px;
-	height: ; 
+	height: 600px; 
 	padding: 0;
 	margin: 0;
 	position: absolute;
@@ -164,7 +164,6 @@ div img {
 	 height: auto;
 }
 
-
 .blur img {
 		filter: blur(3px);
     z-index: -1;
@@ -178,7 +177,7 @@ div img {
     filter: blur(0px);
 }
 
-.column .words {
+.column .words-box {
   	display: none;
 }
 
@@ -194,14 +193,14 @@ div img {
 
 .words {
     width: 100%;
-    /* height: calc(100% - 30px); */
-    /* box-shadow: rgb(255 175 195) 1px 5px 0px 0px inset; */
     position: relative;
     top: -3px;
     z-index: 2;
 }
 
 /*
+to get rid of
+the weird shitty line
 .plan {
 	border:  1px solid white;
 	box-sizing: content-box;
