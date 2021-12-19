@@ -153,26 +153,28 @@ div img {
 }
 
 .carousel {
-  	display: block;
+  	display: ;
     overflow: hidden;
 }
 
-.carousel div {
+.photo, .plan   {
 	 overflow: hidden;
 	 transition: height 0.5s ease-out;
 	 height: auto;
 }
 
+/*
 .blur .photo {
 	filter: blur(2px);
 	-webkit-transform: translate3d(0, 0, 0);
   z-index: -1;
- /* height: calc(100% + 40px);*/
+ /* height: calc(100% + 40px);*//*
   width: 406px !important; 
   position: relative;
   top: 2px;
   left: -3px;
 }
+*/
 
 .column:hover .photo  {
     filter: blur(0px);
