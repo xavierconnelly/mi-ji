@@ -61,14 +61,14 @@ function bluify(e) {
 
   if(isPlanCollapsed) {
     expandSection(plan)
-    plan.setAttribute('data-collapsed', 'true')
+    plan.setAttribute('data-collapsed', 'false')
   } else {
     collapseSection(plan)
   }
   
   if(isPhotoCollapsed) {
     expandSection(photo)
-    photo.setAttribute('data-collapsed', 'true')
+    photo.setAttribute('data-collapsed', 'false')
   } else {
     collapseSection(photo)
   }
