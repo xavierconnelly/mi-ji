@@ -165,7 +165,7 @@ div img {
 }
 
 
-.blur .photo {
+.blur img {
 	filter: blur(2px);
 	-webkit-transform: translate3d(0, 0, 0);
   z-index: -1;
