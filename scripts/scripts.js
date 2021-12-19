@@ -1,3 +1,28 @@
+// $(document).ready(function () {
+//   $(".carousel").slick({
+//     dots: false,
+//     fade: false,
+//     infinite: true,
+//     speed: 500,
+//     slidesToShow: 1,
+//     //vertical: true,
+//     lazyLoad: 'progressive',
+//     adaptiveHeight: true
+//   });
+// });
+
+function focusDetails() {
+  document.getElementById("gallery").style.opacity = "0";
+  document.querySelector("body").style.background = "rgb(255, 80, 0)";
+}
+function normalDetails() {
+  document.getElementById("gallery").style.opacity = "1";
+  document.querySelector("body").style.background = "";
+}
+
+
+// Flick between images
+
 // This is the important part!
 
 function collapseSection(element) {
@@ -75,10 +100,15 @@ function bluify(e) {
 }
 
 // Get a list of every element in the document
-var elements = document.getElementsByClassName("column");
+var elements = document.getElementsByClassName("container");
 
 // Add bluify as a click listener so when the
 // element is clicked on, it turns blue
 for (var i = 0; i < elements.length; i++) {
   elements[i].addEventListener("click", bluify, false);
 }
+
+
+window.addEventListener('load', (event) => {
+ var promise = getElementsByClassName(".plan").decode();
+});
