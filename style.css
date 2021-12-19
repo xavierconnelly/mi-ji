@@ -166,26 +166,23 @@ div img {
 
 
 .blur img {
-	filter: blur(2px);
-	-webkit-transform: translate3d(0, 0, 0);
-  z-index: -1;
- /* height: calc(100% + 40px);*/
-  width: 406px !important; 
-  position: relative;
-  top: 2px;
-  left: -3px;
-}
+		filter: blur(3px);
+    z-index: -1;
+    width: 408px !important;
+    position: relative;
+    top: 4px;
+    left: -4px;
+  }
 
 .column:hover .blur img  {
     filter: blur(0px);
 }
 
-
 .column .words {
   	display: none;
 }
 
-.column:hover .words {
+.column:hover .words-box {
   	display: block;
 }
 
