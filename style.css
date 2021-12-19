@@ -140,7 +140,7 @@ footer div p {
 
 .column {
 	width: 400px;
-	height: 600px; /* height: 100vh; */
+	height: max-content; 
 	padding: 0;
 	margin: 0;
 	position: absolute;
@@ -176,9 +176,11 @@ div img {
 }
 */
 
+/*
 .column:hover .photo  {
     filter: blur(0px);
 }
+*/
 
 .column .words {
   	display: none;
