@@ -43,7 +43,7 @@ function collapseSection(element) {
     // on the next frame (as soon as the previous style change has taken effect),
     // have the element transition to height: 0
     requestAnimationFrame(function() {
-      element.style.height = 0 + 'px';
+      element.style.height = 1 + 'px';
     });
   });
   
@@ -109,6 +109,6 @@ for (var i = 0; i < elements.length; i++) {
 }
 
 
-window.addEventListener('load', (event) => {
- var promise = getElementsByClassName("plan").decode();
-});
+//window.addEventListener('load', (event) => {
+ //var promise = getElementsByClassName("plan").decode();
+//});
