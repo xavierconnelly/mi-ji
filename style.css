@@ -99,12 +99,12 @@ footer div p {
 
 /***************************************** CURSORS */
 
-.red .slick-next {cursor: url(/assets/cursor_red.svg), pointer;}
-.grey .slick-next {cursor: url(/assets/cursor_grey.svg), pointer;}
-.green .slick-next {cursor: url(/assets/cursor_green.svg), pointer;}
-.pistachio .slick-next {cursor: url(/assets/cursor_pistachio.svg), pointer;}
-.yellow .slick-next {cursor: url(/assets/cursor_yellow.svg), pointer;}
-.pink .slick-next {cursor: url(/assets/cursor_pink.svg), pointer;}
+.red .photo {cursor: url(/assets/cursor_red.svg), pointer;}
+.grey .photo {cursor: url(/assets/cursor_grey.svg), pointer;}
+.green .photo {cursor: url(/assets/cursor_green.svg), pointer;}
+.pistachio .photo {cursor: url(/assets/cursor_pistachio.svg), pointer;}
+.yellow .photo {cursor: url(/assets/cursor_yellow.svg), pointer;}
+.pink .photo {cursor: url(/assets/cursor_pink.svg), pointer;}
 
 
 .red .plan {cursor: url(), pointer;}
