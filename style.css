@@ -176,9 +176,7 @@ div img {
   left: -3px;
 }
 
-
-
-.column:hover .photo  {
+.column:hover .blur img  {
     filter: blur(0px);
 }
 
