@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <!-- Meta -->
     <meta charset="utf-8">
-    <title>James and Jimmy</title>
+    <title>Office Mi-Ji</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Office MI—JI is an architectural office.">
     <meta name="keywords" content="melbourne, architect, small, arctictecture, office, millie, anderson, carter, james, jimmy, fitzroy, local">
@@ -24,7 +24,7 @@
       <p>
         Office MI—JI is an architectural office
       </p>
-      <img src="https://mi-ji.com.au/images/OM_Brand_Mark_Black_Small_F.png">
+      <img src="https://mi-ji.com.au/images/OM_Brand_Mark_Black_Small_F.png" alt="Mi-Ji logo">
     </header>
 
     <div id="gallery"> <!-- THIS IS BEING DOUBLED TO CREATE THE EFFECT AND IS REPEATING THE CSS -->
@@ -33,13 +33,17 @@
         <div class="column pink">
           <div class="carousel">
             <div class="photo blur">
-                <img src="https://mi-ji.com.au/images/ACertainKindofLife/01_650.JPG">
+              <picture>
+                <source type="image/webp" srcset="./images/ACertainKindofLife/01_800.webp">
+                <source type="image/png" srcset="./images/ACertainKindofLife/01_800.png">
+                <img src="https://mi-ji.com.au/images/ACertainKindofLife/01_800.JPG" alt="photo of the A Certain Kind of Life project">
+              </picture>
             </div>
             <div class="plan" data-collapsed="true" style="height: 1px">
               <picture>
-                <source type="image/webp" srcset="./images/ACertainKindofLife/Plan_650.webp">
-                <source type="image/png" srcset="./images/ACertainKindofLife/Plan_650.png">
-                <img src="./images/ACertainKindofLife/Plan_650.png" alt="A plan view of the Certain Kind of Life project">
+                <source type="image/webp" srcset="./images/ACertainKindofLife/Plan_800.webp">
+                <source type="image/png" srcset="./images/ACertainKindofLife/Plan_800.png">
+                <img src="./images/ACertainKindofLife/Plan_800.png" alt="architectural plan of the Certain Kind of Life project">
               </picture>
             </div>
           </div>
@@ -52,10 +56,18 @@
         <div class="column grey">
           <div class="carousel">
             <div class="photo blur">
-                <img src="https://mi-ji.com.au/images/ABHouse/02_650.JPG">
+              <picture>
+                <source type="image/webp" srcset="./images/ABHouse/02_800.webp">
+                <source type="image/png" srcset="./images/ABHouse/02_800.png">              
+                <img src="https://mi-ji.com.au/images/ABHouse/02_800.JPG" alt="photo of the AB House project">
+              </picture>
               </div>
             <div class="plan" data-collapsed="true" style="height: 1px">
-              <img src="https://mi-ji.com.au/images/ABHouse/Plan_650.png">
+              <picture>
+                <source type="image/webp" srcset="./images/ABHouse/Plan_800.webp">
+                <source type="image/png" srcset="./images/ABHouse/Plan_800.png">                
+                <img src="https://mi-ji.com.au/images/ABHouse/Plan_800.png" alt="architectural plan of the AB House project">
+              </picture>
             </div>
           </div>
           <div class="words-box">
@@ -66,24 +78,41 @@
         <div class="column pink">
           <div class="carousel">
             <div class="photo blur">
-                <img src="https://mi-ji.com.au/images/ACertainKindofLife/04_650.JPG">
-              </div>
+              <picture>
+                <source type="image/webp" srcset="./images/ACertainKindofLife/04_800.webp">
+                <source type="image/png" srcset="./images/ACertainKindofLife/04_800.png">
+                <img src="https://mi-ji.com.au/images/ACertainKindofLife/04_800.JPG" alt="photo of the A Certain Kind of Life project">
+              </picture>
+            </div>
             <div class="plan" data-collapsed="true" style="height: 1px">
-              <img src="https://mi-ji.com.au/images/ACertainKindofLife/Plan_650.png">
+              <picture>
+                <source type="image/webp" srcset="./images/ACertainKindofLife/Plan_800.webp">
+                <source type="image/png" srcset="./images/ACertainKindofLife/Plan_800.png">
+                <img src="./images/ACertainKindofLife/Plan_800.png" alt="architectural plan of the Certain Kind of Life project">
+              </picture>
             </div>
           </div>
           <div class="words-box">
-            <span class="words">A Certain Kind of Life - Lisbon, Portugal 2019 (Jimmy Carter with Abigail Chang, Francesco Marullo and Agata Siemionow in conjunction with the University of Illinois at Chicago.)</span>
+            <span class="words">A Certain Kind of Life - Lisbon, Portugal 2019 (Jimmy Carter with Abigail Chang, Francesco Marullo and Agata Siemionow in conjunction with the University of Illinois at Chicago.)
+            </span>
           </div>
         </div>
 
         <div class="column green">
           <div class="carousel">
             <div class="photo blur">
-              <img src="https://mi-ji.com.au/images/AHouseForOne/01_650.JPG">
+              <picture>
+                <source type="image/webp" srcset="./images/AHouseForOne/01_800.webp">
+                <source type="image/png" srcset="./images/AHouseForOne/01_800.png"> 
+                <img src="https://mi-ji.com.au/images/AHouseForOne/01_800.JPG" alt="photo of the A House For One project">
+              </picture>
             </div>
             <div class="plan" data-collapsed="true" style="height: 1px">
-              <img src="https://mi-ji.com.au/images/AHouseForOne/Plan_650.png">
+              <picture>
+                <source type="image/webp" srcset="./images/AHouseForOne/Plan_800.webp">
+                <source type="image/png" srcset="./images/AHouseForOne/Plan_800.png"> 
+                <img src="https://mi-ji.com.au/images/AHouseForOne/Plan_800.png" alt="architectural plan of the A House For One project">
+              </picture>
             </div>
           </div>
           <div class="words-box">
@@ -95,7 +124,11 @@
         <div class="column red">
           <div>
             <div class="photo blur" style="cursor: pointer">
-              <img src="https://mi-ji.com.au/images/TokyoTina/01_650.JPG">
+              <picture>
+                <source type="image/webp" srcset="./images/TokyoTina/01_800.webp">
+                <source type="image/png" srcset="./images/TokyoTina/01_800.png"> 
+                <img src="https://mi-ji.com.au/images/TokyoTina/01_800.JPG" alt="photo of the Tokyo Tina project">
+              </picture>
             </div>
           </div>
           <div class="words-box">
@@ -106,24 +139,40 @@
         <div class="column yellow">
           <div class="carousel">
             <div class="photo blur">
-              <img src="https://mi-ji.com.au/images/APavilion/01_650.JPG">
+              <picture>
+                <source type="image/webp" srcset="./images/APavilion/01_800.webp">
+                <source type="image/png" srcset="./images/APavilion/01_800.png">               
+                <img src="https://mi-ji.com.au/images/APavilion/01_800.JPG" alt="photo of the A Pavillion project">
+              </picture>
             </div>
             <div class="plan" data-collapsed="true" style="height: 1px">
-              <img src="https://mi-ji.com.au/images/APavilion/Plan_650.png">
+              <picture>
+                <source type="image/webp" srcset="./images/APavilion/Plan_800.webp">
+                <source type="image/png" srcset="./images/APavilion/Plan_800.png"> 
+                <img src="https://mi-ji.com.au/images/APavilion/Plan_800.png" alt="architectural plan of the A Pavillion project">
+              </picture>
             </div>
-            </div>
+          </div>
           <div class="words-box">
             <span class="words">A Pavilion - Collingwood, Australia 2021 (in collaboration with Molly Younger and Omid Jaffari)</span>
           </div>
-        </div>
+        </div>  
 
         <div class="column grey">
           <div class="carousel">
             <div class="photo blur">
-              <img src="https://mi-ji.com.au/images/ABHouse/01_650.JPG">
-            </div>
+              <picture>
+                <source type="image/webp" srcset="./images/ABHouse/01_800.webp">
+                <source type="image/png" srcset="./images/ABHouse/01_800.png">              
+                <img src="https://mi-ji.com.au/images/ABHouse/01_800.JPG" alt="photo of the AB House project">
+              </picture>
+              </div>
             <div class="plan" data-collapsed="true" style="height: 1px">
-              <img src="https://mi-ji.com.au/images/ABHouse/Plan_650.png">
+              <picture>
+                <source type="image/webp" srcset="./images/ABHouse/Plan_800.webp">
+                <source type="image/png" srcset="./images/ABHouse/Plan_800.png">                
+                <img src="https://mi-ji.com.au/images/ABHouse/Plan_800.png" alt="architectural plan of the AB House project">
+              </picture>
             </div>
           </div>
           <div class="words-box">
@@ -134,10 +183,18 @@
         <div class="column green">
           <div class="carousel">
             <div class="photo blur">
-              <img src="https://mi-ji.com.au/images/AHouseForOne/02_650.JPG">
+              <picture>
+                <source type="image/webp" srcset="./images/AHouseForOne/02_800.webp">
+                <source type="image/png" srcset="./images/AHouseForOne/02_800.png"> 
+                <img src="https://mi-ji.com.au/images/AHouseForOne/02_800.JPG" alt="photo of the A House For One project">
+              </picture>
             </div>
             <div class="plan" data-collapsed="true" style="height: 1px">
-              <img src="https://mi-ji.com.au/images/AHouseForOne/Plan_650.png">
+              <picture>
+                <source type="image/webp" srcset="./images/AHouseForOne/Plan_800.webp">
+                <source type="image/png" srcset="./images/AHouseForOne/Plan_800.png"> 
+                <img src="https://mi-ji.com.au/images/AHouseForOne/Plan_800.png" alt="architectural plan of the A House For One project">
+              </picture>
             </div>
           </div>
           <div class="words-box">
@@ -149,24 +206,41 @@
         <div class="column pink">
           <div class="carousel">
             <div class="photo blur">
-              <img src="https://mi-ji.com.au/images/ACertainKindofLife/02_650.JPG">
+              <picture>
+                <source type="image/webp" srcset="./images/ACertainKindofLife/02_800.webp">
+                <source type="image/png" srcset="./images/ACertainKindofLife/02_800.png">
+                <img src="https://mi-ji.com.au/images/ACertainKindofLife/02_800.JPG" alt="photo of the A Certain Kind of Life project">
+              </picture>
             </div>
             <div class="plan" data-collapsed="true" style="height: 1px">
-              <img src="https://mi-ji.com.au/images/ACertainKindofLife/Plan_650.png">
+              <picture>
+                <source type="image/webp" srcset="./images/ACertainKindofLife/Plan_800.webp">
+                <source type="image/png" srcset="./images/ACertainKindofLife/Plan_800.png">
+                <img src="./images/ACertainKindofLife/Plan_800.png" alt="architectural plan of the Certain Kind of Life project">
+              </picture>
             </div>
           </div>
           <div class="words-box">
-            <span class="words">A Certain Kind of Life - Lisbon, Portugal 2019 (Jimmy Carter with Abigail Chang, Francesco Marullo and Agata Siemionow in conjunction with the University of Illinois at Chicago.)</span>
+            <span class="words">A Certain Kind of Life - Lisbon, Portugal 2019 (Jimmy Carter with Abigail Chang, Francesco Marullo and Agata Siemionow in conjunction with the University of Illinois at Chicago.)
+            </span>
           </div>
         </div>
 
         <div class="column grey">
           <div class="carousel">
             <div class="photo blur">
-              <img src="https://mi-ji.com.au/images/ABHouse/03_650.JPG">
-            </div>
+              <picture>
+                <source type="image/webp" srcset="./images/ABHouse/03_800.webp">
+                <source type="image/png" srcset="./images/ABHouse/03_800.png">              
+                <img src="https://mi-ji.com.au/images/ABHouse/03_800.JPG" alt="photo of the AB House project">
+              </picture>
+              </div>
             <div class="plan" data-collapsed="true" style="height: 1px">
-              <img src="https://mi-ji.com.au/images/ABHouse/Plan_650.png">
+              <picture>
+                <source type="image/webp" srcset="./images/ABHouse/Plan_800.webp">
+                <source type="image/png" srcset="./images/ABHouse/Plan_800.png">                
+                <img src="https://mi-ji.com.au/images/ABHouse/Plan_800.png" alt="architectural plan of the AB House project">
+              </picture>
             </div>
           </div>
           <div class="words-box">
@@ -177,10 +251,18 @@
         <div class="column green">
           <div class="carousel">
             <div class="photo blur">
-              <img src="https://mi-ji.com.au/images/AHouseForOne/03_650.JPG">
+              <picture>
+                <source type="image/webp" srcset="./images/AHouseForOne/03_800.webp">
+                <source type="image/png" srcset="./images/AHouseForOne/03_800.png"> 
+                <img src="https://mi-ji.com.au/images/AHouseForOne/03_800.JPG" alt="photo of the A House For One project">
+              </picture>
             </div>
             <div class="plan" data-collapsed="true" style="height: 1px">
-              <img src="https://mi-ji.com.au/images/AHouseForOne/Plan_650.png">
+              <picture>
+                <source type="image/webp" srcset="./images/AHouseForOne/Plan_800.webp">
+                <source type="image/png" srcset="./images/AHouseForOne/Plan_800.png"> 
+                <img src="https://mi-ji.com.au/images/AHouseForOne/Plan_800.png" alt="architectural plan of the A House For One project">
+              </picture>
             </div>
           </div>
           <div class="words-box">
@@ -192,38 +274,63 @@
         <div class="column yellow">
           <div class="carousel">
             <div class="photo blur">
-              <img src="https://mi-ji.com.au/images/APavilion/02_650.JPG">
+              <picture>
+                <source type="image/webp" srcset="./images/APavilion/02_800.webp">
+                <source type="image/png" srcset="./images/APavilion/02_800.png">               
+                <img src="https://mi-ji.com.au/images/APavilion/02_800.JPG" alt="photo of the A Pavillion project">
+              </picture>
             </div>
             <div class="plan" data-collapsed="true" style="height: 1px">
-              <img src="https://mi-ji.com.au/images/APavilion/Plan_650.png">
+              <picture>
+                <source type="image/webp" srcset="./images/APavilion/Plan_800.webp">
+                <source type="image/png" srcset="./images/APavilion/Plan_800.png"> 
+                <img src="https://mi-ji.com.au/images/APavilion/Plan_800.png" alt="architectural plan of the A Pavillion project">
+              </picture>
             </div>
           </div>
           <div class="words-box">
             <span class="words">A Pavilion - Collingwood, Australia 2021 (in collaboration with Molly Younger and Omid Jaffari)</span>
           </div>
-        </div>
+        </div>  
 
         <div class="column pink">
           <div class="carousel">
             <div class="photo blur">
-              <img src="https://mi-ji.com.au/images/ACertainKindofLife/03_650.JPG">
+              <picture>
+                <source type="image/webp" srcset="./images/ACertainKindofLife/03_800.webp">
+                <source type="image/png" srcset="./images/ACertainKindofLife/03_800.png">
+                <img src="https://mi-ji.com.au/images/ACertainKindofLife/03_800.JPG" alt="photo of the A Certain Kind of Life project">
+              </picture>
             </div>
             <div class="plan" data-collapsed="true" style="height: 1px">
-              <img src="https://mi-ji.com.au/images/ACertainKindofLife/Plan_650.png">
+              <picture>
+                <source type="image/webp" srcset="./images/ACertainKindofLife/Plan_800.webp">
+                <source type="image/png" srcset="./images/ACertainKindofLife/Plan_800.png">
+                <img src="./images/ACertainKindofLife/Plan_800.png" alt="architectural plan of the Certain Kind of Life project">
+              </picture>
             </div>
           </div>
           <div class="words-box">
-            <span class="words">A Certain Kind of Life - Lisbon, Portugal 2019 (Jimmy Carter with Abigail Chang, Francesco Marullo and Agata Siemionow in conjunction with the University of Illinois at Chicago.)</span>
+            <span class="words">A Certain Kind of Life - Lisbon, Portugal 2019 (Jimmy Carter with Abigail Chang, Francesco Marullo and Agata Siemionow in conjunction with the University of Illinois at Chicago.)
+            </span>
           </div>
         </div>
 
         <div class="column grey">
           <div class="carousel">
             <div class="photo blur">
-              <img src="https://mi-ji.com.au/images/ABHouse/04_650.JPG">
-            </div>
+              <picture>
+                <source type="image/webp" srcset="./images/ABHouse/04_800.webp">
+                <source type="image/png" srcset="./images/ABHouse/04_800.png">              
+                <img src="https://mi-ji.com.au/images/ABHouse/04_800.JPG" alt="photo of the AB House project">
+              </picture>
+              </div>
             <div class="plan" data-collapsed="true" style="height: 1px">
-              <img src="https://mi-ji.com.au/images/ABHouse/Plan_650.png">
+              <picture>
+                <source type="image/webp" srcset="./images/ABHouse/Plan_800.webp">
+                <source type="image/png" srcset="./images/ABHouse/Plan_800.png">                
+                <img src="https://mi-ji.com.au/images/ABHouse/Plan_800.png" alt="architectural plan of the AB House project">
+              </picture>
             </div>
           </div>
           <div class="words-box">
@@ -234,10 +341,18 @@
         <div class="column yellow">
           <div class="carousel">
             <div class="photo blur">
-              <img src="https://mi-ji.com.au/images/APavilion/03_650.JPG">
+              <picture>
+                <source type="image/webp" srcset="./images/APavilion/03_800.webp">
+                <source type="image/png" srcset="./images/APavilion/03_800.png">               
+                <img src="https://mi-ji.com.au/images/APavilion/03_800.JPG" alt="photo of the A Pavillion project">
+              </picture>
             </div>
             <div class="plan" data-collapsed="true" style="height: 1px">
-              <img src="https://mi-ji.com.au/images/APavilion/Plan_650.png">
+              <picture>
+                <source type="image/webp" srcset="./images/APavilion/Plan_800.webp">
+                <source type="image/png" srcset="./images/APavilion/Plan_800.png"> 
+                <img src="https://mi-ji.com.au/images/APavilion/Plan_800.png" alt="architectural plan of the A Pavillion project">
+              </picture>
             </div>
           </div>
           <div class="words-box">
