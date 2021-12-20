@@ -161,17 +161,21 @@ footer div p {
 		height: auto;
 }
 
-div img {
-		width: 100%;
+}
+
+.photo img {
+	    width: 400px; /* !important*/
+	    height: auto;
 }
 
 .blur img {
 		filter: blur(3px);
 		z-index: -1;
-		width: 408px !important;
 		position: relative;
 		top: 4px;
 		left: -4px;
+	    width: 408px; /* !important*/
+	    height: auto;
 }
 
 .column:hover .blur img  {
