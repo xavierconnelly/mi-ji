@@ -3,6 +3,7 @@
 @font-face {
 	font-family: "Andale";
 	src: url("https://mi-ji.com.au/ANDALEMO.woff") format("woff");
+	font-display: swap
 }
 
 * {
@@ -31,48 +32,48 @@ a {
 /***************************************** TOP */
 
 header {
-	height: 30px;
-	width: 100%;
-	padding: 1px 10px; 
-	background: white;
-	transition: 2s;
-	position: fixed;
-	z-index: 2;
-	/* display: flex; */
-  /* align-items: center; */
+		height: 30px;
+		width: 100%;
+		padding: 1px 10px; 
+		background: white;
+		transition: 2s;
+		position: fixed;
+		z-index: 2;
+		/* display: flex; */
+		/* align-items: center; */
 }
 
 header p {
-	float: left;
-	line-height: 30px;
+		float: left;
+		line-height: 30px;
 }
 
 header img {
-	float: right;
-	height: 100%;
+		float: right;
+		height: 100%;
 }
 
 /***************************************** BOTTOM */
 
 footer {
-	position: fixed;
-	bottom: 0;
-	width: 100%;
-	transition: 2s;
-	z-index: 2;
+		position: fixed;
+		bottom: 0;
+		width: 100%;
+		transition: 2s;
+		z-index: 2;
 }
 
 footer div {
-	width: 100%;
-	display: flex;
-	flex-wrap: wrap;
-	align-items: end;
+		width: 100%;
+		display: flex;
+		flex-wrap: wrap;
+		align-items: end;
 }
 
 footer div p {
-	width: 25%;
-	padding: 10px 10px 10px 10px;
-	text-align: left;
+		width: 25%;
+		padding: 10px 10px 10px 10px;
+		text-align: left;
 }
 
 #office {order: 1;}
@@ -106,7 +107,6 @@ footer div p {
 .yellow .photo {cursor: url(/assets/cursor_yellow.svg), pointer;}
 .pink .photo {cursor: url(/assets/cursor_pink.svg), pointer;}
 
-
 .red .plan {cursor: url(), pointer;}
 .grey .plan {cursor: url(), pointer;}
 .green .plan {cursor: url(), pointer;}
@@ -114,38 +114,35 @@ footer div p {
 .yellow .plan {cursor: url(), pointer;}
 .pink .plan {cursor: url(), pointer;}
 
-
 /***************************************** SCROLL THINGS */
 
-
 #gallery {
-	position: absolute;
-	top: 15px;
-	width: 100%;
-	height: 100vh;
-	overflow: ;
-	z-index: 1;
-	transition: 1.5s;
+		position: absolute;
+		top: 15px;
+		width: 100%;
+		height: 100vh;
+		overflow: ;
+		z-index: 1;
+		transition: 1.5s;
 }
 
 .cards {
-	display: flex;
-	position: absolute;
-	width: 400px; /*14rem*/
-	/*height: 18rem;*/
-	top: 0;
-	left: 50%;
-	transform: translate(-50%, -50%);
+		display: flex;
+		position: absolute;
+		width: 400px;
+		top: 0;
+		left: 50%;
+		transform: translate(-50%, -50%);
 }
 
 .column {
-	width: 400px;
-	height: 600px; 
-	padding: 0;
-	margin: 0;
-	position: absolute;
-	top: 0;
-	left: 0;
+		width: 400px;
+		height: 600px; 
+		padding: 0;
+		margin: 0;
+		position: absolute;
+		top: 0;
+		left: 0;
 }
 
 .carousel {
@@ -154,24 +151,24 @@ footer div p {
   	flex-direction: column;
 }
 
-div img {
-	width: 100%;
+.photo, .plan   {
+		overflow: hidden;
+		transition: height 0.5s ease-out;
+		height: auto;
 }
 
-.photo, .plan   {
-	 overflow: hidden;
-	 transition: height 0.5s ease-out;
-	 height: auto;
+div img {
+		width: 100%;
 }
 
 .blur img {
 		filter: blur(3px);
-    z-index: -1;
-    width: 408px !important;
-    position: relative;
-    top: 4px;
-    left: -4px;
-  }
+		z-index: -1;
+		width: 408px !important;
+		position: relative;
+		top: 4px;
+		left: -4px;
+}
 
 .column:hover .blur img  {
     filter: blur(0px);
@@ -198,19 +195,16 @@ div img {
     z-index: 2;
 }
 
-/*
-to get rid of
-the weird shitty line
+/* to get rid of the weird shitty line
 .plan {
-	border:  1px solid white;
-	box-sizing: content-box;
-	width: calc(100% - 2px);
+		border:  1px solid white;
+		box-sizing: content-box;
+		width: calc(100% - 2px);
 }
-*/
 
 /*
 .blur, .plan {
-	border:  5px solid white;
+		border:  5px solid white;
 }
 /*
 
@@ -218,17 +212,17 @@ the weird shitty line
 
 .slick-prev,
 .slick-next {
-  top: 0px;
-  left: 0px;
-  width: 100%;
-  height: 100%;
-  margin-top: 0px; 
-  padding: 0;
+		top: 0px;
+		left: 0px;
+		width: 100%;
+		height: 100%;
+		margin-top: 0px; 
+		padding: 0;
 }
 
 .slick-prev:before,
 .slick-next:before {
-  content: none;
+  	content: none;
 }
 
 .slick-slider {
@@ -239,7 +233,7 @@ the weird shitty line
 
 @media only screen and (max-width: 600px) {
 	* {
-	  	font-size: 0.95em;
+			font-size: 0.95em;
 	}
 
 	header p {
@@ -264,7 +258,7 @@ the weird shitty line
 
 	.column {
     	/*width: 70%;*/
-    }
+	}
 }
 
 
