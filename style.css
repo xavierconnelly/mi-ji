@@ -163,7 +163,7 @@ footer div p {
 
 }
 
-.photo img {
+.photo img, .plan img {
 	    width: 400px; /* !important*/
 	    height: auto;
 }
@@ -177,6 +177,7 @@ footer div p {
 	    width: 408px; /* !important*/
 	    height: auto;
 }
+
 
 .column:hover .blur img  {
     filter: blur(0px);
