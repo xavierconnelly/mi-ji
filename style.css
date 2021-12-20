@@ -29,6 +29,10 @@ a {
 	text-decoration: none;
 }
 
+img {
+  aspect-ratio: attr(width) / attr(height);
+}
+
 /***************************************** TOP */
 
 header {
