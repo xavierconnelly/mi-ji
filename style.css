@@ -241,7 +241,7 @@ footer div p {
 
 @media only screen and (max-width: 600px) {
 	* {
-			font-size: 0.95em;
+		font-size: 0.95em;
 	}
 
 	header p {
@@ -273,9 +273,25 @@ footer div p {
 @media only screen and (max-height: 700px) {
 	.cards {
 		width: 250px;
+		height: auto;
 	}
 
 	.column {
 		width: 250px;
+	    height: auto;
+	}
+
+	.photo img, .plan img {
+	    width: 250px; /* !important*/
+	    height: auto;
+	}
+
+	.blur img {
+		filter: blur(2px);
+		top: 3px;
+		left: -3px;
+	    width: 426px; /* !important*/
+	    height: auto;
+}
 	}
 }
