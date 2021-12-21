@@ -280,6 +280,10 @@ footer div p {
 	    height: auto;
 	}
 
+	.carousel {
+		width: 250px;
+	}
+
 	.photo img, .plan img {
 	    width: 250px; /* !important*/
 	    height: auto;
