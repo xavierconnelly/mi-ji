@@ -289,7 +289,7 @@ footer div p {
 		filter: blur(2px);
 		top: 3px;
 		left: -3px;
-	    width: 426px; /* !important*/
+	    width: 256px; /* !important*/
 	    height: auto;
 	}
 }
