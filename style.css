@@ -317,6 +317,11 @@ footer div p {
 @media only screen 
   and (min-device-width: 300px) 
   and (max-device-width: 812px) {
+
+  	.pin-spacer{
+  		display: none;
+  	}
+
   	#gallery {
   		display: none;
   	}
@@ -324,7 +329,7 @@ footer div p {
   	.mobile {
   		display: block;
   		color: darkred;
-  		font-size: 40px;
+  		font-size: 60px;
   	}
 
 }
