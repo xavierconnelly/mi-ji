@@ -241,13 +241,17 @@ footer div p {
 
 @media only screen and (max-width: 600px) {
 	* {
-		font-size: 0.95em;
+		font-size: 0.94em;
+	}
+
+	header {
+		height: 24px;
 	}
 
 	header p {
-	  	line-height: unset;
-	  	width: 80%; /* reduce this to increase image height*/
-	} 
+		line-height: 22px;
+    	width: 85%;
+}
 
 	footer div {
 	  	align-items: flex-start;
