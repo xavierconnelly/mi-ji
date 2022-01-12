@@ -293,7 +293,7 @@ footer div p {
 	}
 
 	.photo img, .plan img {
-	    width: 250px; /* !important*/
+	    width: 200px; /* !important*/
 	    height: auto;
 	}
 
@@ -306,11 +306,17 @@ footer div p {
 	}
 }
 
-@media only screen and (max-height: 800px) {
+@media only screen and (max-height: 700px) {
 	.cards {
 		width: 250px;
 		height: auto;
 	}
+
+	.photo img, .plan img {
+	    width: 250px; /* !important*/
+	    height: auto;
+	}
+
 }
 
 /* Phones */
