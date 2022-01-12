@@ -111,12 +111,12 @@ footer div p {
 .yellow .photo {cursor: url(/assets/cursor_yellow.svg), pointer;}
 .pink .photo {cursor: url(/assets/cursor_pink.svg), pointer;}
 
-.red .plan {cursor: url(), pointer;}
-.grey .plan {cursor: url(), pointer;}
-.green .plan {cursor: url(), pointer;}
-.pistachio .plan {cursor: url(), pointer;}
-.yellow .plan {cursor: url(), pointer;}
-.pink .plan {cursor: url(), pointer;}
+.red .plan {cursor: url(/assets/cursor_red_image.svg), pointer;}
+.grey .plan {cursor: url(/assets/cursor_grey_image.svg), pointer;}
+.green .plan {cursor: url(/assets/cursor_green_image.svg), pointer;}
+.pistachio .plan {cursor: url(/assets/cursor_pistachio_image.svg), pointer;}
+.yellow .plan {cursor: url(/assets/cursor_yellow_image.svg), pointer;}
+.pink .plan {cursor: url(/assets/cursor_pink_image.svg), pointer;}
 
 /***************************************** SCROLL THINGS */
 
