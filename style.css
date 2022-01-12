@@ -33,6 +33,10 @@ img {
   aspect-ratio: attr(width) / attr(height);
 }
 
+.mobile {
+	display:  none;
+}
+
 /***************************************** TOP */
 
 header {
@@ -316,4 +320,11 @@ footer div p {
   	#gallery {
   		display: none;
   	}
+
+  	.mobile {
+  		display: block;
+  		color: darkred;
+  		font-size: 40px;
+  	}
+
 }
