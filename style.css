@@ -17,7 +17,7 @@
 
 body {
 	background: white;
-	transition: 1.5s;
+	transition: .8s;
 	min-height: 100vh;
 	overflow: hidden;
 	padding: 0;
@@ -127,7 +127,7 @@ footer div p {
 		height: 100vh;
 		overflow: ;
 		z-index: 1;
-		transition: 1.5s;
+		transition: .8s;
 }
 
 .cards {
@@ -271,12 +271,12 @@ footer div p {
 
 @media only screen and (max-height: 700px) {
 	.cards {
-		width: 250px;
+		width: 200px;
 		height: auto;
 	}
 
 	.column {
-		width: 250px;
+		width: 200px;
 	    height: auto;
 	}
 
@@ -296,4 +296,20 @@ footer div p {
 	    width: 256px; /* !important*/
 	    height: auto;
 	}
+}
+
+@media only screen and (max-height: 800px) {
+	.cards {
+		width: 250px;
+		height: auto;
+	}
+}
+
+/* Phones */
+@media only screen 
+  and (min-device-width: 300px) 
+  and (max-device-width: 812px) {
+  	#gallery {
+  		display: none;
+  	}
 }
