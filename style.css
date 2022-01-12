@@ -277,7 +277,7 @@ footer div p {
 	}
 }
 
-@media only screen and (max-height: 700px) {
+@media only screen and (max-height: 600px) {
 	.cards {
 		width: 200px;
 		height: auto;
@@ -289,7 +289,7 @@ footer div p {
 	}
 
 	.carousel {
-		width: 250px;
+		width: 200px;
 	}
 
 	.photo img, .plan img {
@@ -306,12 +306,20 @@ footer div p {
 	}
 }
 
-@media only screen and (max-height: 700px) {
+@media only screen and (max-height: 750px) {
 	.cards {
 		width: 250px;
 		height: auto;
 	}
 
+	.column {
+		width: 250px;
+	    height: auto;
+	}
+
+	.carousel {
+		width: 250px;
+	}
 	.photo img, .plan img {
 	    width: 250px; /* !important*/
 	    height: auto;
