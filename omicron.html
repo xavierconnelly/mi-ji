@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/css/splide.min.css"/>
+
+
+
+    <style type="text/css">
+      #splide {
+   width: 400px;
+   height: 100vh;
+   display: flex;
+   flex-direction: column;
+}
+ .splide__slide img {
+   display: block;
+   width: 100%;
+   transition: transform 400ms;
+   filter: grayscale(1);
+   transform-origin: center center;
+}
+ .splide__slide.is-active img {
+   filter: grayscale(0);
+}
+ .splide.splide__arrow {
+   top: 0;
+   bottom: 0;
+   height: 100%;
+   transform: none;
+   border-radius: 50%;
+   width: 24px;
+   height: 24px;
+   opacity: 1;
+}
+ .splide.splide__arrow svg {
+   width: 12px;
+   height: 12px;
+}
+ .splide__arrow.splide__arrow--prev {
+   left: 0;
+   background: pink;
+}
+ .splide__arrow.splide__arrow--next {
+   right: 0;
+   background: pink;
+}
+ body {
+   margin: 0;
+}
+ 
+    </style>
+  </head>
+
+
+<body>
+<div id="splide" class="splide">
+  <div class="splide__track">
+    <ul class="splide__list">
+      <li class="splide__slide">
+        <img src="https://mi-ji.com.au/images/ABHouse/04_800.JPG">
+       </li>
+      <li class="splide__slide">
+        <img src="https://mi-ji.com.au/images/ABHouse/01_800.JPG">
+          
+        </li>
+      <li class="splide__slide">
+        <img src="https://mi-ji.com.au/images/ABHouse/02_800.JPG">
+          
+        </li>
+      <li class="splide__slide">
+        <img src="https://mi-ji.com.au/images/ABHouse/03_800.JPG">
+          
+        </li>
+    </ul>
+  </div>
+</div>
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@splidejs/splide@2.4.6/dist/js/splide.min.js"></script>
+
+
+<script type="text/javascript">
+  
+  document.addEventListener( 'DOMContentLoaded', function () {
+  new Splide('#splide', {
+    direction: 'ttb',
+    height   : '100vh',
+    type: 'loop',
+    perPage: 3,
+    drag   : 'free',
+    focus: 'center',
+    autoplay: false,
+    //interval: 8000,
+   wheel    : true,
+   waitForTransition: true,
+    //flickMaxPages: 3,
+    //updateOnMove: true,
+    autoWidth: true,
+   autoHeight: true,
+    pagination: false,
+   // padding: '10%',
+    //throttle: 300,
+    //breakpoints: {
+    //  1440: {
+    //    perPage: 1,
+   //     padding: '30%'
+   //   }
+   // }
+  }).mount();
+});
+
+</script>
+</body>
+</html>
