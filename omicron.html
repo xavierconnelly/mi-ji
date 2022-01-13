@@ -2,113 +2,108 @@
 <html lang="en">
   <head>
 
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/css/splide.min.css"/>
-
-
+ <link
+  rel="stylesheet"
+  href="https://unpkg.com/swiper@7/swiper-bundle.min.css"
+/>
 
     <style type="text/css">
-      #splide {
-   width: 100%;
-   height: 100%;
-   display: flex;
-   flex-direction: column;
+  * {
+  margin: 0;
+  box-sizing: border-box;
 }
- .splide__slide img {
-   display: block;
-   width: 100%;
-   transition: transform 400ms;
-   filter: grayscale(1);
-   transform-origin: center center;
+
+.container {
+  width: max-content;
 }
- .splide__slide.is-active img {
-   filter: grayscale(0);
+
+.newswiper {
+  display: inline-block;
+  width: 400px;
+  height: 100vh;
+  background: yellow;
+  border: 1px solid brown;
+  overflow: hidden;
+  list-style: none;
+  padding: 0;
+  z-index: 1;
 }
- .splide.splide__arrow {
-   top: 0;
-   bottom: 0;
-   height: 100%;
-   transform: none;
-   border-radius: 50%;
-   width: 24px;
-   height: 24px;
-   opacity: 1;
+
+.swiper-slide {
+  height: unset;
 }
- .splide.splide__arrow svg {
-   width: 12px;
-   height: 12px;
+
+img {
+  width: 100%;
+  display: block;
+  margin: 0;
 }
- .splide__arrow.splide__arrow--prev {
-   left: 0;
-   background: pink;
-}
- .splide__arrow.splide__arrow--next {
-   right: 0;
-   background: pink;
-}
- body {
-   margin: 0;
-   height: 100%;
-   overflow: hidden;
-}
+
  
     </style>
   </head>
 
 
 <body>
-<div id="splide" class="splide">
-  <div class="splide__track">
-    <ul class="splide__list">
-      <li class="splide__slide">
-        <img src="https://mi-ji.com.au/images/ABHouse/04_800.JPG">
-       </li>
-      <li class="splide__slide">
+
+<div class="container">
+
+  <!-- Slider main container -->
+  <div class="john newswiper">
+    <!-- Additional required wrapper -->
+    <div class="swiper-wrapper">
+      <!-- Slides -->
+      <div class="swiper-slide">
+        <img src="https://mi-ji.com.au/images/APavilion/01_800.JPG">
+      </div>
+      <div class="swiper-slide">
+        <img src="https://mi-ji.com.au/images/APavilion/02_800.JPG">
+      </div>
+      <div class="swiper-slide">
+        <img src="https://mi-ji.com.au/images/APavilion/03_800.JPG">
+      </div>
+    </div>
+  </div>
+
+  <!-- Slider main container -->
+  <div class="robert newswiper">
+    <!-- Additional required wrapper -->
+    <div class="swiper-wrapper">
+      <!-- Slides -->
+      <div class="swiper-slide">
         <img src="https://mi-ji.com.au/images/ABHouse/01_800.JPG">
-          
-        </li>
-      <li class="splide__slide">
+      </div>
+      <div class="swiper-slide">
         <img src="https://mi-ji.com.au/images/ABHouse/02_800.JPG">
-          
-        </li>
-      <li class="splide__slide">
+      </div>
+      <div class="swiper-slide">
         <img src="https://mi-ji.com.au/images/ABHouse/03_800.JPG">
-          
-        </li>
-    </ul>
+      </div>
+    </div>
   </div>
 </div>
 
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@splidejs/splide@2.4.6/dist/js/splide.min.js"></script>
 
+<script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
 
 <script type="text/javascript">
   
-  document.addEventListener( 'DOMContentLoaded', function () {
-  new Splide('#splide', {
-    direction: 'ttb',
-    height   : '100vh',
-    type: 'loop',
-    perPage: 3,
-    drag   : 'free',
-    focus: 'center',
-    autoplay: false,
-    //interval: 8000,
-   wheel    : true,
-   waitForTransition: true,
-    //flickMaxPages: 3,
-    //updateOnMove: true,
-    autoWidth: true,
-   autoHeight: true,
-    pagination: false,
-   // padding: '10%',
-    throttle: 300,
-    //breakpoints: {
-    //  1440: {
-    //    perPage: 1,
-   //     padding: '30%'
-   //   }
-   // }
-  }).mount();
+const robert = new Swiper(".robert", {
+  // Optional parameters
+  direction: "vertical",
+  loop: true,
+  freeMode: true,
+  slidesPerView: "auto",
+  loopedSlides: 3
+});
+
+const john = new Swiper(".john", {
+  // Optional parameters
+  direction: "vertical",
+  loop: true,
+  freeMode: true,
+  slidesPerView: "auto",
+  loopedSlides: 3
 });
 
 </script>
