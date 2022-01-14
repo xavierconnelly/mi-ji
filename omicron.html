@@ -38,15 +38,10 @@ header img {
 }
 
 .newswiper {
-    /* display: inline-block; */
-    /* float: left; */
-    /* width: 100vw; */
-    height: 100vh;
-    /* background: yellow; */
-    /* border: 1px solid brown; */
-    overflow: hidden;
-    padding: 0;
-    z-index: 1;
+  height: 100vh;
+  overflow: hidden;
+  padding: 0;
+  z-index: 1;
 }
 
 .swiper-slide {
@@ -173,7 +168,7 @@ header img {
 
 
 <body>
-<header>
+ <header>
   <p>
     Office MI—JI is an architectural office
   </p>
@@ -183,6 +178,7 @@ header img {
 <!-- Slideshow container -->
 <div class="slideshow-container">
 
+  <!-- Full-width images with number and caption text -->
   <div class="mySlides fade">
     <!-- Slider main container -->
     <div class="john newswiper">
@@ -220,15 +216,17 @@ header img {
         <div class="swiper-slide">
           <img src="https://mi-ji.com.au/images/ABHouse/03_800.JPG">
         </div>
-        <div class="words swiper-slide">A Certain Kind of Life - Lisbon, Portugal 2019 (Jimmy Carter with Abigail Chang, Francesco Marullo and Agata Siemionow in conjunction with the University of Illinois at Chicago.)
-        </div>
       </div>
     </div>
   </div>
 
   <!-- Next and previous buttons -->
-  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  <a class="prev" onclick="plusSlides(-1)">
+    <img src="https://mi-ji.com.au/assets/prev_pink.svg">
+  </a>
+  <a class="next" onclick="plusSlides(1)">
+    <img src="https://mi-ji.com.au/assets/next_pink.svg">
+  </a>
 
 </div>
 
@@ -236,7 +234,27 @@ header img {
 <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
 
 <script type="text/javascript">
-  
+ 
+const robert = new Swiper(".robert", {
+  // Optional parameters
+  direction: "vertical",
+  loop: true,
+  freeMode: true,
+  slidesPerView: "auto",
+  loopedSlides: 4
+});
+
+const john = new Swiper(".john", {
+  // Optional parameters
+  direction: "vertical",
+  loop: true,
+  freeMode: true,
+  slidesPerView: "auto",
+  loopedSlides: 3
+});
+
+
+
 var slideIndex = 1;
 showSlides(slideIndex);
 
@@ -265,23 +283,6 @@ function showSlides(n) {
   slides[slideIndex - 1].style.display = "block";
 }
 
-const robert = new Swiper(".robert", {
-  // Optional parameters
-  direction: "vertical",
-  loop: true,
-  freeMode: true,
-  slidesPerView: "auto",
-  loopedSlides: 4
-});
-
-const john = new Swiper(".john", {
-  // Optional parameters
-  direction: "vertical",
-  loop: true,
-  freeMode: true,
-  slidesPerView: "auto",
-  loopedSlides: 4
-});
 
 
 </script>
