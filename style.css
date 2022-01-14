@@ -166,25 +166,13 @@ footer div p {
 }
 
 
-.photo img, .plan img {
-	    width: 400px; /* !important*/
-	    height: auto;
-}
-
+.photo img,
+.plan img,
 .blur img {
-		filter: blur(3px);
-		z-index: -1;
-		position: relative;
-		top: 4px;
-		left: -4px;
-	    width: 408px; /* !important*/
+	    width: 400px;
 	    height: auto;
 }
 
-
-.column:hover .blur img  {
-    filter: blur(0px);
-}
 
 .column .words-box {
   	display: none;
@@ -291,16 +279,10 @@ footer div p {
 	.carousel {
 		width: 300px;
 	}
-	.photo img, .plan img {
-	    width: 300px; /* !important*/
-	    height: auto;
-	}
-
+	.photo img, 
+	.plan img,
 	.blur img {
-		filter: blur(2px);
-		top: 3px;
-		left: -3px;
-	    width: 306px; /* !important*/
+	    width: 300px; /* !important*/
 	    height: auto;
 	}
 }
@@ -320,16 +302,10 @@ footer div p {
 		width: 200px;
 	}
 
-	.photo img, .plan img {
-	    width: 200px; /* !important*/
-	    height: auto;
-	}
-
+	.photo img,
+	.plan img,
 	.blur img {
-		filter: blur(2px);
-		top: 3px;
-		left: -3px;
-	    width: 206px; /* !important*/
+	    width: 200px; /* !important*/
 	    height: auto;
 	}
 }
