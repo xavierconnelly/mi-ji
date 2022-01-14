@@ -1,15 +1,19 @@
-// $(document).ready(function () {
-//   $(".carousel").slick({
-//     dots: false,
-//     fade: false,
-//     infinite: true,
-//     speed: 500,
-//     slidesToShow: 1,
-//     //vertical: true,
-//     lazyLoad: 'progressive',
-//     adaptiveHeight: true
-//   });
-// });
+////////////////////////////////////////////////////////////////////////////////
+// Desktop scrolling
+
+const fifteen = new Swiper(".fifteen", {
+  // Optional parameters
+  direction: "horizontal",
+  loop: true,
+  freeMode: true,
+  slidesPerView: "auto",
+  loopedSlides: 15,
+  mousewheel: true
+});
+
+
+////////////////////////////////////////////////////////////////////////////////
+// Flick between images and plans
 
 function focusDetails() {
   document.getElementById("gallery").style.opacity = "0";
@@ -21,9 +25,72 @@ function normalDetails() {
 }
 
 
-// Flick between images
+////////////////////////////////////////////////////////////////////////////////
+// Mobile scrolling
 
-// This is the important part!
+const three = new Swiper(".three", {
+  // Optional parameters
+  direction: "vertical",
+  loop: true,
+  freeMode: true,
+  slidesPerView: "auto",
+  loopedSlides: 3
+});
+
+const four = new Swiper(".four", {
+  // Optional parameters
+  direction: "vertical",
+  loop: true,
+  freeMode: true,
+  slidesPerView: "auto",
+  loopedSlides: 4
+});
+
+const five = new Swiper(".five", {
+  // Optional parameters
+  direction: "vertical",
+  loop: true,
+  freeMode: true,
+  slidesPerView: "auto",
+  loopedSlides: 5
+});
+
+
+////////////////////////////////////////////////////////////////////////////////
+// Mobile project nav/slideshow
+
+var slideIndex = 1;
+showSlides(slideIndex);
+
+// Next/previous controls
+function plusSlides(n) {
+  showSlides((slideIndex += n));
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides((slideIndex = n));
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  if (n > slides.length) {
+    slideIndex = 1;
+  }
+  if (n < 1) {
+    slideIndex = slides.length;
+  }
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  slides[slideIndex - 1].style.display = "block";
+}
+
+
+////////////////////////////////////////////////////////////////////////////////
+// Flick between images and plans
+
 
 function collapseSection(element) {
   // get the height of the element's inner content, regardless of its actual size
@@ -71,7 +138,6 @@ function expandSection(element) {
   element.setAttribute('data-collapsed', 'false');
 }
 
-
 // When called as a listener, turns the related element blue
 function bluify(e) {
   // Always true
@@ -107,8 +173,3 @@ var elements = document.getElementsByClassName("carousel");
 for (var i = 0; i < elements.length; i++) {
   elements[i].addEventListener("click", bluify, false);
 }
-
-
-//window.addEventListener('load', (event) => {
- //var promise = getElementsByClassName("plan").decode();
-//});
