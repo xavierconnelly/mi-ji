@@ -166,14 +166,14 @@ footer div p {
 		height: auto;
 }
 
-/*
+
 .photo img,
 .plan img,
 .blur img {
 	    width: 400px;
 	    height: auto;
 }
-*/
+
 
 .column .words-box {
   	display: none;
@@ -195,6 +195,8 @@ footer div p {
     top: -3px;
     z-index: 2;
 }
+
+
 
 /***************************************** MEDIA QUERY */
 
