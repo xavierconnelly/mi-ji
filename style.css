@@ -224,6 +224,8 @@ footer div p {
 	  	flex: 1 50%;
 	}
 
+
+
 	#millie {order: 1;}
 	#jimmy {order: 2;}
 	#office {order: 3;}
@@ -235,12 +237,19 @@ footer div p {
 		width: 300px;
 	}
 
+
+
 	.column {
 		width: 300px;
 	    height: auto;
 	}
 
-
+	.photo img,
+.plan img,
+.blur img {
+	    width: 300px;
+	    height: auto;
+}
 
 }
 
@@ -254,6 +263,14 @@ footer div p {
 		width: 200px;
 	    height: auto;
 	}
+
+	.photo img,
+	.plan img,
+	.blur img {
+		    width: 200px;
+		    height: auto;
+	}
+
 }
 
 /* Phones */
