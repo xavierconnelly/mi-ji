@@ -1,525 +1,336 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <!-- Meta -->
-    <meta charset="utf-8">
-    <title>Office Mi-Ji</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Office MI—JI is an architectural office.">
-    <meta name="keywords" content="melbourne, architect, small, arctictecture, office, millie, anderson, carter, james, jimmy, fitzroy, local">
-    <meta name="author" content="Office Mi-Ji">
-    <!-- Chrome, Firefox OS and Opera -->
-    <meta name="theme-color" content="rgb(255, 80, 0)">
-    <!-- CSS -->
-    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
-    <link rel="stylesheet" href="/style.css">
-    <!-- Global site tag (gtag.js) - Google Analytics  CHANGE THIS
-    script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-136398833-1"></script> --> 
+/***************************************** GLOBALS */
 
-    <style type="text/css">
-      
-.container {
-  width: max-content;
+@font-face {
+	font-family: "Andale";
+	src: url("https://mi-ji.com.au/ANDALEMO.woff") format("woff");
+	font-display: swap
+}
+
+* {
+	margin: 0;
+	box-sizing: border-box;
+	font-family: "Andale", times;
+	font-size: 0.9rem;
+	-webkit-font-smoothing: antialiased !important;
+	text-rendering: optimizeLegibility !important;
+}
+
+body {
+	background: white;
+	transition: .8s;
+	min-height: 100vh;
+	overflow: hidden;
+	padding: 0;
+	margin: 0;
+}
+
+a {
+	color: initial;
+	text-decoration: none;
+}
+
+img {
+  aspect-ratio: attr(width) / attr(height);
+}
+
+.mobile {
+	display:  none;
+}
+
+/***************************************** TOP */
+
+header {
+		height: 30px;
+		width: 100%;
+		padding: 1px 10px; 
+		background: white;
+		transition: 2s;
+		position: fixed;
+		z-index: 2;
+		/* display: flex; */
+		/* align-items: center; */
+}
+
+header p {
+		float: left;
+		line-height: 30px;
+}
+
+header img {
+		float: right;
+		height: 100%;
+}
+
+/***************************************** BOTTOM */
+
+footer {
+		position: fixed;
+		bottom: 0;
+		width: 100%;
+		transition: 2s;
+		z-index: 2;
+}
+
+footer div {
+		width: 100%;
+		display: flex;
+		flex-wrap: wrap;
+		align-items: end;
+}
+
+footer div p {
+		width: 25%;
+		padding: 10px 10px 10px 10px;
+		text-align: left;
+}
+
+#office {order: 1;}
+#millie {order: 2;}
+#jimmy {order: 3;}
+#rego {order: 4;}
+
+/***************************************** COLOURS
+
+.red .carousel {background: rgb(255, 80, 0);}
+.grey .carousel {background: rgb(241, 241, 241);}
+.green .carousel {background: rgb(0, 200, 80);}
+.pistachio .carousel {background: rgb(245, 245, 200);}
+.yellow .carousel {background: rgb(250, 240, 0);}
+.pink .carousel {background: rgb(255, 175, 195);} */
+
+
+.red .words-box {background: rgb(255, 80, 0);}
+.grey .words-box {background: rgb(241, 241, 241);}
+.green .words-box {background: rgb(0, 200, 80);}
+.pistachio .words-box {background: rgb(245, 245, 200);}
+.yellow .words-box {background: rgb(250, 240, 0);}
+.pink .words-box {background: rgb(255, 175, 195);}
+
+/***************************************** CURSORS */
+
+.red .photo {cursor: url(/assets/cursor_red.svg), pointer;}
+.grey .photo {cursor: url(/assets/cursor_grey.svg), pointer;}
+.green .photo {cursor: url(/assets/cursor_green.svg), pointer;}
+.pistachio .photo {cursor: url(/assets/cursor_pistachio.svg), pointer;}
+.yellow .photo {cursor: url(/assets/cursor_yellow.svg), pointer;}
+.pink .photo {cursor: url(/assets/cursor_pink.svg), pointer;}
+
+.red .plan {cursor: url(/assets/cursor_red_image.svg), pointer;}
+.grey .plan {cursor: url(/assets/cursor_grey_image.svg), pointer;}
+.green .plan {cursor: url(/assets/cursor_green_image.svg), pointer;}
+.pistachio .plan {cursor: url(/assets/cursor_pistachio_image.svg), pointer;}
+.yellow .plan {cursor: url(/assets/cursor_yellow_image.svg), pointer;}
+.pink .plan {cursor: url(/assets/cursor_pink_image.svg), pointer;}
+
+/***************************************** SCROLL THINGS */
+
+#gallery {
+		position: absolute;
+		top: 15px;
+		width: 100%;
+		height: 100vh;
+		overflow: ;
+		z-index: 1;
+		transition: .8s;
+}
+
+.cards {
+		display: flex;
+		position: absolute;
+		width: 400px;
+		top: 0;
+		left: 50%;
+		transform: translate(-50%, -50%);
 }
 
 .column {
-  
-    position: unset;
-  
-    }
-
-
-.swiper {
-  display: inline-block;
-  float: left;
-  width: 100vw;
-  height: 100vh;
-  background: ;
-  overflow: hidden;
-  list-style: none;
-  padding: 0;
-  z-index: 1;
+		width: 400px;
+		height: 600px; 
+		padding: 0;
+		margin: 0;
+		position: absolute;
+		top: 0;
+		left: 0;
 }
 
-.swiper-slide {
-  height: unset;
-  width: 400px;
+.carousel {
+		width: 400px;
+  	display: flex;
+  	flex-direction: column;
 }
 
-
-
-
-.swiper-slide img {
-  width: 100%;
-  display: block;
-  margin: 0;
-}
-
-    </style>
-  <head>
-
-  <body>
-
-    <header>
-      <p>
-        Office MI—JI is an architectural office
-      </p>
-      <img src="https://mi-ji.com.au/assets/OM_Brand_Mark_Black_Small_F.png" alt="Mi-Ji logo">
-    </header>
-
-<div class="container">
-    <!-- Slider main container -->
-      <div class="paul swiper">
-        <!-- Additional required wrapper -->
-        <div class="swiper-wrapper">
-          <!-- Slides -->
-
-          <div class="swiper-slide">
-            <div class="column pink">
-              <div class="carousel">
-                <div class="photo blur">
-                  <picture>
-                    <source type="image/webp" srcset="./images/ACertainKindofLife/01_800.webp">
-                    <source type="image/png" srcset="./images/ACertainKindofLife/01_800.png">
-                    <img src="https://mi-ji.com.au/images/ACertainKindofLife/01_800.JPG" width="800" height="1200" alt="photo of the A Certain Kind of Life project">
-                  </picture>
-                </div>
-                <div class="plan" data-collapsed="true" style="height: 1px">
-                  <picture>
-                    <source type="image/svg" srcset="./images/ACertainKindofLife/Plan_800.svg">
-                    <img src="./images/ACertainKindofLife/Plan_800.svg" width="800" height="1120" alt="architectural plan of the Certain Kind of Life project">
-                  </picture>
-                </div>
-              </div>
-              <div class="words-box">
-                <span class="words">A Certain Kind of Life - Lisbon, Portugal 2019 (Jimmy Carter with Abigail Chang, Francesco Marullo and Agata Siemionow in conjunction with the University of Illinois at Chicago.)
-                </span>
-              </div>
-            </div>
-          </div>
-
-
-          <div class="swiper-slide">
-        <div class="column grey">
-          <div class="carousel">
-            <div class="photo blur">
-              <picture>
-                <source type="image/webp" srcset="./images/ABHouse/03_800.webp">
-                <source type="image/png" srcset="./images/ABHouse/03_800.png">              
-                <img src="https://mi-ji.com.au/images/ABHouse/03_800.JPG" width="800" height="534" alt="photo of the AB House project">
-              </picture>
-              </div>
-            <div class="plan" data-collapsed="true" style="height: 1px">
-              <picture>
-                <source type="image/svg" srcset="./images/ABHouse/Plan_800.svg">                
-                <img src="./images/ABHouse/Plan_800.svg" width="800" height="1120" alt="architectural plan of the AB House project">
-              </picture>
-            </div>
-          </div>
-          <div class="words-box">
-            <span class="words">A B House - Barwon Heads, Australia 2021</span>
-          </div>
-        </div>
-          </div>
-
-
-          <div class="swiper-slide">
-
-        <div class="column pink">
-          <div class="carousel">
-            <div class="photo blur">
-              <picture>
-                <source type="image/webp" srcset="./images/ACertainKindofLife/04_800.webp">
-                <source type="image/png" srcset="./images/ACertainKindofLife/04_800.png">
-                <img src="https://mi-ji.com.au/images/ACertainKindofLife/04_800.JPG" width="800" height="1200" alt="photo of the A Certain Kind of Life project">
-              </picture>
-            </div>
-            <div class="plan" data-collapsed="true" style="height: 1px">
-              <picture>
-                <source type="image/svg" srcset="./images/ACertainKindofLife/Plan_800.svg">
-                <img src="./images/ACertainKindofLife/Plan_800.svg" width="800" height="1120" alt="architectural plan of the Certain Kind of Life project">
-              </picture>
-            </div>
-          </div>
-          <div class="words-box">
-            <span class="words">A Certain Kind of Life - Lisbon, Portugal 2019 (Jimmy Carter with Abigail Chang, Francesco Marullo and Agata Siemionow in conjunction with the University of Illinois at Chicago.)
-            </span>
-          </div>
-        </div>
-          </div>
-
-
-          <div class="swiper-slide">
-        <div class="column green">
-          <div class="carousel">
-            <div class="photo blur">
-              <picture>
-                <source type="image/webp" srcset="./images/AHouseForOne/01_800.webp">
-                <source type="image/png" srcset="./images/AHouseForOne/01_800.png"> 
-                <img src="https://mi-ji.com.au/images/AHouseForOne/01_800.JPG" width="800" height="689" alt="photo of the A House For One project">
-              </picture>
-            </div>
-            <div class="plan" data-collapsed="true" style="height: 1px">
-              <picture>
-                <source type="image/svg" srcset="./images/AHouseForOne/Plan_800.svg"> 
-                <img src="./images/AHouseForOne/Plan_800.svg" width="800" height="1120" alt="architectural plan of the A House For One project">
-              </picture>
-            </div>
-          </div>
-          <div class="words-box">
-            <span class="words">A House For One – Castlemaine, Australia 2016
-            </span>
-          </div>
-        </div>
-          </div>
-
-
-          <div class="swiper-slide">
-        <div class="column red">
-          <div>
-            <div class="photo blur" style="cursor: default">
-              <picture>
-                <source type="image/webp" srcset="./images/TokyoTina/01_800.webp">
-                <source type="image/png" srcset="./images/TokyoTina/01_800.png"> 
-                <img src="./images/TokyoTina/01_800.JPG"  width="800" height="642" alt="photo of the Tokyo Tina project">
-              </picture>
-            </div>
-          </div>
-          <div class="words-box">
-            <span class="words">Tokyo Tina – Prahran, Australia 2015</span>
-          </div>
-        </div>
-          </div>
-
-
-          <div class="swiper-slide">
-        <div class="column yellow">
-          <div class="carousel">
-            <div class="photo blur">
-              <picture>
-                <source type="image/webp" srcset="./images/APavilion/02_800.webp">
-                <source type="image/png" srcset="./images/APavilion/02_800.png">               
-                <img src="https://mi-ji.com.au/images/APavilion/02_800.JPG" width="800" height="1066" alt="photo of the A Pavillion project">
-              </picture>
-            </div>
-            <div class="plan" data-collapsed="true" style="height: 1px">
-              <picture>
-                <source type="image/svg" srcset="./images/APavilion/Plan_800.svg"> 
-                <img src="./images/APavilion/Plan_800.svg" width="800" height="1120" alt="architectural plan of the A Pavillion project">
-              </picture>
-            </div>
-          </div>
-          <div class="words-box">
-            <span class="words">A Pavilion - Collingwood, Australia 2021 (in collaboration with client)</span>
-          </div>
-        </div>  
-          </div>
-
-
-          <div class="swiper-slide">
-        <div class="column grey">
-          <div class="carousel">
-            <div class="photo blur">
-              <picture>
-                <source type="image/webp" srcset="./images/ABHouse/01_800.webp">
-                <source type="image/png" srcset="./images/ABHouse/01_800.png">              
-                <img src="https://mi-ji.com.au/images/ABHouse/01_800.JPG" width="800" height="534" alt="photo of the AB House project">
-              </picture>
-              </div>
-            <div class="plan" data-collapsed="true" style="height: 1px">
-              <picture>
-                <source type="image/svg" srcset="./images/ABHouse/Plan_800.svg">                
-                <img src="./images/ABHouse/Plan_800.svg" width="800" height="1120" alt="architectural plan of the AB House project">
-              </picture>
-            </div>
-          </div>
-          <div class="words-box">
-            <span class="words">A B House - Wadawurrung Country, Australia 2021</span>
-          </div>
-        </div>
-          </div>
-
-
-          <div class="swiper-slide">
-        <div class="column green">
-          <div class="carousel">
-            <div class="photo blur">
-              <picture>
-                <source type="image/webp" srcset="./images/AHouseForOne/02_800.webp">
-                <source type="image/png" srcset="./images/AHouseForOne/02_800.png"> 
-                <img src="https://mi-ji.com.au/images/AHouseForOne/02_800.JPG" width="800" height="1020" alt="photo of the A House For One project">
-              </picture>
-            </div>
-            <div class="plan" data-collapsed="true" style="height: 1px">
-              <picture>
-              <source type="image/svg" srcset="./images/AHouseForOne/Plan_800.svg"> 
-                <img src="./images/AHouseForOne/Plan_800.svg" width="800" height="1120" alt="architectural plan of the A House For One project">
-              </picture>
-            </div>
-          </div>
-          <div class="words-box">
-            <span class="words">A House For One – Dja Dja Wurrung Country, Australia 2016</span>
-          </div>
-        </div>
-          </div>
-
-
-          <div class="swiper-slide">
-        <div class="column pink">
-          <div class="carousel">
-            <div class="photo blur">
-              <picture>
-                <source type="image/webp" srcset="./images/ACertainKindofLife/02_800.webp">
-                <source type="image/png" srcset="./images/ACertainKindofLife/02_800.png">
-                <img src="https://mi-ji.com.au/images/ACertainKindofLife/02_800.JPG" width="800" height="1200" alt="photo of the A Certain Kind of Life project">
-              </picture>
-            </div>
-            <div class="plan" data-collapsed="true" style="height: 1px">
-              <picture>
-                <source type="image/svg" srcset="./images/ACertainKindofLife/Plan_800.svg">
-                <img src="./images/ACertainKindofLife/Plan_800.svg" width="800" height="1120" alt="architectural plan of the Certain Kind of Life project">
-              </picture>
-            </div>
-          </div>
-          <div class="words-box">
-            <span class="words">A Certain Kind of Life - Lisbon, Portugal 2019 (Jimmy Carter with Abigail Chang, Francesco Marullo and Agata Siemionow in conjunction with the University of Illinois at Chicago.)
-            </span>
-          </div>
-        </div>
-          </div>
-
-
-          <div class="swiper-slide">
-        <div class="column yellow">
-          <div class="carousel">
-            <div class="photo blur">
-              <picture>
-                <source type="image/webp" srcset="./images/APavilion/01_800.webp">
-                <source type="image/png" srcset="./images/APavilion/01_800.png">               
-                <img src="https://mi-ji.com.au/images/APavilion/01_800.JPG" width="800" height="600" alt="photo of the A Pavillion project">
-              </picture>
-            </div>
-            <div class="plan" data-collapsed="true" style="height: 1px">
-              <picture>
-                <source type="image/svg" srcset="./images/APavilion/Plan_800.svg"> 
-                <img src="./images/APavilion/Plan_800.svg" width="800" height="1120" alt="architectural plan of the A Pavillion project">
-              </picture>
-            </div>
-          </div>
-          <div class="words-box">
-            <span class="words">A Pavilion - Wurundjeri Country, Australia 2021 (in collaboration with client)</span>
-          </div>
-        </div>  
-          </div>
-
-
-          <div class="swiper-slide">
-        <div class="column grey">
-          <div class="carousel">
-            <div class="photo blur">
-              <picture>
-                <source type="image/webp" srcset="./images/ABHouse/02_800.webp">
-                <source type="image/png" srcset="./images/ABHouse/02_800.png">              
-                <img src="https://mi-ji.com.au/images/ABHouse/02_800.JPG" width="800" height="1200" alt="photo of the AB House project">
-              </picture>
-              </div>
-            <div class="plan" data-collapsed="true" style="height: 1px">
-              <picture>
-                <source type="image/svg" srcset="./images/ABHouse/Plan_800.svg">                
-                <img src="./images/ABHouse/Plan_800.svg" width="800" height="1120" alt="architectural plan of the AB House project">
-              </picture>
-            </div>
-          </div>
-          <div class="words-box">
-            <span class="words">A B House - Barwon Heads, Australia 2021</span>
-          </div>
-        </div>
-          </div>
-
-
-          <div class="swiper-slide">
-        <div class="column green">
-          <div class="carousel">
-            <div class="photo blur">
-              <picture>
-                <source type="image/webp" srcset="./images/AHouseForOne/03_800.webp">
-                <source type="image/png" srcset="./images/AHouseForOne/03_800.png"> 
-                <img src="https://mi-ji.com.au/images/AHouseForOne/03_800.JPG" width="800" height="658" alt="photo of the A House For One project">
-              </picture>
-            </div>
-            <div class="plan" data-collapsed="true" style="height: 1px">
-              <picture>
-                <source type="image/svg" srcset="./images/AHouseForOne/Plan_800.svg"> 
-                <img src="./images/AHouseForOne/Plan_800.svg" width="800" height="1120"  alt="architectural plan of the A House For One project">
-              </picture>
-            </div>
-          </div>
-          <div class="words-box">
-            <span class="words">A House For One – Castlemaine, Australia 2016
-            </span>
-          </div>
-        </div>
-          </div>
-
-
-          <div class="swiper-slide">
-        <div class="column pink">
-          <div class="carousel">
-            <div class="photo blur">
-              <picture>
-                <source type="image/webp" srcset="./images/ACertainKindofLife/03_800.webp">
-                <source type="image/png" srcset="./images/ACertainKindofLife/03_800.png">
-                <img src="https://mi-ji.com.au/images/ACertainKindofLife/03_800.JPG" width="800" height="1200" alt="photo of the A Certain Kind of Life project">
-              </picture>
-            </div>
-            <div class="plan" data-collapsed="true" style="height: 1px">
-              <picture>
-                <source type="image/svg" srcset="./images/ACertainKindofLife/Plan_800.svg">
-                <img src="./images/ACertainKindofLife/Plan_800.svg" width="800" height="1120" alt="architectural plan of the Certain Kind of Life project">
-              </picture>
-            </div>
-          </div>
-          <div class="words-box">
-            <span class="words">A Certain Kind of Life - Lisbon, Portugal 2019 (Jimmy Carter with Abigail Chang, Francesco Marullo and Agata Siemionow in conjunction with the University of Illinois at Chicago.)
-            </span>
-          </div>
-        </div>
-          </div>
-
-
-          <div class="swiper-slide">
-        <div class="column grey">
-          <div class="carousel">
-            <div class="photo blur">
-              <picture>
-                <source type="image/webp" srcset="./images/ABHouse/04_800.webp">
-                <source type="image/png" srcset="./images/ABHouse/04_800.png">              
-                <img src="https://mi-ji.com.au/images/ABHouse/04_800.JPG" width="800" height="534" alt="photo of the AB House project">
-              </picture>
-              </div>
-            <div class="plan" data-collapsed="true" style="height: 1px">
-              <picture>
-                <source type="image/svg" srcset="./images/ABHouse/Plan_800.svg">                
-                <img src="./images/ABHouse/Plan_800.svg" width="800" height="1120" alt="architectural plan of the AB House project">
-              </picture>
-            </div>
-          </div>
-          <div class="words-box">
-            <span class="words">A B House - Wadawurrung Country, Australia 2021</span>
-          </div>
-        </div>
-          </div>
-
-
-          <div class="swiper-slide">
-        <div class="column yellow">
-          <div class="carousel">
-            <div class="photo blur">
-              <picture>
-                <source type="image/webp" srcset="./images/APavilion/03_800.webp">
-                <source type="image/png" srcset="./images/APavilion/03_800.png">               
-                <img src="https://mi-ji.com.au/images/APavilion/03_800.JPG" width="800" height="1066" alt="photo of the A Pavillion project">
-              </picture>
-            </div>
-            <div class="plan" data-collapsed="true" style="height: 1px">
-              <picture>
-                <source type="image/svg" srcset="./images/APavilion/Plan_800.svg"> 
-                <img src="./images/APavilion/Plan_800.svg" width="800" height="1120" alt="architectural plan of the A Pavillion project">
-              </picture>
-            </div>
-          </div>
-          <div class="words-box">
-            <span class="words">A Pavilion - Wurundjeri Country, Australia 2021 (in collaboration with client)</span>
-          </div>
-        </div>       
-</div>
-      </div>
-    </div>
-</div>
-
-    <div class="mobile">
-      
-      Mobile site
-
-    </div>
-
-    <footer onmouseover="focusDetails()" onmouseout="normalDetails()">
-      <div>
-        <p id="office" class="highlight">
-          Office MI—JI<br>
-          Suite 01/156 George St <br>
-          Fitzroy 3065
-        </p>
-        <p id="millie">
-          Millie Anderson<br>
-          millie@mi-ji.com.au<br>
-          0417 038 912
-        </p>
-        <p id="jimmy">
-          Jimmy Carter<br>
-          jimmy@mi-ji.com.au<br>
-          0452 055 948
-        </p>
-        <p id="rego">
-          <a href="https://instagram.com/office_mi.ji" target="none">IG</a><br>
-          ARBV 52058
-        </p>
-      </div>
-    </footer>
- 
-    <script type="text/javascript" src="/scripts/looping.js"></script>
-    <script type="text/javascript" src="/scripts/scripts.js"></script>
-
-<script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
-
-<script type="text/javascript">
-// vertical looping
-
-const paul = new Swiper(".paul", {
-  // Optional parameters
-  direction: "horizontal",
-  loop: true,
-  freeMode: true,
-  slidesPerView: "auto",
-  loopedSlides: 15,
-  mousewheel: true
-});
-
-
-
-// project nav/slideshow
-
-var slideIndex = 1;
-showSlides(slideIndex);
-
-// Next/previous controls
-function plusSlides(n) {
-  showSlides((slideIndex += n));
-}
-
-// Thumbnail image controls
-function currentSlide(n) {
-  showSlides((slideIndex = n));
-}
-
-function showSlides(n) {
-  var i;
-  var slides = document.getElementsByClassName("mySlides");
-  if (n > slides.length) {
-    slideIndex = 1;
-  }
-  if (n < 1) {
-    slideIndex = slides.length;
-  }
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";
-  }
-  slides[slideIndex - 1].style.display = "block";
+.photo, .plan   {
+		overflow: hidden;
+		transition: height 0.5s ease-out;
+		height: auto;
 }
 
 
+.photo img, .plan img, .blur img {
+	    width: 400px; /* !important*/
+	    height: auto;
+}
 
-</script>
 
-  </body>
-</html>
+.column .words-box {
+  	display: none;
+}
+
+.column:hover .words-box {
+  	display: block;
+}
+
+.words-box {
+    position: relative;
+    top: -2px;
+    box-shadow: rgb(255 255 255) 0px -6px 0px 0px inset;
+}
+
+.words {
+    width: 100%;
+    position: relative;
+    top: -3px;
+    z-index: 2;
+}
+
+/* to get rid of the weird shitty line
+.plan {
+		border:  1px solid white;
+		box-sizing: content-box;
+		width: calc(100% - 2px);
+}
+
+/*
+.blur, .plan {
+		border:  5px solid white;
+}
+/*
+
+/***************************************** SLIDER OVERRIDE THINGS */
+
+.slick-prev,
+.slick-next {
+		top: 0px;
+		left: 0px;
+		width: 100%;
+		height: 100%;
+		margin-top: 0px; 
+		padding: 0;
+}
+
+.slick-prev:before,
+.slick-next:before {
+  	content: none;
+}
+
+.slick-slider {
+    margin-bottom: 0px;
+}
+
+/***************************************** MEDIA QUERY */
+
+@media only screen and (max-width: 600px) {
+	* {
+		font-size: 0.94em;
+	}
+
+	header {
+		height: 24px;
+	}
+
+	header p {
+		line-height: 22px;
+    	width: 85%;
+}
+
+	footer div {
+	  	align-items: flex-start;
+	  	flex-flow: row wrap;
+	}
+
+	footer div p {
+	  	padding: 10px;
+	  	flex: 1 50%;
+	}
+
+	#millie {order: 1;}
+	#jimmy {order: 2;}
+	#office {order: 3;}
+	#rego {order: 4;}
+
+	.column {
+    	/*width: 70%;*/
+	}
+}
+
+@media only screen and (max-height: 750px) {
+	.cards {
+		width: 300px;
+		height: auto;
+	}
+
+	.column {
+		width: 300px;
+	    height: auto;
+	}
+
+	.carousel {
+		width: 300px;
+	}
+	.photo img, .plan img,	.blur img {
+	    width: 300px; /* !important*/
+	    height: auto;
+	}
+
+
+}
+
+@media only screen and (max-height: 600px) {
+	.cards {
+		width: 200px;
+		height: auto;
+	}
+
+	.column {
+		width: 200px;
+	    height: auto;
+	}
+
+	.carousel {
+		width: 200px;
+	}
+
+	.photo img, .plan img {
+	    width: 200px; /* !important*/
+	    height: auto;
+	}
+
+	.blur img {
+		filter: blur(2px);
+		top: 3px;
+		left: -3px;
+	    width: 206px; /* !important*/
+	    height: auto;
+	}
+}
+
+/* Phones */
+@media only screen 
+  and (min-device-width: 300px) 
+  and (max-device-width: 812px) {
+
+  	.pin-spacer{
+  		display: none;
+  	}
+
+  	#gallery {
+  		display: none;
+  	}
+
+  	.mobile {
+  		display: block;
+  		color: darkred;
+  		font-size: 60px;
+  	}
+
+}
