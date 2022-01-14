@@ -13,6 +13,30 @@
   margin: 0;
 }
 
+/***************************************** TOP */
+
+header {
+  height: 30px;
+  width: 100%;
+  padding: 1px 10px;
+  background: white;
+  transition: 2s;
+  position: fixed;
+  z-index: 2;
+  /* display: flex; */
+  /* align-items: center; */
+}
+
+header p {
+  float: left;
+  line-height: 30px;
+}
+
+header img {
+  float: right;
+  height: 100%;
+}
+
 .newswiper {
   display: inline-block;
   float: left;
@@ -30,7 +54,7 @@
   height: unset;
 }
 
-img {
+.swiper-slide img {
   width: 100%;
   display: block;
   margin: 0;
@@ -101,11 +125,18 @@ img {
   }
 }
 
+
     </style>
   </head>
 
 
 <body>
+<header>
+  <p>
+    Office MI—JI is an architectural office
+  </p>
+  <img src="https://mi-ji.com.au/assets/OM_Brand_Mark_Black_Small_F.png" alt="Mi-Ji logo">
+</header>
 
 <!-- Slideshow container -->
 <div class="slideshow-container">
@@ -126,6 +157,9 @@ img {
         <div class="swiper-slide">
           <img src="https://mi-ji.com.au/images/APavilion/03_800.JPG">
         </div>
+        <div class="words">A Certain Kind of Life - Lisbon, Portugal 2019 (Jimmy Carter with Abigail Chang, Francesco Marullo and Agata Siemionow in conjunction with the University of Illinois at Chicago.)
+
+        </div>
       </div>
     </div>
   </div>
@@ -144,6 +178,9 @@ img {
         </div>
         <div class="swiper-slide">
           <img src="https://mi-ji.com.au/images/ABHouse/03_800.JPG">
+        </div>
+        <div class="words swiper-slide">A Certain Kind of Life - Lisbon, Portugal 2019 (Jimmy Carter with Abigail Chang, Francesco Marullo and Agata Siemionow in conjunction with the University of Illinois at Chicago.)
+
         </div>
       </div>
     </div>
@@ -194,7 +231,7 @@ const robert = new Swiper(".robert", {
   loop: true,
   freeMode: true,
   slidesPerView: "auto",
-  loopedSlides: 3
+  loopedSlides: 4
 });
 
 const john = new Swiper(".john", {
@@ -203,7 +240,7 @@ const john = new Swiper(".john", {
   loop: true,
   freeMode: true,
   slidesPerView: "auto",
-  loopedSlides: 3
+  loopedSlides: 4
 });
 
 
