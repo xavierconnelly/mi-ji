@@ -128,7 +128,7 @@ footer div p {
   display: inline-block;
   float: left;
   width: 100vw;
-  height: 100vh;
+  height: 100vh; 
   background: ;
   overflow: hidden;
   list-style: none;
@@ -138,11 +138,17 @@ footer div p {
   top: 29px;
 }
 
-.swiper-slide {
+/*.swiper-slide {
   height: unset;
   width: 400px;
-}
+}*/
 
+.column {
+	width: 400px;
+	height: 600px; 
+	padding: 0;
+	margin: 0;
+}
 
 .swiper-slide img {
   width: 100%;
@@ -151,12 +157,6 @@ footer div p {
 }
 
 
-.column {
-		width: 400px;
-		height: 600px; 
-		padding: 0;
-		margin: 0;
-	}
 
 .photo, .plan   {
 		overflow: hidden;
