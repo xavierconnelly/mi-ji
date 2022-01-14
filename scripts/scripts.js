@@ -11,7 +11,6 @@ const fifteen = new Swiper(".fifteen", {
   mousewheel: true
 });
 
-
 ////////////////////////////////////////////////////////////////////////////////
 // Flick between images and plans
 
@@ -23,70 +22,6 @@ function normalDetails() {
   document.getElementById("gallery").style.opacity = "1";
   document.querySelector("body").style.background = "";
 }
-
-
-////////////////////////////////////////////////////////////////////////////////
-// Mobile scrolling
-
-const three = new Swiper(".three", {
-  // Optional parameters
-  direction: "vertical",
-  loop: true,
-  freeMode: true,
-  slidesPerView: "auto",
-  loopedSlides: 3
-});
-
-const four = new Swiper(".four", {
-  // Optional parameters
-  direction: "vertical",
-  loop: true,
-  freeMode: true,
-  slidesPerView: "auto",
-  loopedSlides: 4
-});
-
-const five = new Swiper(".five", {
-  // Optional parameters
-  direction: "vertical",
-  loop: true,
-  freeMode: true,
-  slidesPerView: "auto",
-  loopedSlides: 5
-});
-
-
-////////////////////////////////////////////////////////////////////////////////
-// Mobile project nav/slideshow
-
-var slideIndex = 1;
-showSlides(slideIndex);
-
-// Next/previous controls
-function plusSlides(n) {
-  showSlides((slideIndex += n));
-}
-
-// Thumbnail image controls
-function currentSlide(n) {
-  showSlides((slideIndex = n));
-}
-
-function showSlides(n) {
-  var i;
-  var slides = document.getElementsByClassName("mySlides");
-  if (n > slides.length) {
-    slideIndex = 1;
-  }
-  if (n < 1) {
-    slideIndex = slides.length;
-  }
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";
-  }
-  slides[slideIndex - 1].style.display = "block";
-}
-
 
 ////////////////////////////////////////////////////////////////////////////////
 // Flick between images and plans
@@ -172,4 +107,67 @@ var elements = document.getElementsByClassName("carousel");
 // element is clicked on, it turns blue
 for (var i = 0; i < elements.length; i++) {
   elements[i].addEventListener("click", bluify, false);
+}
+
+
+////////////////////////////////////////////////////////////////////////////////
+// Mobile scrolling
+
+const three = new Swiper(".three", {
+  // Optional parameters
+  direction: "vertical",
+  loop: true,
+  freeMode: true,
+  slidesPerView: "auto",
+  loopedSlides: 3
+});
+
+const four = new Swiper(".four", {
+  // Optional parameters
+  direction: "vertical",
+  loop: true,
+  freeMode: true,
+  slidesPerView: "auto",
+  loopedSlides: 4
+});
+
+const five = new Swiper(".five", {
+  // Optional parameters
+  direction: "vertical",
+  loop: true,
+  freeMode: true,
+  slidesPerView: "auto",
+  loopedSlides: 5
+});
+
+
+////////////////////////////////////////////////////////////////////////////////
+// Mobile project nav/slideshow
+
+var slideIndex = 1;
+showSlides(slideIndex);
+
+// Next/previous controls
+function plusSlides(n) {
+  showSlides((slideIndex += n));
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides((slideIndex = n));
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  if (n > slides.length) {
+    slideIndex = 1;
+  }
+  if (n < 1) {
+    slideIndex = slides.length;
+  }
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  slides[slideIndex - 1].style.display = "block";
 }
