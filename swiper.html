@@ -28,7 +28,7 @@
     </header>
 
     <!-- Slider main container -->
-      <div class="paul swiper">
+      <div id="gallery" class="fifteen swiper">
         <!-- Additional required wrapper -->
         <div class="swiper-wrapper">
           <!-- Slides -->
@@ -437,59 +437,7 @@
       </div>
     </footer>
  
-    <script type="text/javascript" src="/scripts/looping.js"></script>
     <script type="text/javascript" src="/scripts/scripts.js"></script>
-
-<script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
-
-<script type="text/javascript">
-// vertical looping
-
-const paul = new Swiper(".paul", {
-  // Optional parameters
-  direction: "horizontal",
-  loop: true,
-  freeMode: true,
-  slidesPerView: "auto",
-  loopedSlides: 15,
-  mousewheel: true
-});
-
-
-
-// project nav/slideshow
-
-var slideIndex = 1;
-showSlides(slideIndex);
-
-// Next/previous controls
-function plusSlides(n) {
-  showSlides((slideIndex += n));
-}
-
-// Thumbnail image controls
-function currentSlide(n) {
-  showSlides((slideIndex = n));
-}
-
-function showSlides(n) {
-  var i;
-  var slides = document.getElementsByClassName("mySlides");
-  if (n > slides.length) {
-    slideIndex = 1;
-  }
-  if (n < 1) {
-    slideIndex = slides.length;
-  }
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";
-  }
-  slides[slideIndex - 1].style.display = "block";
-}
-
-
-
-</script>
-
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
   </body>
 </html>
