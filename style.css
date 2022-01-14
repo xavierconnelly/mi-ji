@@ -124,17 +124,9 @@ footer div p {
 
 /***************************************** SCROLL THINGS */
 
-
 .container {
   width: max-content;
 }
-
-.column {
-  
-    position: unset;
-  
-    }
-
 
 .swiper {
   display: inline-block;
@@ -160,15 +152,13 @@ footer div p {
   margin: 0;
 }
 
+
 .column {
 		width: 400px;
 		height: 600px; 
 		padding: 0;
 		margin: 0;
-		position: absolute;
-		top: 0;
-		left: 0;
-}
+	}
 
 .photo, .plan   {
 		overflow: hidden;
@@ -176,26 +166,14 @@ footer div p {
 		height: auto;
 }
 
-
-.photo img, .plan img {
-	    width: 400px; /* !important*/
-	    height: auto;
-}
-
+/*
+.photo img,
+.plan img,
 .blur img {
-		filter: blur(3px);
-		z-index: -1;
-		position: relative;
-		top: 4px;
-		left: -4px;
-	    width: 408px; /* !important*/
+	    width: 400px;
 	    height: auto;
 }
-
-
-.column:hover .blur img  {
-    filter: blur(0px);
-}
+*/
 
 .column .words-box {
   	display: none;
@@ -216,40 +194,6 @@ footer div p {
     position: relative;
     top: -3px;
     z-index: 2;
-}
-
-/* to get rid of the weird shitty line
-.plan {
-		border:  1px solid white;
-		box-sizing: content-box;
-		width: calc(100% - 2px);
-}
-
-/*
-.blur, .plan {
-		border:  5px solid white;
-}
-/*
-
-/***************************************** SLIDER OVERRIDE THINGS */
-
-.slick-prev,
-.slick-next {
-		top: 0px;
-		left: 0px;
-		width: 100%;
-		height: 100%;
-		margin-top: 0px; 
-		padding: 0;
-}
-
-.slick-prev:before,
-.slick-next:before {
-  	content: none;
-}
-
-.slick-slider {
-    margin-bottom: 0px;
 }
 
 /***************************************** MEDIA QUERY */
@@ -282,10 +226,6 @@ footer div p {
 	#jimmy {order: 2;}
 	#office {order: 3;}
 	#rego {order: 4;}
-
-	.column {
-    	/*width: 70%;*/
-	}
 }
 
 @media only screen and (max-height: 750px) {
@@ -297,21 +237,20 @@ footer div p {
 		width: 300px;
 	    height: auto;
 	}
+
+
+
 }
 
 @media only screen and (max-height: 600px) {
+	.swiper-slide {
+		width: 200px;
+		height: auto;
+	}
 
-.swiper-slide  {
-
-width:  200px;
-}
 	.column {
 		width: 200px;
 	    height: auto;
-	}
-
-	.carousel {
-		width: 200px;
 	}
 }
 
@@ -320,18 +259,6 @@ width:  200px;
   and (min-device-width: 300px) 
   and (max-device-width: 812px) {
 
-  	.pin-spacer{
-  		display: none;
-  	}
 
-  	#gallery {
-  		display: none;
-  	}
-
-  	.mobile {
-  		display: block;
-  		color: darkred;
-  		font-size: 60px;
-  	}
 
 }
