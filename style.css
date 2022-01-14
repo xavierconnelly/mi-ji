@@ -124,10 +124,6 @@ footer div p {
 
 /***************************************** SCROLL THINGS */
 
-.container {
-  width: max-content;
-}
-
 .swiper {
   display: inline-block;
   float: left;
@@ -138,6 +134,8 @@ footer div p {
   list-style: none;
   padding: 0;
   z-index: 1;
+  position: fixed;
+  top: 29px;
 }
 
 .swiper-slide {
@@ -169,9 +167,19 @@ footer div p {
 
 .photo img,
 .plan img,
-.blur img {
+.blur img,
+.clear img {
 	    width: 400px;
 	    height: auto;
+}
+
+
+.photo:hover .blur {
+	display: none;
+}
+
+.photo:hover .clear {
+	display: block;
 }
 
 
