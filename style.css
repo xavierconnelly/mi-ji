@@ -44,7 +44,6 @@ header {
 		width: 100%;
 		padding: 1px 10px; 
 		background: white;
-		transition: 2s;
 		position: fixed;
 		z-index: 40;
 		/* display: flex; */
@@ -300,6 +299,7 @@ footer {
     top: ;
     height: 100vh;
     width: 100%;
+    		transition: 0s;
  		background: #ffffffc7;
 }
 	  footer div {
