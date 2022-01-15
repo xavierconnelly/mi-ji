@@ -168,14 +168,15 @@ footer div p {
 	    height: auto;
 }
 
-.photo picture {
+.photo .clear {
 	position: absolute;
 	top: 0;
 	left: 0;
+	opacity: 0;
 }
 
-.photo:hover .blur {
-	opacity: 0;
+.photo:hover .clear {
+	opacity: 1;
 }
 
 .column .words-box {
