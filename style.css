@@ -322,28 +322,29 @@ img {
 	  }
 
 	  header p {
-	    line-height: unset;
-	    width: 80%;
+		    line-height: unset;
+		    width: 80%;
+		    padding: 10px 0px 0px 0px;
 	  }
 
-	header img {
-  float: right;
-  height: 30px;
-}
+		header img {
+			  float: right;
+			  height: 30px;
+		}
 
 	  footer {
-	    background: white;
-	      padding: 10px 20px;
+		    background: white;
+		    padding: 10px 20px;
 	  }
 
 	  footer div {
-	    align-items: flex-start;
-	    flex-flow: row wrap;
+		    align-items: flex-start;
+		    flex-flow: row wrap;
 	  }
 
 	  footer div p {
-	    padding: 10px;
-	    flex: 1 50%;
+		    padding: 10px;
+		    flex: 1 50%;
 	  }
 
 /***************************************** BOTTOM 
