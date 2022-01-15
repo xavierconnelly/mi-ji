@@ -1,238 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-
- <link
-  rel="stylesheet"
-  href="https://unpkg.com/swiper@7/swiper-bundle.min.css"
-/>
-
-    <style type="text/css">
-
-@font-face {
-  font-family: "Andale";
-  src: url("https://mi-ji.com.au/ANDALEMO.woff") format("woff");
-  font-display: swap
-}
-
-* {
-  margin: 0;
-  box-sizing: border-box;
-  font-family: "Andale", times;
-  font-size: 0.9rem;
-  -webkit-font-smoothing: antialiased !important;
-  text-rendering: optimizeLegibility !important;
-}
-
-a {
-  color: initial;
-  text-decoration: none;
-}
-
-img {
-  aspect-ratio: attr(width) / attr(height);
-}
-
-
-/***************************************** TOP */
-
-header {
-  height: 30px;
-  width: 100%;
-  padding: 1px 10px;
-  background: white;
-  transition: 2s;
-  position: fixed;
-  z-index: 2;
-  /* display: flex; */
-  /* align-items: center; */
-}
-
-header p {
-  float: left;
-  line-height: 30px;
-
-}
-
-header img {
-  float: right;
-  height: 100%;
-}
-
-.newswiper {
-  height: 100vh;
-  overflow: hidden;
-  padding: 20px;
-  z-index: 1;
-}
-
-
-
-
-.swiper-slide {
-  height: unset;
-}
-
-
-
-.swiper-slide img {
-  width: 100%;
-  display: block;
-  margin: 0;
-  filter: grayscale(1);
-}
-
-.swiper-slide-active img{
-  filter: grayscale(0);
-}
-
-/* Slideshow container */
-.slideshow-container {
-  max-width: ;
-  position: relative;
-  margin: auto;
-}
-
-/* Hide the images by default */
-.mySlides {
-  display: none;
-  z-index: -1;
-}
-
-/* Next & previous buttons */
-.prev,
-.next {
-  z-index: 99;
-  cursor: pointer;
-  position: fixed;
-  top: 50%;
-  width: auto;
-  margin-top: -22px;
-  padding: 30px;
-  color: pink;
-  font-weight: bold;
-  font-size: 100px;
-  transition: 0.6s ease;
-  user-select: none;
-}
-
-.prev {
-  left: 0;
-}
-
-/* Position the "next button" to the right */
-.next {
-  right: 0;
-}
-
-/* Fading animation */
-.fade {
-  -webkit-animation-name: fade;
-  -webkit-animation-duration: 1.5s;
-  animation-name: fade;
-  animation-duration: 1.5s;
-}
-
-@-webkit-keyframes fade {
-  from {
-    opacity: 0.4;
-  }
-  to {
-    opacity: 1;
-  }
-}
-
-@keyframes fade {
-  from {
-    opacity: 0.4;
-  }
-  to {
-    opacity: 1;
-  }
-}
-
-/***************************************** BOTTOM */
-
-footer {
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    transition: 2s;
-    z-index: 2;
-}
-
-footer div {
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: end;
-}
-
-footer div p {
-    width: 25%;
-    padding: 10px 10px 10px 10px;
-    text-align: left;
-}
-
-#office {order: 1;}
-#millie {order: 2;}
-#jimmy {order: 3;}
-#rego {order: 4;}
-
-/***************************************** MEDIA QUERY */
-
-
-  * {
-    font-size: 1em;
-  }
-
-.words {
-    background: pink;
-    position: fixed;
-    bottom: 0px;
-    z-index: 99;
-    font-size: 2em;
-    width: 100%;
-    padding: 10px 10px 20px 10px;
-}
-
-  header {
-    height: 80px;
-    padding: 1px 10px 20px 10px;
-  }
-
-  header p {
-    font-size: 2em;
-    line-height: 60px;
-    width: 85%;
-  }
-
-  footer {
-    background: white;
-      font-size: 2em;
-      padding: 10px 20px;
-  }
-
-  footer div {
-    align-items: flex-start;
-    flex-flow: row wrap;
-  }
-
-  footer div p {
-    padding: 10px;
-    flex: 1 50%;
-  }
-
-  #millie {    order: 1;}
-  #jimmy {    order: 2;}
-  #office {    order: 3;}
-  #rego {    order: 4;}
-
-
-
-    </style>
+    <!-- Meta -->
+    <meta charset="utf-8">
+    <title>Office Mi-Ji</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Office MI—JI is an architectural office.">
+    <meta name="keywords" content="melbourne, architect, small, arctictecture, office, millie, anderson, carter, james, jimmy, fitzroy, local">
+    <meta name="author" content="Office Mi-Ji">
+    <!-- Chrome, Firefox OS and Opera -->
+    <meta name="theme-color" content="rgb(255, 80, 0)">
+    <!-- CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="/style.css">
+    <!-- Global site tag (gtag.js) - Google Analytics  CHANGE THIS
+    script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-136398833-1"></script> --> 
   </head>
-
 
 <body>
 <header>
@@ -397,31 +180,31 @@ footer div p {
         </div>
       </div>
     
+      </div>
+        <div class="words" style="background:  rgb(245, 245, 200);">A House For One – Castlemaine, Australia 2016
+      </div>
+
+      <!-- Next and previous buttons -->
+      <a class="prev" onclick="plusSlides(-1)">
+        <img src="https://mi-ji.com.au/assets/prev.svg">
+      </a>
+      <a class="next" onclick="plusSlides(1)">
+        <img src="https://mi-ji.com.au/assets/next.svg">
+      </a>
+
+      </div>
+
+      <!-- Next and previous buttons -->
+      <a class="prev" onclick="plusSlides(-1)">
+        <img src="https://mi-ji.com.au/assets/prev_pink.svg">
+      </a>
+      <a class="next" onclick="plusSlides(1)">
+        <img src="https://mi-ji.com.au/assets/next_pink.svg">
+      </a>
+
     </div>
-      <div class="words" style="background:  rgb(245, 245, 200);">A House For One – Castlemaine, Australia 2016
-    </div>
 
-  <!-- Next and previous buttons -->
-  <a class="prev" onclick="plusSlides(-1)">
-    <img src="https://mi-ji.com.au/assets/prev.svg">
-  </a>
-  <a class="next" onclick="plusSlides(1)">
-    <img src="https://mi-ji.com.au/assets/next.svg">
-  </a>
-
-  </div>
-
-  <!-- Next and previous buttons -->
-  <a class="prev" onclick="plusSlides(-1)">
-    <img src="https://mi-ji.com.au/assets/prev_pink.svg">
-  </a>
-  <a class="next" onclick="plusSlides(1)">
-    <img src="https://mi-ji.com.au/assets/next_pink.svg">
-  </a>
-
-</div>
-
-    <script type="text/javascript" src="/scripts/scripts.js"></script>
     <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <script type="text/javascript" src="/scripts/scripts.js"></script>
   </body>
 </html>
