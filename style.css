@@ -362,7 +362,7 @@ footer div p {
 	.newswiper {
 		  height: 100vh;
 		  overflow: hidden;
-		  padding: 20px;
+		  padding: 10px;
 		  z-index: 1;
 	}
 
@@ -402,7 +402,6 @@ footer div p {
 		  position: fixed;
 		  top: 50%;
 		  width: auto;
-		  height: 30px;
 		  margin-top: -22px;
 		  padding: 30px;
 		  color: pink;
@@ -410,6 +409,11 @@ footer div p {
 		  font-size: 100px;
 		  transition: 0.6s ease;
 		  user-select: none;
+	}
+
+	.prev img,
+	.next img {
+		height: 30px;
 	}
 
 	.prev {
