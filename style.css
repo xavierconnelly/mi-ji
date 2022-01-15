@@ -341,14 +341,9 @@ header img {
   z-index: 1;
 }
 
-
-
-
 .swiper-slide {
   height: unset;
 }
-
-
 
 .swiper-slide img {
   width: 100%;
@@ -426,7 +421,7 @@ header img {
   }
 }
 
-/***************************************** BOTTOM */
+/***************************************** BOTTOM 
 
 footer {
     position: fixed;
@@ -448,14 +443,7 @@ footer div p {
     padding: 10px 10px 10px 10px;
     text-align: left;
 }
-
-#office {order: 1;}
-#millie {order: 2;}
-#jimmy {order: 3;}
-#rego {order: 4;}
-
-/***************************************** MEDIA QUERY */
-
+*/
 
   * {
     font-size: 1em;
@@ -464,6 +452,7 @@ footer div p {
 .words {
     background: pink;
     position: fixed;
+    top: unset;
     bottom: 0px;
     z-index: 99;
     font-size: 2em;
