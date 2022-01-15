@@ -1,5 +1,5 @@
 ////////////////////////////////////////////////////////////////////////////////
-// Desktop scrolling
+// Desktop — Scrolling
 
 const fifteen = new Swiper(".fifteen", {
   // Optional parameters
@@ -12,7 +12,7 @@ const fifteen = new Swiper(".fifteen", {
 });
 
 ////////////////////////////////////////////////////////////////////////////////
-// Flick between images and plans
+// Desktop — Focus on details
 
 function focusDetails() {
   document.getElementById("gallery").style.opacity = "0";
@@ -24,7 +24,7 @@ function normalDetails() {
 }
 
 ////////////////////////////////////////////////////////////////////////////////
-// Flick between images and plans
+// Desktop — Flick between images and plans
 
 
 function collapseSection(element) {
@@ -109,9 +109,18 @@ for (var i = 0; i < elements.length; i++) {
   elements[i].addEventListener("click", bluify, false);
 }
 
+////////////////////////////////////////////////////////////////////////////////
+// Mobile — Footer Showing
+
+function hideFooter() {
+  document.querySelector("footer").style.bottom = "100%";
+}
+function showFooter() {
+  document.querySelector("footer").style.bottom = "";
+}
 
 ////////////////////////////////////////////////////////////////////////////////
-// Mobile scrolling
+// Mobile — Scrolling
 
 const three = new Swiper(".three", {
   // Optional parameters
@@ -142,7 +151,7 @@ const five = new Swiper(".five", {
 
 
 ////////////////////////////////////////////////////////////////////////////////
-// Mobile project nav/slideshow
+// Mobile — Project nav/slideshow
 
 var slideIndex = 1;
 showSlides(slideIndex);
