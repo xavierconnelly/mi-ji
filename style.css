@@ -328,7 +328,7 @@ footer {
 	    bottom: 0px;
 	    z-index: 10;
 	    width: 100%;
-	    padding: 10px 10px 20px 10px;
+	    padding: 5px 10px 20px 10px;
 	}
 
 	.newswiper {
@@ -372,6 +372,7 @@ footer {
     z-index: 15;
     position: fixed;
     top: 50%;
+    height: 25px;
     width: auto;
     padding: 40px 10px;
     /* transition: 0.6s ease; */
@@ -381,7 +382,7 @@ footer {
 
 	.prev img,
 	.next img {
-		height: 30px;
+		height: 100%;
 	}
 
 	.prev {
