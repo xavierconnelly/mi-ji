@@ -313,7 +313,7 @@ img {
 
 
 	  * {
-	    font-size: 1em;
+	    font-size: .95em;
 	  }
 
 	  header {
@@ -322,7 +322,7 @@ img {
 	  }
 
 	  header p {
-	    line-height: 60px;
+	    line-height: 30px;
 	    width: 80%;
 	  }
 
