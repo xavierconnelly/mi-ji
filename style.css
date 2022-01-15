@@ -305,6 +305,8 @@ footer {
 	  footer div {
 		    align-items: flex-start;
 		    flex-flow: row wrap;
+		    position: absolute;
+    bottom: 0;
 	  }
 
 	  	  footer div p {
@@ -367,7 +369,7 @@ footer {
 	/* Next & previous buttons */
 	.prev,
 	.next {
-    z-index: 99;
+    z-index: 15;
     position: fixed;
     top: 50%;
     width: auto;
