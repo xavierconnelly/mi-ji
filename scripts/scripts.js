@@ -114,9 +114,12 @@ for (var i = 0; i < elements.length; i++) {
 
 function hideFooter() {
   document.querySelector("footer").style.bottom = "100%";
+  document.getElementsByClassName("slideshow-container").style.opacity = "1";
+
 }
 function showFooter() {
   document.querySelector("footer").style.bottom = "";
+  document.getElementsByClassName("slideshow-container").style.opacity = "0.5";
 }
 
 ////////////////////////////////////////////////////////////////////////////////
