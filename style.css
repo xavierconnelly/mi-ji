@@ -322,7 +322,7 @@ img {
 	  }
 
 	  header p {
-	    line-height: 30px;
+	    line-height: unset;
 	    width: 80%;
 	  }
 
