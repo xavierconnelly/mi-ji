@@ -286,23 +286,23 @@ footer div p {
 /***************************************** TOP */
 
 	  * {
-	    font-size: .95em;
+	    font-size: .93em;
 	  }
 
 	  header {
-	    height: 50px;
+	    height: 40px;
 	    padding: 1px 10px 20px 10px;
 	  }
 
 	  header p {
 		    line-height: unset;
 		    width: 80%;
-		    padding: 10px 0px 0px 0px;
+		    padding: 5px 0px 0px 0px;
 	  }
 
 		header img {
 			  float: right;
-			  height: 30px;
+			  height: 25px;
 		}
 
 	  footer {
