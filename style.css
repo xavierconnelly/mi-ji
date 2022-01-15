@@ -150,38 +150,33 @@ footer div p {
 	margin: 0;
 }
 
+/* not sure aboout this*/
 .swiper-slide img {
   width: 100%;
   display: block;
   margin: 0;
 }
 
-
-
-.photo, .plan   {
-		overflow: hidden;
+.photo,
+.plan {
 		transition: height 0.5s ease-out;
 		height: auto;
 }
 
-
-.photo img,
-.plan img,
-.blur img,
-.clear img {
+.carousel img {
 	    width: 400px;
 	    height: auto;
 }
 
+.photo picture {
+	position: absolute;
+	top: 0;
+	left: 0;
+}
 
 .photo:hover .blur {
-	display: none;
+	opacity: 0;
 }
-
-.photo:hover .clear {
-	display: block;
-}
-
 
 .column .words-box {
   	display: none;
