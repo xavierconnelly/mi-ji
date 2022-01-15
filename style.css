@@ -367,6 +367,15 @@ footer {
 		  z-index: -1;
 	}
 
+	.tina {
+    padding: 0px 10px;
+}
+
+.tina img {
+			width: 100vw; */
+
+}
+
 	/* Next & previous buttons */
 	.prev,
 	.next {
