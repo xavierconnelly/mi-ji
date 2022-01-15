@@ -144,28 +144,33 @@ footer div p {
 }*/
 
 .column {
-	width: 400px;
-	height: 600px; 
-	padding: 0;
-	margin: 0;
+		width: 400px;
+		height: 600px; 
+		padding: 0;
+		margin: 0;
 }
 
 /* not sure aboout this*/
 .swiper-slide img {
-  width: 100%;
-  display: block;
-  margin: 0;
+	  width: 100%;
+	  display: block;
+	  margin: 0;
+}
+
+.carousel img {
+	  width: 400px;
+	  height: auto;
+}
+
+.photo {
+		position: relative;
 }
 
 .photo,
 .plan {
+		overflow: hidden;
 		transition: height 0.5s ease-out;
 		height: auto;
-}
-
-.carousel img {
-	    width: 400px;
-	    height: auto;
 }
 
 .photo .clear {
