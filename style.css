@@ -283,34 +283,7 @@ footer div p {
   and (min-device-width: 300px) 
   and (max-device-width: 812px) {
 
-   
-@font-face {
-  font-family: "Andale";
-  src: url("https://mi-ji.com.au/ANDALEMO.woff") format("woff");
-  font-display: swap
-}
-
-* {
-  margin: 0;
-  box-sizing: border-box;
-  font-family: "Andale", times;
-  font-size: 0.9rem;
-  -webkit-font-smoothing: antialiased !important;
-  text-rendering: optimizeLegibility !important;
-}
-
-a {
-  color: initial;
-  text-decoration: none;
-}
-
-img {
-  aspect-ratio: attr(width) / attr(height);
-}
-
-
 /***************************************** TOP */
-
 
 	  * {
 	    font-size: .95em;
@@ -371,10 +344,10 @@ footer div p {
 }
 */
 
-	  #millie {    order: 1;}
-	  #jimmy {    order: 2;}
-	  #office {    order: 3;}
-	  #rego {    order: 4;}
+  #millie {order: 1;}
+  #jimmy {order: 2;}
+  #office {order: 3;}
+  #rego {order: 4;}
 
 	.words {
 	    background: pink;
@@ -387,91 +360,90 @@ footer div p {
 	}
 
 	.newswiper {
-  height: 100vh;
-  overflow: hidden;
-  padding: 20px;
-  z-index: 1;
-}
+		  height: 100vh;
+		  overflow: hidden;
+		  padding: 20px;
+		  z-index: 1;
+	}
 
-.swiper-slide {
-  height: unset;
-}
+	.swiper-slide {
+	  	height: unset;
+	  	width: unset;
+	}
 
-.swiper-slide img {
-  width: 100%;
-  display: block;
-  margin: 0;
-  filter: grayscale(1);
-}
+	.swiper-slide img {
+		  width: 100%;
+		  display: block;
+		  margin: 0;
+		  filter: grayscale(1);
+	}
 
-.swiper-slide-active img{
-  filter: grayscale(0);
-}
+	.swiper-slide-active img{
+	  	filter: grayscale(0);
+	}
 
-/* Slideshow container */
-.slideshow-container {
-  max-width: ;
-  position: relative;
-  margin: auto;
-}
+	/* Slideshow container */
+	.slideshow-container {
+		  position: relative;
+		  margin: auto;
+	}
 
-/* Hide the images by default */
-.mySlides {
-  display: none;
-  z-index: -1;
-}
+	/* Hide the images by default */
+	.mySlides {
+		  display: none;
+		  z-index: -1;
+	}
 
-/* Next & previous buttons */
-.prev,
-.next {
-  z-index: 99;
-  cursor: pointer;
-  position: fixed;
-  top: 50%;
-  width: auto;
-  margin-top: -22px;
-  padding: 30px;
-  color: pink;
-  font-weight: bold;
-  font-size: 100px;
-  transition: 0.6s ease;
-  user-select: none;
-}
+	/* Next & previous buttons */
+	.prev,
+	.next {
+		  z-index: 99;
+		  cursor: pointer;
+		  position: fixed;
+		  top: 50%;
+		  width: auto;
+		  height: 30px;
+		  margin-top: -22px;
+		  padding: 30px;
+		  color: pink;
+		  font-weight: bold;
+		  font-size: 100px;
+		  transition: 0.6s ease;
+		  user-select: none;
+	}
 
-.prev {
-  left: 0;
-}
+	.prev {
+	  	left: 0;
+	}
 
-/* Position the "next button" to the right */
-.next {
-  right: 0;
-}
+	/* Position the "next button" to the right */
+	.next {
+	  	right: 0;
+	}
 
-/* Fading animation */
-.fade {
-  -webkit-animation-name: fade;
-  -webkit-animation-duration: 1.5s;
-  animation-name: fade;
-  animation-duration: 1.5s;
-}
+	/* Fading animation */
+	.fade {
+		  -webkit-animation-name: fade;
+		  -webkit-animation-duration: 1.5s;
+		  animation-name: fade;
+		  animation-duration: 1.5s;
+	}
 
-@-webkit-keyframes fade {
-  from {
-    opacity: 0.4;
-  }
-  to {
-    opacity: 1;
-  }
-}
+	@-webkit-keyframes fade {
+	  from {
+	    opacity: 0.4;
+	  }
+	  to {
+	    opacity: 1;
+	  }
+	}
 
-@keyframes fade {
-  from {
-    opacity: 0.4;
-  }
-  to {
-    opacity: 1;
-  }
-}
-
-
+	@keyframes fade {
+	  from {
+	    opacity: 0.4;
+	  }
+	  to {
+	    opacity: 1;
+	  }
+	}
 }
