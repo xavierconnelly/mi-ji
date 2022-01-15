@@ -455,7 +455,6 @@ footer div p {
     top: unset;
     bottom: 0px;
     z-index: 99;
-    font-size: 2em;
     width: 100%;
     padding: 10px 10px 20px 10px;
 }
@@ -466,14 +465,12 @@ footer div p {
   }
 
   header p {
-    font-size: 2em;
     line-height: 60px;
     width: 85%;
   }
 
   footer {
     background: white;
-      font-size: 2em;
       padding: 10px 20px;
   }
 
