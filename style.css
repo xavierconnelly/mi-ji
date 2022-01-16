@@ -253,27 +253,25 @@ footer div p {
   and (min-device-width: 300px) 
   and (max-device-width: 812px) {
 
-/***************************************** TOP */
-
-
-
-	footer div {
-	  	align-items: flex-start;
-	  	flex-flow: row wrap;
-	}
-
-	footer div p {
-	  	padding: 10px;
-	  	flex: 1 50%;
-	}
+/***************************************** GENERAL */
 
 	  * {
-	    font-size: .93em;
+		    font-size: .93em;
 	  }
 
+		img {
+				-webkit-user-select: none;
+				-khtml-user-select: none;
+				-moz-user-select: none;
+				-o-user-select: none;
+				user-select: none;
+		}
+
+/***************************************** TOP */
+
 	  header {
-	    height: 40px;
-	    padding: 1px 10px 20px 10px;
+		    height: 40px;
+		    padding: 1px 10px 20px 10px;
 	  }
 
 	  header p {
@@ -289,37 +287,32 @@ footer div p {
 
 /***************************************** BOTTOM */
 
+		footer {
+		position: fixed;
+		bottom: 30%;
+		height: 100vh;
+		width: 100%;
+		transition: 1s;
+		background: rgba(255, 255, 255, 0.95);
+		}
+		footer div {
+		align-items: flex-start;
+		flex-flow: row wrap;
+		position: absolute;
+		bottom: 0;
+		}
 
+		footer div p {
+		padding: 10px;
+		flex: 1 50%;
+		}
 
+		#millie {order: 1;}
+		#jimmy {order: 2;}
+		#office {order: 3;}
+		#rego {order: 4;}
 
-
-
-footer {
-    position: fixed;
-    bottom: 30%;
-    height: 100vh;
-    width: 100%;
-    		transition: 1s;
- 		background: rgba(255, 255, 255, 0.95);
-}
-	  footer div {
-		    align-items: flex-start;
-		    flex-flow: row wrap;
-		    position: absolute;
-    bottom: 0;
-	  }
-
-	  	  footer div p {
-		    padding: 10px;
-		    flex: 1 50%;
-	  }
-
-*/
-
-  #millie {order: 1;}
-  #jimmy {order: 2;}
-  #office {order: 3;}
-  #rego {order: 4;}
+/***************************************** WORDS */
 
 	.words {
 	    background: pink;
@@ -327,9 +320,12 @@ footer {
 	    top: unset;
 	    bottom: 0px;
 	    z-index: 10;
-	    width: 100%;
+	    width: calc(100% - 20px);
+	    margin: 0px 10px;
 	    padding: 5px 10px 20px 10px;
 	}
+
+/***************************************** SWIPERS */
 
 	.newswiper {
 		  height: 100vh;
