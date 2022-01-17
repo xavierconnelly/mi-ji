@@ -1,3 +1,14 @@
+.limited {
+    overflow: scroll;
+    height: 100vh;
+    padding: 30px 10px 100px 10px;
+}
+
+
+.images-scroll {
+
+}
+
 /***************************************** GLOBALS */
 
 @font-face {
