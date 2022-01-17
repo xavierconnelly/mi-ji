@@ -344,14 +344,14 @@ footer div p {
 		  height: auto;
 		  display: block;
 		  margin: 0;
-		  /*filter: grayscale(1);*/
+		  filter: grayscale(1);
 	}
 
-/*
+
 	.swiper-slide-active img{
 	  	filter: grayscale(0);
 	}
-*/
+
 	/* Slideshow container */
 	.slideshow-container {
 		  position: relative;
