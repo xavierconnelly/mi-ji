@@ -346,12 +346,12 @@ footer div p {
 		  margin: 0;
 	}
 	
-	.blur {
-		  opacity: 0;
+	.swiper-slide-active .clear {
+	  	opacity: 1;
 	}
 
-	.swiper-slide-active .blur {
-	  	opacity: 1;
+	.photo:hover .clear {
+			opacity: unset;
 	}
 
 	/* Slideshow container */
@@ -368,12 +368,12 @@ footer div p {
 
 	.tina {
     padding: 0px 10px;
-}
+	}
 
-.tina img {
-			width: 100%; 
-			height: auto;
-}
+	.tina img {
+				width: 100%; 
+				height: auto;
+	}
 
 	/* Next & previous buttons */
 	.prev,
