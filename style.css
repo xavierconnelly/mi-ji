@@ -344,12 +344,14 @@ footer div p {
 		  height: auto;
 		  display: block;
 		  margin: 0;
-		  filter: grayscale(1);
+	}
+	
+	.blur {
+		  opacity: 0;
 	}
 
-
-	.swiper-slide-active img{
-	  	filter: grayscale(0);
+	.swiper-slide-active .blur {
+	  	opacity: 1;
 	}
 
 	/* Slideshow container */
@@ -425,21 +427,4 @@ footer div p {
 	    opacity: 1;
 	  }
 	}
-}
-
-/* Testing */
-
-.limited {
-    overflow: scroll;
-    height: 100vh;
-    padding: 30px 10px 100px 10px;
-}
-
-
-.images-scroll {
-
-}
-
-.limited img {
-	width:  100%;
 }
