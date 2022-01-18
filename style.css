@@ -204,6 +204,13 @@ footer div p {
     z-index: 2;
 }
 
+/***************************************** MEDIA QUERY DESKTOP */
+
+@media only screen and (max-width: 500px) {
+	.photo:hover .clear {
+			opacity: unset;
+	}
+}
 
 
 /***************************************** MEDIA QUERY DESKTOP */
@@ -250,7 +257,7 @@ footer div p {
 /***************************************** MEDIA QUERY MOBILE */
 
 @media only screen 
-  and (min-device-width: 300px) 
+  and (min-device-width: 200px) 
   and (max-device-width: 812px) {
 
 /***************************************** GENERAL */
@@ -322,7 +329,8 @@ footer div p {
 	    z-index: 10;
 	    width: calc(100% - 20px);
 	    margin: 0px 10px;
-	    padding: 0px 0px 20px 0px;
+			padding: 0px;
+    	border-bottom: 10px solid white;
 	}
 
 /***************************************** SWIPERS */
@@ -348,10 +356,6 @@ footer div p {
 	
 	.swiper-slide-active .clear {
 	  	opacity: 1;
-	}
-
-	.photo:hover .clear {
-			opacity: unset;
 	}
 
 	/* Slideshow container */
