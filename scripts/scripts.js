@@ -137,7 +137,7 @@ const vertical = new Swiper(".vertical", {
   allowSlidePrev: true,
   longSwipes: false,
   setWrapperSize: true,
-  threshold: "20px"
+  momentum: false
 });
 
 
