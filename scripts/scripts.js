@@ -1,6 +1,7 @@
 ////////////////////////////////////////////////////////////////////////////////
 // Desktop — Scrolling
 
+// NEEDS CHANGING WHEN ADDING/REMOVING IMAGES
 const fifteen = new Swiper(".fifteen", {
   // Optional parameters
   direction: "horizontal",
@@ -131,7 +132,9 @@ const three = new Swiper(".three", {
   loop: true,
   freeMode: true,
   slidesPerView: "auto",
-  loopedSlides: 3
+  loopedSlides: 3,
+  centeredSlides: true,
+  allowSlidePrev: true
 });
 
 const four = new Swiper(".four", {
@@ -140,7 +143,9 @@ const four = new Swiper(".four", {
   loop: true,
   freeMode: true,
   slidesPerView: "auto",
-  loopedSlides: 4
+  loopedSlides: 4,
+  centeredSlides: true,
+  allowSlidePrev: true
 });
 
 const five = new Swiper(".five", {
@@ -149,7 +154,10 @@ const five = new Swiper(".five", {
   loop: true,
   freeMode: true,
   slidesPerView: "auto",
-  loopedSlides: 5
+  loopedSlides: 5,
+  centeredSlides: true,
+  allowSlidePrev: true,
+  height: "1000px"
 });
 
 
