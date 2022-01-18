@@ -179,8 +179,6 @@ footer div p {
 		opacity: 0;
 }
 
-
-
 .column .words-box {
   	display: none;
 }
@@ -209,7 +207,6 @@ footer div p {
 				opacity: 1;
 		}
 }
-
 
 /***************************************** MEDIA QUERY DESKTOP */
 
@@ -334,10 +331,11 @@ footer div p {
 /***************************************** SWIPERS */
 
 	.newswiper {
-		  height: 100vh;
-		  overflow: hidden;
-		  padding: 10px;
-		  z-index: 1;
+		height: 200vh; /* from 100vh */
+    overflow: hidden;
+    padding: 10px;
+    z-index: 1;
+    transform: translateY(-50vh); * added with above */
 	}
 
 	.swiper-slide {
