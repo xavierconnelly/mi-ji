@@ -316,11 +316,13 @@ footer div p {
 
 /***************************************** WORDS */
 
+	.words-box {
+		top: unset;
+		bottom: 0px;
+	}
+
 	.words {
-	    background: pink;
 	    position: fixed;
-	    top: unset;
-	    bottom: 0px;
 	    z-index: 10;
 	    width: calc(100% - 20px);
 	    margin: 0px 10px;
