@@ -134,7 +134,8 @@ const three = new Swiper(".three", {
   slidesPerView: "auto",
   loopedSlides: null,
   centeredSlides: true,
-  allowSlidePrev: true
+  allowSlidePrev: true,
+  longSwipes: false
 });
 
 const four = new Swiper(".four", {
@@ -145,7 +146,8 @@ const four = new Swiper(".four", {
   slidesPerView: "auto",
   loopedSlides: null,
   centeredSlides: true,
-  allowSlidePrev: true
+  allowSlidePrev: true,
+  longSwipes: false
 });
 
 const five = new Swiper(".five", {
@@ -157,7 +159,6 @@ const five = new Swiper(".five", {
   loopedSlides: null,
   centeredSlides: true,
   allowSlidePrev: true,
-  height: "1000px",
   longSwipes: false
 });
 
