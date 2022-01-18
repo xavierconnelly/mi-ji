@@ -179,9 +179,7 @@ footer div p {
 		opacity: 0;
 }
 
-.photo:hover .clear {
-		opacity: 1;
-}
+
 
 .column .words-box {
   	display: none;
@@ -206,10 +204,10 @@ footer div p {
 
 /***************************************** MEDIA QUERY DESKTOP */
 
-@media only screen and (max-width: 500px) {
-	.photo:hover .clear {
-			opacity: unset;
-	}
+@media only screen and (min-width: 500px) {
+		.photo:hover .clear {
+				opacity: 1;
+		}
 }
 
 
