@@ -126,7 +126,7 @@ function showFooter() {
 ////////////////////////////////////////////////////////////////////////////////
 // Mobile — Scrolling
 
-const three = new Swiper(".three", {
+const vertical = new Swiper(".vertical", {
   // Optional parameters
   direction: "vertical",
   loop: true,
@@ -136,33 +136,8 @@ const three = new Swiper(".three", {
   centeredSlides: true,
   allowSlidePrev: true,
   longSwipes: false,
-  setWrapperSize: true
-});
-
-const four = new Swiper(".four", {
-  // Optional parameters
-  direction: "vertical",
-  loop: true,
-  freeMode: true,
-  slidesPerView: "auto",
-  loopedSlides: null,
-  centeredSlides: true,
-  allowSlidePrev: true,
-  longSwipes: false,
-  setWrapperSize: true
-});
-
-const five = new Swiper(".five", {
-  // Optional parameters
-  direction: "vertical",
-  loop: true,
-  freeMode: true,
-  slidesPerView: "auto",
-  loopedSlides: null,
-  centeredSlides: true,
-  allowSlidePrev: true,
-  longSwipes: false,
-  setWrapperSize: true
+  setWrapperSize: true,
+  threshold: "20px"
 });
 
 
