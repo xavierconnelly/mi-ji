@@ -197,7 +197,7 @@ footer div p {
     width: 100%;
     position: relative;
     top: -3px;
-    z-index: 2;
+    z-index: 10;
 }
 
 /***************************************** MEDIA QUERY DESKTOP */
@@ -317,16 +317,14 @@ footer div p {
 /***************************************** WORDS */
 
 	.words-box {
+		position: fixed;
 		top: unset;
 		bottom: 0px;
 	}
 
 	.words {
-	    position: fixed;
-	    z-index: 10;
-	    width: calc(100% - 20px);
+			display: block;
 	    margin: 0px 10px;
-			padding: 0px;
     	border-bottom: 10px solid white;
 	}
 
