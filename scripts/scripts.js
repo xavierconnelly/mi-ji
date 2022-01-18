@@ -143,7 +143,7 @@ const four = new Swiper(".four", {
   loop: true,
   freeMode: true,
   slidesPerView: "auto",
-  loopedSlides: 4,
+  loopedSlides: 0,
   centeredSlides: true,
   allowSlidePrev: true
 });
@@ -154,10 +154,11 @@ const five = new Swiper(".five", {
   loop: true,
   freeMode: true,
   slidesPerView: "auto",
-  loopedSlides: 5,
+  loopedSlides: 0,
   centeredSlides: true,
   allowSlidePrev: true,
-  height: "1000px"
+  height: "1000px",
+  longSwipes: false
 });
 
 
