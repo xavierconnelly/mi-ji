@@ -368,6 +368,7 @@ footer div p {
 				height: 100%;
 			  position: relative;
 			  margin: auto;
+			  opacity: 1;
 		}
 
 		/* project container */
