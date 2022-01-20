@@ -196,6 +196,7 @@ footer div p {
 .words-box {
     position: relative;
     top: -2px;
+    z-index: 10;
     box-shadow: rgb(255 255 255) 0px -6px 0px 0px inset;
 }
 
