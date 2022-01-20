@@ -337,11 +337,11 @@ footer div p {
 /***************************************** SWIPERS */
 
 	.newswiper {
-		height: 200vh; /* from 100vh */
+		height: 100%; /* from 100vh  or 200vh*/
     overflow: hidden;
     padding: 10px;
     z-index: 1;
-    transform: translateY(-50vh); * added with above */
+   /* transform: translateY(-50vh);  added with above */
 	}
 
 	.swiper-slide {
