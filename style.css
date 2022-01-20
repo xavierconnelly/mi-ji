@@ -22,12 +22,16 @@ html {
 body {
 	position:absolute; top:0; bottom:0; right:0; left:0;
 	background: white;
-	transition: .8s;
 	height: 100%;
 	min-height: 100vh;
 	overflow: hidden;
 	padding: 0;
 	margin: 0;
+	-webkit-transition: all 0.8s ease;
+	-moz-transition: all 0.8s ease;
+	-ms-transition: all 0.8s ease;
+	-o-transition: all 0.8s ease;
+	transition: 0.8s ease;
 }
 
 a {
@@ -72,8 +76,12 @@ footer {
 		position: fixed;
 		bottom: 0;
 		width: 100%;
-		transition: 2s;
 		z-index: 20;
+	-webkit-transition: all 1.5s ease;
+	-moz-transition: all 1.5s ease;
+	-ms-transition: all 1.5s ease;
+	-o-transition: all 1.5s ease;
+	transition: 1.5s ease;
 }
 
 footer div {
@@ -174,8 +182,12 @@ footer div p {
 .photo,
 .plan {
 		overflow: hidden;
-		transition: height 1s ease-out;
 		height: auto;
+		-webkit-transition: all 1s ease-out;
+		-moz-transition: all 1s ease-out;
+		-ms-transition: all 1s ease-out;
+		-o-transition: all 1s ease-out;
+		transition: 1s ease-out;
 }
 
 .photo .clear {
@@ -197,6 +209,10 @@ footer div p {
     position: relative;
     top: -2px;
     z-index: 10;
+    -webkit-box-shadow: rgb(255 255 255) 0px -6px 0px 0px inset;
+		-moz-box-shadow: rgb(255 255 255) 0px -6px 0px 0px inset;
+		-ms-box-shadow: rgb(255 255 255) 0px -6px 0px 0px inset;
+		-o-box-shadow: rgb(255 255 255) 0px -6px 0px 0px inset;
     box-shadow: rgb(255 255 255) 0px -6px 0px 0px inset;
 }
 
@@ -215,15 +231,15 @@ footer div p {
 		}
 }
 
-/***************************************** MEDIA QUERY DESKTOP */
+/***************************************** MEDIA QUERY DESKTOP SMALL */
 
 @media only screen and (max-height: 750px) {
 	.swiper-slide  {
-		width: 300px;
+			width: 300px;
 	}
 
 	.column {
-		width: 300px;
+			width: 300px;
 	    height: auto;
 	}
 
@@ -235,14 +251,17 @@ footer div p {
 	}
 }
 
+/***************************************** MEDIA QUERY DESKTOP SMALLER */
+
 @media only screen and (max-height: 600px) {
+
 	.swiper-slide {
-		width: 200px;
-		height: auto;
+			width: 200px;
+			height: auto;
 	}
 
 	.column {
-		width: 200px;
+			width: 200px;
 	    height: auto;
 	}
 
@@ -268,10 +287,13 @@ footer div p {
 		    font-size: .93em;
 	  }
 
+
+/* delete this */
 		img {
 				-webkit-user-select: none;
 				-khtml-user-select: none;
 				-moz-user-select: none;
+				-ms-user-select: none;
 				-o-user-select: none;
 				user-select: none;
 		}
@@ -297,23 +319,27 @@ footer div p {
 /***************************************** BOTTOM */
 
 		footer {
-		position: fixed;
-		bottom: 30%;
-		height: 100vh;
-		width: 100%;
-		transition: 1s;
-		background: rgba(255, 255, 255, 0.95);
+				position: fixed;
+				bottom: 30%;
+				height: 100vh;
+				width: 100%;
+				background: rgba(255, 255, 255, 0.95);
+				-webkit-transition: all 1s ease;
+				-moz-transition: all 1s ease;
+				-ms-transition: all 1s ease;
+				-o-transition: all 1s ease;
+				transition: 1s ease;
 		}
 		footer div {
-		align-items: flex-start;
-		flex-flow: row wrap;
-		position: absolute;
-		bottom: 0;
+				align-items: flex-start;
+				flex-flow: row wrap;
+				position: absolute;
+				bottom: 0;
 		}
 
 		footer div p {
-		padding: 10px;
-		flex: 1 50%;
+				padding: 10px;
+				flex: 1 50%;
 		}
 
 		#millie {order: 1;}
@@ -323,115 +349,112 @@ footer div p {
 
 /***************************************** WORDS */
 
-	.words-box {
-		position: fixed;
-		top: unset;
-		bottom: 0px;
-	}
+		.words-box {
+				position: fixed;
+				top: unset;
+				bottom: 0px;
+		}
 
-	.words {
-			display: block;
-	    margin: 0px 10px;
-    	border-bottom: 10px solid white;
-	}
+		.words {
+				display: block;
+		    margin: 0px 10px;
+		  	border-bottom: 10px solid white;
+		}
 
 /***************************************** SWIPERS */
 
-	.newswiper {
-		height: 100%; /* from 100vh  or 200vh*/
-    overflow: hidden;
-    padding: 10px;
-    z-index: 1;
-   /* transform: translateY(-50vh);  added with above */
-	}
+		.newswiper {
+				height: 100%; /* from 100vh  or 200vh*/
+		   /* transform: translateY(-50vh);  added with above */
+		    overflow: hidden;
+		    padding: 10px;
+		    z-index: 1;
+		}
 
-	.swiper-slide {
-	  	height: unset;
-	  	width: unset;
-	}
+		.swiper-slide {
+		  	height: unset;
+		  	width: unset;
+		}
 
-	.swiper-slide img {
-		  width: 100%;
-		  height: auto;
-		  display: block;
-		  margin: 0;
-	}
-	
-	.swiper-slide-active .clear {
-	  	opacity: 1;
-	}
+		.swiper-slide img {
+			  width: 100%;
+			  height: auto;
+			  display: block;
+			  margin: 0;
+		}
+		
+		.swiper-slide-active .clear {
+		  	opacity: 1;
+		}
 
-	/* Slideshow container */
-	.slideshow-container {
-		  position: relative;
-		  margin: auto;
-	}
+		/* Slideshow container */
+		.slideshow-container {
+			  position: relative;
+			  margin: auto;
+		}
 
-	/* Hide the images by default */
-	.mySlides {
-		  display: none;
-		  z-index: -1;
-	}
+		/* Hide the images by default */
+		.mySlides {
+			  display: none;
+			  z-index: -1;
+		}
 
-	.tina {
-    padding: 0px 10px;
-	}
+		.tina {
+	    	padding: 0px 10px;
+		}
 
-	.tina img {
+		.tina img {
 				width: 100%; 
 				height: auto;
-	}
+		}
 
-	/* Next & previous buttons */
-	.prev,
-	.next {
-    z-index: 15;
-    position: fixed;
-    top: 50%;
-    width: auto;
-    padding: 40px 15px;
-    /* transition: 0.6s ease; */
-    transform: translateY(-50%);
-    user-select: none;
-  }
-
-	.prev img,
-	.next img {
-    height: 25px;
-	}
-
-	.prev {
-	  	left: 0;
-	}
-
-	/* Position the "next button" to the right */
-	.next {
-	  	right: 0;
-	}
-
-	/* Fading animation */
-	.fade {
-		  -webkit-animation-name: fade;
-		  -webkit-animation-duration: 1.5s;
-		  animation-name: fade;
-		  animation-duration: 1.5s;
-	}
-
-	@-webkit-keyframes fade {
-	  from {
-	    opacity: 0.4;
+		.prev,
+		.next {
+		    z-index: 15;
+		    position: fixed;
+		    top: 50%;
+		    width: auto;
+		    padding: 40px 15px;
+		    /* transition: 0.6s ease; */
+		    transform: translateY(-50%);
+		    user-select: none;
 	  }
-	  to {
-	    opacity: 1;
-	  }
-	}
 
-	@keyframes fade {
-	  from {
-	    opacity: 0.4;
-	  }
-	  to {
-	    opacity: 1;
-	  }
-	}
+		.prev img,
+		.next img {
+	    	height: 25px;
+		}
+
+		.prev {
+		  	left: 0;
+		}
+
+		.next {
+		  	right: 0;
+		}
+
+		.fade {
+			  -webkit-animation-name: fade;
+			  -webkit-animation-duration: 1.5s;
+			  animation-name: fade;
+			  animation-duration: 1.5s;
+		}
+
+		@-webkit-keyframes fade {
+		  from {
+		    opacity: 0.4;
+		  }
+		  to {
+		    opacity: 1;
+		  }
+		}
+
+		@keyframes fade {
+		  from {
+		    opacity: 0.4;
+		  }
+		  to {
+		    opacity: 1;
+		  }
+		}
 }
