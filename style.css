@@ -363,9 +363,23 @@ footer div p {
 
 /***************************************** SWIPERS */
 
+		/* Slideshow container - (flick between project) */
+		.slideshow-container {
+				height: 100%;
+			  position: relative;
+			  margin: auto;
+		}
+
+		/* project container */
+		.mySlides {
+				height: 100%;
+			  display: none;	/* Hide the images by default */
+			  z-index: -1;
+		}
+
+		/* vertical swiper - could possibly merge with mySlides above */
 		.newswiper {
-				height: 100%; /* from 100vh  or 200vh*/
-		   /* transform: translateY(-50vh);  added with above */
+				height: 100%; /* from 100vh  or 200vh*/ 		   /* transform: translateY(-50vh);  added with above */
 		    overflow: hidden;
 		    padding: 10px;
 		    z-index: 1;
@@ -385,18 +399,6 @@ footer div p {
 		
 		.swiper-slide-active .clear {
 		  	opacity: 1;
-		}
-
-		/* Slideshow container */
-		.slideshow-container {
-			  position: relative;
-			  margin: auto;
-		}
-
-		/* Hide the images by default */
-		.mySlides {
-			  display: none;
-			  z-index: -1;
 		}
 
 		.tina {
