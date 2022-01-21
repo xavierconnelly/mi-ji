@@ -194,7 +194,7 @@ footer div p {
 		position: absolute;
 		top: 0;
 		left: 0;
-		opacity: 0;
+		opacity: 1; /* CHANGE BACK  to 0 */
 }
 
 .column .words-box {
