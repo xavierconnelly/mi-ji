@@ -130,7 +130,7 @@ const vertical = new Swiper(".vertical", {
   // Optional parameters
   direction: "vertical",
   loop: true,
-  freeMode: true,
+  freeMode: false,
   slidesPerView: "auto",
   loopedSlides: 3,
   centeredSlides: true,
