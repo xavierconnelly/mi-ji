@@ -13,6 +13,7 @@
 	font-size: 0.9rem;
 	-webkit-font-smoothing: antialiased !important;
 	text-rendering: optimizeLegibility !important;
+	cursor: unset;
 }
 
 html {
