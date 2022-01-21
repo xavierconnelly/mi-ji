@@ -127,14 +127,16 @@ function showFooter() {
 // Mobile — Scrolling
 
 const vertical = new Swiper(".vertical", {
-  // Optional parameters
+  // styling
   direction: "vertical",
+  centeredSlides: true,
+  //loop
   loop: true,
   slidesPerView: 1,
   loopedSlides: 3,
-  freeMode: false, // allow/stop scroll momentum
-  centeredSlides: true,
   allowSlidePrev: false, // stop scrolling up on first
+  // speed
+  freeMode: true, // allow/stop scroll momentum
   longSwipes: false // stop 
   // setWrapperSize: true
 });
