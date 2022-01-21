@@ -129,7 +129,7 @@ function showFooter() {
 const vertical = new Swiper(".vertical", {
   // Optional parameters
   direction: "vertical",
-  loop: false,
+  loop: true,
   slidesPerView: "auto",
   loopedSlides: 3,
   freeMode: false,
