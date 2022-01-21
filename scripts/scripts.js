@@ -131,10 +131,10 @@ const vertical = new Swiper(".vertical", {
   direction: "vertical",
   loop: true,
   slidesPerView: "auto",
-  loopedSlides: 2,
-  freeMode: false,
+  loopedSlides: 3,
+  freeMode: true,
   centeredSlides: true,
-  allowSlidePrev: true, // stop scrolling up on first
+  allowSlidePrev: false, // stop scrolling up on first
   longSwipes: false // stop 
   // setWrapperSize: true
 });
