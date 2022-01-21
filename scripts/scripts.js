@@ -132,7 +132,7 @@ const vertical = new Swiper(".vertical", {
   loop: true,
   freeMode: true,
   slidesPerView: "auto",
-  loopedSlides: null,
+  loopedSlides: 3,
   centeredSlides: true,
   allowSlidePrev: false,
   longSwipes: false,
