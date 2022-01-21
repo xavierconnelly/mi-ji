@@ -130,9 +130,9 @@ const vertical = new Swiper(".vertical", {
   // Optional parameters
   direction: "vertical",
   loop: true,
-  slidesPerView: "auto",
+  slidesPerView: 1,
   loopedSlides: 3,
-  freeMode: true,
+  freeMode: false, // allow/stop scroll momentum
   centeredSlides: true,
   allowSlidePrev: false, // stop scrolling up on first
   longSwipes: false // stop 
