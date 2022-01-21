@@ -191,11 +191,18 @@ footer div p {
 		transition: 1s ease-out;
 }
 
+
+/* CHANGE BACK  to below, maybe
 .photo .clear {
 		position: absolute;
 		top: 0;
 		left: 0;
-		opacity: 1; /* CHANGE BACK  to 0 */
+		opacity: 0; 
+}
+ */
+
+.photo .clear {
+		opacity: 1; 
 }
 
 .column .words-box {
