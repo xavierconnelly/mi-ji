@@ -134,10 +134,9 @@ const vertical = new Swiper(".vertical", {
   slidesPerView: "auto",
   loopedSlides: 3,
   centeredSlides: false,
-  allowSlidePrev: true,
+  allowSlidePrev: false,
   longSwipes: false,
-  setWrapperSize: true,
-  momentum: false
+  setWrapperSize: true
 });
 
 
