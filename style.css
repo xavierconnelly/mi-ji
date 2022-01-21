@@ -383,7 +383,7 @@ footer div p {
 		.newswiper {
 				height: 100%; /* from 100vh  or 200vh*/ 		   /* transform: translateY(-50vh);  added with above */
 		    overflow: hidden;
-		    padding: 10px;
+		    padding: 80px 10px 20px 10px;
 		    z-index: 1;
 		}
 
