@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.3.6,
+* Autoprefixer: v10.3.1
+* Browsers: last 4 version
+*/
+
 /***************************************** GLOBALS */
 
 @font-face {
@@ -8,7 +15,8 @@
 
 * {
 	margin: 0;
-	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
 	font-family: "Andale", times;
 	font-size: 0.9rem;
 	-webkit-font-smoothing: antialiased !important;
@@ -29,9 +37,9 @@ body {
 	padding: 0;
 	margin: 0;
 	-webkit-transition: all 0.8s ease;
-	-moz-transition: all 0.8s ease;
-	-ms-transition: all 0.8s ease;
 	-o-transition: all 0.8s ease;
+	-webkit-transition: 0.8s ease;
+	-o-transition: 0.8s ease;
 	transition: 0.8s ease;
 }
 
@@ -79,17 +87,22 @@ footer {
 		width: 100%;
 		z-index: 20;
 	-webkit-transition: all 1.5s ease;
-	-moz-transition: all 1.5s ease;
-	-ms-transition: all 1.5s ease;
 	-o-transition: all 1.5s ease;
+	-webkit-transition: 1.5s ease;
+	-o-transition: 1.5s ease;
 	transition: 1.5s ease;
 }
 
 footer div {
 		width: 100%;
+		display: -webkit-box;
+		display: -ms-flexbox;
 		display: flex;
-		flex-wrap: wrap;
-		align-items: end;
+		-ms-flex-wrap: wrap;
+		    flex-wrap: wrap;
+		-webkit-box-align: end;
+		    -ms-flex-align: end;
+		        align-items: end;
 }
 
 footer div p {
@@ -98,10 +111,10 @@ footer div p {
 		text-align: left;
 }
 
-#office {order: 1;}
-#millie {order: 2;}
-#jimmy {order: 3;}
-#rego {order: 4;}
+#office {-webkit-box-ordinal-group: 2;-ms-flex-order: 1;order: 1;}
+#millie {-webkit-box-ordinal-group: 3;-ms-flex-order: 2;order: 2;}
+#jimmy {-webkit-box-ordinal-group: 4;-ms-flex-order: 3;order: 3;}
+#rego {-webkit-box-ordinal-group: 5;-ms-flex-order: 4;order: 4;}
 
 /***************************************** COLOURS
 
@@ -185,9 +198,9 @@ footer div p {
 		overflow: hidden;
 		height: auto;
 		-webkit-transition: all 1s ease-out;
-		-moz-transition: all 1s ease-out;
-		-ms-transition: all 1s ease-out;
 		-o-transition: all 1s ease-out;
+		-webkit-transition: 1s ease-out;
+		-o-transition: 1s ease-out;
 		transition: 1s ease-out;
 }
 
@@ -218,7 +231,6 @@ footer div p {
     top: -2px;
     z-index: 10;
     -webkit-box-shadow: rgb(255 255 255) 0px -6px 0px 0px inset;
-		-moz-box-shadow: rgb(255 255 255) 0px -6px 0px 0px inset;
 		-ms-box-shadow: rgb(255 255 255) 0px -6px 0px 0px inset;
 		-o-box-shadow: rgb(255 255 255) 0px -6px 0px 0px inset;
     box-shadow: rgb(255 255 255) 0px -6px 0px 0px inset;
@@ -299,7 +311,6 @@ footer div p {
 /* delete this */
 		img {
 				-webkit-user-select: none;
-				-khtml-user-select: none;
 				-moz-user-select: none;
 				-ms-user-select: none;
 				-o-user-select: none;
@@ -333,27 +344,34 @@ footer div p {
 				width: 100%;
 				background: rgba(255, 255, 255, 0.95);
 				-webkit-transition: all 1s ease;
-				-moz-transition: all 1s ease;
-				-ms-transition: all 1s ease;
 				-o-transition: all 1s ease;
+				-webkit-transition: 1s ease;
+				-o-transition: 1s ease;
 				transition: 1s ease;
 		}
 		footer div {
-				align-items: flex-start;
-				flex-flow: row wrap;
+				-webkit-box-align: start;
+				    -ms-flex-align: start;
+				        align-items: flex-start;
+				-webkit-box-orient: horizontal;
+				-webkit-box-direction: normal;
+				    -ms-flex-flow: row wrap;
+				        flex-flow: row wrap;
 				position: absolute;
 				bottom: 0;
 		}
 
 		footer div p {
 				padding: 10px;
-				flex: 1 50%;
+				-webkit-box-flex: 1;
+				    -ms-flex: 1 50%;
+				        flex: 1 50%;
 		}
 
-		#millie {order: 1;}
-		#jimmy {order: 2;}
-		#office {order: 3;}
-		#rego {order: 4;}
+		#millie {-webkit-box-ordinal-group: 2;-ms-flex-order: 1;order: 1;}
+		#jimmy {-webkit-box-ordinal-group: 3;-ms-flex-order: 2;order: 2;}
+		#office {-webkit-box-ordinal-group: 4;-ms-flex-order: 3;order: 3;}
+		#rego {-webkit-box-ordinal-group: 5;-ms-flex-order: 4;order: 4;}
 
 /***************************************** WORDS */
 
@@ -427,8 +445,13 @@ footer div p {
 		    width: auto;
 		    padding: 40px 15px;
 		    /* transition: 0.6s ease; */
-		    transform: translateY(-50%);
-		    user-select: none;
+		    -webkit-transform: translateY(-50%);
+		        -ms-transform: translateY(-50%);
+		            transform: translateY(-50%);
+		    -webkit-user-select: none;
+		       -moz-user-select: none;
+		        -ms-user-select: none;
+		            user-select: none;
 	  }
 
 		.prev img,
