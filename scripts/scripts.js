@@ -123,24 +123,6 @@ function showFooter() {
   document.getElementsByClassName("slideshow-container").style.opacity = 0.5;
 }
 
-////////////////////////////////////////////////////////////////////////////////
-// Mobile — Scrolling
-
-const vertical = new Swiper(".vertical", {
-  // styling
-  direction: "vertical",
-  centeredSlides: true,
-  //loop
-  loop: true,
-  slidesPerView: 1,
-  loopedSlides: 3,
-  allowSlidePrev: false, // stop scrolling up on first
-  // speed
-  freeMode: true, // allow/stop scroll momentum
-  longSwipes: false // stop 
-  // setWrapperSize: true
-});
-
 
 ////////////////////////////////////////////////////////////////////////////////
 // Mobile — Project nav/slideshow
