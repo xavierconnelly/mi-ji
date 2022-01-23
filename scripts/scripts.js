@@ -138,7 +138,7 @@ const vertical = new Swiper(".vertical", {
   allowSlidePrev: true, // can scroll backwards?
   // speed
   freeMode: true, // allow/stop scroll momentum
-  longSwipes: false // stop 
+  longSwipes: true // stop 
   // setWrapperSize: true
 });
 
