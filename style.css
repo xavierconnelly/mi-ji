@@ -415,8 +415,8 @@ footer div p {
 		}
 
 		.swiper-slide {
-		  	height: unset;
-		  	width: unset;
+		  	height: auto;
+		  	width: 100%;
 		}
 
 		.swiper-slide img {
