@@ -209,15 +209,15 @@ footer div p {
 
 /* CHANGE BACK  to below, maybe
 .photo .clear {
-		position: absolute;
-		top: 0;
-		left: 0;
-		opacity: 0; 
+		opacity: 1; 
 }
  */
 
 .photo .clear {
-		opacity: 1; 
+		position: absolute;
+		top: 0;
+		left: 0;
+		opacity: 0; 
 }
 
 .column .words-box {
