@@ -1,77 +1,496 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <!-- Meta -->
-    <meta charset="utf-8">
-    <title>Office Mi-Ji</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Office MI—JI is an architectural office.">
-    <meta name="keywords" content="melbourne, architect, small, arctictecture, office, millie, anderson, carter, james, jimmy, fitzroy, local">
-    <meta name="author" content="Office Mi-Ji">
-    <!-- Chrome, Firefox OS and Opera -->
-    <meta name="theme-color" content="rgb(255, 80, 0)">
-    <!-- CSS -->
-    <link rel="stylesheet" href="/style.css">
-    <link rel="stylesheet" href="/swiper.css"/>
-    <link rel="stylesheet" href="/normalize.css">
-    <!-- Global site tag (gtag.js) - Google Analytics  CHANGE THIS
-    script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-136398833-1"></script> --> 
-  </head>
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.3.6,
+* Autoprefixer: v10.3.1
+* Browsers: last 4 version
+*/
 
-  <body>
+/***************************************** GLOBALS */
 
-      <div class="mySlides fade yellow">  
-        <!-- Slider main container -->
-        <div class="vertical newswiper">
-          <!-- Additional required wrapper -->
-          <div class="swiper-wrapper">
-            <!-- Slides -->
-            <div class="swiper-slide photo">
-              <picture class="clear">
-                <source type="image/webp" srcset="./image400/APavillion/01_400.webp">
-                <source type="image/jpg" srcset="./image400/APavillion/01_400.jpg">
-                <img src="./image400/APavillion/01_400.JPG" width="400" height="1200" alt="photo of the A Pavilion project">
-              </picture>
-            </div>
-          </div>
-        </div>
-        <a class="prev" onclick="plusSlides(-1)">
-          <img src="https://mi-ji.com.au/assets/prev_yellow.svg">
-        </a>
-        <a class="next" onclick="plusSlides(1)">
-          <img src="https://mi-ji.com.au/assets/next_yellow.svg">
-        </a>
-        <div class="words-box">
-          <span class="words">
-            A Pavilion - Collingwood, Australia 2021 (in collaboration with client)
-          </span>
-        </div>
-      </div>
+@font-face {
+	font-family: "Andale";
+	src: url("https://mi-ji.com.au/ANDALEMO.woff") format("woff");
+	font-display: swap
+}
 
-    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
-    <script type="text/javascript">
-      
-      ////////////////////////////////////////////////////////////////////////////////
-// Mobile — Scrolling
+* {
+	margin: 0;
 
-const vertical = new Swiper(".vertical", {
-  // styling
-  direction: "vertical",
-  centeredSlides: true,
-  //loop
-  loop: true,
-  slidesPerView: "auto",
-  spaceBetween: 30,
-  loopedSlides: 3,
-  allowSlidePrev: true, // can scroll backwards?
-  // speed
-  freeMode: true, // allow/stop scroll momentum
-  longSwipes: false // stop 
-  // setWrapperSize: true
-});
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	font-family: "Andale", times;
+	font-size: 0.9rem;
+	-webkit-font-smoothing: antialiased !important;
+	text-rendering: optimizeLegibility !important;
+	cursor: unset;
+}
 
-    </script>
+html {
+  height: 100%;
+}
+
+body {
+	position:absolute; top:0; bottom:0; right:0; left:0;
+	background: white;
+	height: 100%;
+	min-height: 100vh;
+	overflow: hidden;
+	padding: 0;
+	margin: 0;
+	-webkit-transition: all 0.8s ease;
+	-o-transition: all 0.8s ease;
+	-webkit-transition: 0.8s ease;
+	-o-transition: 0.8s ease;
+	transition: 0.8s ease;
+}
+
+a {
+	color: initial;
+	text-decoration: none;
+}
+
+img {
+  aspect-ratio: attr(width) / attr(height);
+}
+
+.mobile {
+	display:  none;
+}
+
+/***************************************** TOP */
+
+header {
+		height: 30px;
+		width: 100%;
+		padding: 1px 10px; 
+		background: white;
+		position: fixed;
+		z-index: 40;
+		/* display: flex; */
+		/* align-items: center; */
+}
+
+header p {
+		float: left;
+		line-height: 30px;
+}
+
+header img {
+		float: right;
+		height: 100%;
+}
+
+/***************************************** BOTTOM */
+
+footer {
+		position: fixed;
+		bottom: 0;
+		width: 100%;
+		z-index: 20;
+	-webkit-transition: all 1.5s ease;
+	-o-transition: all 1.5s ease;
+	-webkit-transition: 1.5s ease;
+	-o-transition: 1.5s ease;
+	transition: 1.5s ease;
+}
+
+footer div {
+		width: 100%;
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		-ms-flex-wrap: wrap;
+		    flex-wrap: wrap;
+		-webkit-box-align: end;
+		    -ms-flex-align: end;
+		        align-items: end;
+}
+
+footer div p {
+		width: 25%;
+		padding: 10px 10px 10px 10px;
+		text-align: left;
+}
+
+#office {-webkit-box-ordinal-group: 2;-ms-flex-order: 1;order: 1;}
+#millie {-webkit-box-ordinal-group: 3;-ms-flex-order: 2;order: 2;}
+#jimmy {-webkit-box-ordinal-group: 4;-ms-flex-order: 3;order: 3;}
+#rego {-webkit-box-ordinal-group: 5;-ms-flex-order: 4;order: 4;}
+
+/***************************************** COLOURS
+
+.red .carousel {background: rgb(255, 80, 0);}
+.grey .carousel {background: rgb(241, 241, 241);}
+.green .carousel {background: rgb(0, 200, 80);}
+.pistachio .carousel {background: rgb(245, 245, 200);}
+.yellow .carousel {background: rgb(250, 240, 0);}
+.pink .carousel {background: rgb(255, 175, 195);} */
 
 
-  </body>
-</html>
+.red .words-box {background: rgb(255, 80, 0);}
+.grey .words-box {background: rgb(241, 241, 241);}
+.green .words-box {background: rgb(0, 200, 80);}
+.pistachio .words-box {background: rgb(245, 245, 200);}
+.yellow .words-box {background: rgb(250, 240, 0);}
+.pink .words-box {background: rgb(255, 175, 195);}
+
+/***************************************** CURSORS */
+
+.red .photo {cursor: url(/assets/cursor_red.svg), pointer;}
+.grey .photo {cursor: url(/assets/cursor_grey.svg), pointer;}
+.green .photo {cursor: url(/assets/cursor_green.svg), pointer;}
+.pistachio .photo {cursor: url(/assets/cursor_pistachio.svg), pointer;}
+.yellow .photo {cursor: url(/assets/cursor_yellow.svg), pointer;}
+.pink .photo {cursor: url(/assets/cursor_pink.svg), pointer;}
+
+.red .plan {cursor: url(/assets/cursor_red_image.svg), pointer;}
+.grey .plan {cursor: url(/assets/cursor_grey_image.svg), pointer;}
+.green .plan {cursor: url(/assets/cursor_green_image.svg), pointer;}
+.pistachio .plan {cursor: url(/assets/cursor_pistachio_image.svg), pointer;}
+.yellow .plan {cursor: url(/assets/cursor_yellow_image.svg), pointer;}
+.pink .plan {cursor: url(/assets/cursor_pink_image.svg), pointer;}
+
+/***************************************** SCROLL THINGS */
+
+.swiper {
+  display: inline-block;
+  float: left;
+  width: 100vw;
+  height: 100vh; 
+  background: ;
+  overflow: hidden;
+  list-style: none;
+  padding: 0;
+  z-index: 1;
+  position: fixed;
+  top: 29px;
+}
+
+/*.swiper-slide {
+  height: unset;
+  width: 400px;
+}*/
+
+.column {
+		width: 400px;
+		height: 600px; 
+		padding: 0;
+		margin: 0;
+}
+
+/* not sure aboout this*/
+.swiper-slide img {
+	  width: 100%;
+	  display: block;
+	  margin: 0;
+}
+
+.carousel img {
+	  width: 400px;
+	  height: auto;
+}
+
+.photo {
+		position: relative;
+}
+
+.photo,
+.plan {
+		overflow: hidden;
+		height: auto;
+		-webkit-transition: all 1s ease-out;
+		-o-transition: all 1s ease-out;
+		-webkit-transition: 1s ease-out;
+		-o-transition: 1s ease-out;
+		transition: 1s ease-out;
+}
+
+
+/* CHANGE BACK  to below, maybe
+.photo .clear {
+		position: absolute;
+		top: 0;
+		left: 0;
+		opacity: 0; 
+}
+ */
+
+.photo .clear {
+		opacity: 1; 
+}
+
+.column .words-box {
+  	display: none;
+}
+
+.column:hover .words-box {
+  	display: block;
+}
+
+.words-box {
+    position: relative;
+    top: -2px;
+    z-index: 10;
+    -webkit-box-shadow: rgb(255 255 255) 0px -6px 0px 0px inset;
+		-ms-box-shadow: rgb(255 255 255) 0px -6px 0px 0px inset;
+		-o-box-shadow: rgb(255 255 255) 0px -6px 0px 0px inset;
+    box-shadow: rgb(255 255 255) 0px -6px 0px 0px inset;
+}
+
+.words {
+    width: 100%;
+    position: relative;
+    top: -3px;
+    z-index: 10;
+}
+
+/***************************************** MEDIA QUERY DESKTOP */
+
+@media only screen and (min-width: 500px) {
+		.photo:hover .clear {
+				opacity: 1;
+		}
+}
+
+/***************************************** MEDIA QUERY DESKTOP SMALL */
+
+@media only screen and (max-height: 750px) {
+	.swiper-slide  {
+			width: 300px;
+	}
+
+	.column {
+			width: 300px;
+	    height: auto;
+	}
+
+	.photo img,
+	.plan img,
+	.blur img {
+	    width: 300px;
+	    height: auto;
+	}
+}
+
+/***************************************** MEDIA QUERY DESKTOP SMALLER */
+
+@media only screen and (max-height: 600px) {
+
+	.swiper-slide {
+			width: 200px;
+			height: auto;
+	}
+
+	.column {
+			width: 200px;
+	    height: auto;
+	}
+
+	.photo img,
+	.plan img,
+	.blur img {
+		    width: 200px;
+		    height: auto;
+	}
+
+}
+
+
+/***************************************** MEDIA QUERY MOBILE */
+
+@media only screen 
+  and (min-device-width: 200px) 
+  and (max-device-width: 812px) {
+
+/***************************************** GENERAL */
+
+	  * {
+		    font-size: .93em;
+	  }
+
+
+/* delete this */
+		img {
+				-webkit-user-select: none;
+				-moz-user-select: none;
+				-ms-user-select: none;
+				-o-user-select: none;
+				user-select: none;
+		}
+
+/***************************************** TOP */
+
+	  header {
+		    height: 40px;
+		    padding: 1px 10px 20px 10px;
+	  }
+
+	  header p {
+		    line-height: unset;
+		    width: 80%;
+		    padding: 5px 0px 0px 0px;
+	  }
+
+		header img {
+			  float: right;
+			  height: 25px;
+		}
+
+/***************************************** BOTTOM */
+
+		footer {
+				position: fixed;
+				bottom: 30%;
+				height: 100vh;
+				width: 100%;
+				background: rgba(255, 255, 255, 0.95);
+				-webkit-transition: all 1s ease;
+				-o-transition: all 1s ease;
+				-webkit-transition: 1s ease;
+				-o-transition: 1s ease;
+				transition: 1s ease;
+		}
+		footer div {
+				-webkit-box-align: start;
+				    -ms-flex-align: start;
+				        align-items: flex-start;
+				-webkit-box-orient: horizontal;
+				-webkit-box-direction: normal;
+				    -ms-flex-flow: row wrap;
+				        flex-flow: row wrap;
+				position: absolute;
+				bottom: 0;
+		}
+
+		footer div p {
+				padding: 10px;
+				-webkit-box-flex: 1;
+				    -ms-flex: 1 50%;
+				        flex: 1 50%;
+		}
+
+		#millie {-webkit-box-ordinal-group: 2;-ms-flex-order: 1;order: 1;}
+		#jimmy {-webkit-box-ordinal-group: 3;-ms-flex-order: 2;order: 2;}
+		#office {-webkit-box-ordinal-group: 4;-ms-flex-order: 3;order: 3;}
+		#rego {-webkit-box-ordinal-group: 5;-ms-flex-order: 4;order: 4;}
+
+/***************************************** WORDS */
+
+		.words-box {
+				position: fixed;
+				top: unset;
+				bottom: 0px;
+		}
+
+		.words {
+				display: block;
+		    margin: 0px 10px;
+		  	border-bottom: 10px solid white;
+		}
+
+/***************************************** SWIPERS */
+
+		/* Slideshow container - (flick between project) */
+		.slideshow-container {
+				height: 100%;
+			  position: relative;
+			  margin: auto;
+			  opacity: 1;
+		}
+
+		/* project container */
+		.mySlides {
+				height: 100%;
+			  /* display: none;	/* Hide the images by default */
+			  z-index: -1;
+		}
+
+		/* vertical swiper - could possibly merge with mySlides above */
+		.newswiper {
+				height: 100%; /* from 100vh  or 200vh*/ 		   /* transform: translateY(-50vh);  added with above */
+		    overflow: hidden;
+		    padding: 40px 10px 20px 10px;
+		    z-index: 1;
+		}
+
+		.swiper-slide {
+		  	height: unset;
+		  	width: unset;
+		}
+
+		.swiper-slide img {
+			  width: 100%;
+			  height: auto;
+			  display: block;
+			  margin: 0;
+		}
+		
+		.swiper-slide-active .clear {
+		  	opacity: 1;
+		}
+
+		.tina {
+	    	padding: 0px 10px;
+		}
+
+		.tina img {
+				width: 100%; 
+				height: auto;
+		}
+
+		.prev,
+		.next {
+		    z-index: 15;
+		    position: fixed;
+		    top: 50%;
+		    width: auto;
+		    padding: 40px 15px;
+		    /* transition: 0.6s ease; */
+		    -webkit-transform: translateY(-50%);
+		        -ms-transform: translateY(-50%);
+		            transform: translateY(-50%);
+		    -webkit-user-select: none;
+		       -moz-user-select: none;
+		        -ms-user-select: none;
+		            user-select: none;
+	  }
+
+		.prev img,
+		.next img {
+	    	height: 25px;
+		}
+
+		.prev {
+		  	left: 0;
+		}
+
+		.next {
+		  	right: 0;
+		}
+
+		.fade {
+			  -webkit-animation-name: fade;
+			  -webkit-animation-duration: 1.5s;
+			  animation-name: fade;
+			  animation-duration: 1.5s;
+		}
+
+		@-webkit-keyframes fade {
+		  from {
+		    opacity: 0.4;
+		  }
+		  to {
+		    opacity: 1;
+		  }
+		}
+
+		@keyframes fade {
+		  from {
+		    opacity: 0.4;
+		  }
+		  to {
+		    opacity: 1;
+		  }
+		}
+}
