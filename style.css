@@ -380,12 +380,12 @@ footer div p {
 		.words-box {
 				position: fixed;
 				top: unset;
+		    margin: 0px 10px;
 				bottom: 0px;
 		}
 
 		.words {
 				display: block;
-		    margin: 0px 10px;
 		  	border-bottom: 10px solid white;
 		}
 
