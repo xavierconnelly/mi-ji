@@ -1,6 +1,8 @@
-$(window).load(function() {
-	$(".loader").fadeOut("1000");
-})
+// http://www.leopaulbilles.com/js/script.js
+
+// $(window).load(function() {
+// 	$(".loader").fadeOut("1000");
+// })
 
 $(window).load(function () {
     $(window).on("scroll resize", function () {
