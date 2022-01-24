@@ -54,9 +54,8 @@ img {
   aspect-ratio: attr(width) / attr(height);
 }
 
-.mobile {
-	display:  none;
-}
+#gallery{display: block;}
+.mobile {display:  none;}
 
 /***************************************** TOP */
 
@@ -310,14 +309,9 @@ footer div p {
 	  }
 
 
-/* delete this */
-		img {
-				-webkit-user-select: none;
-				-moz-user-select: none;
-				-ms-user-select: none;
-				-o-user-select: none;
-				user-select: none;
-		}
+		#gallery{display: none;}
+		.mobile {display: block;}
+
 
 /***************************************** TOP */
 
@@ -351,6 +345,7 @@ footer div p {
 				-o-transition: 1s ease;
 				transition: 1s ease;
 		}
+
 		footer div {
 				-webkit-box-align: start;
 				    -ms-flex-align: start;
@@ -495,5 +490,5 @@ footer div p {
 		    opacity: 1;
 		  }
 		}
-		
+
 }
