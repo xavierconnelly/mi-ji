@@ -14,11 +14,11 @@ $(window).load(function () {
         });
     });
 
-$(document).ready(function(){
-    $(".show-info").click(function(){
-        $(".info").slideToggle(450);
-    });
-});
+// $(document).ready(function(){
+//     $(".show-info").click(function(){
+//         $(".info").slideToggle(450);
+//     });
+// });
 
 $(document).ready(function () {
 	$(window).trigger('scroll'); // init the value
