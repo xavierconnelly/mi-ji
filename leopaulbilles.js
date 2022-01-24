@@ -20,11 +20,11 @@ $(window).load(function () {
 //     });
 // });
 
-// $(document).ready(function () {
-// 	$(window).trigger('scroll'); // init the value
-//     });
+$(document).ready(function () {
+	$(window).trigger('scroll'); // init the value
+    });
 
-// })
+})
 
 $(function() {
   $('a[href*=#]:not([href=#])').click(function() {
