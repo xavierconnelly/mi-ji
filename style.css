@@ -447,14 +447,10 @@ footer div p {
 		    top: 50%;
 		    width: auto;
 		    padding: 40px 15px;
-		    transition: 0.6s ease;
+		   /* transition: 0.6s ease;*/
 		    -webkit-transform: translateY(-50%);
 		        -ms-transform: translateY(-50%);
 		            transform: translateY(-50%);
-		    -webkit-user-select: none;
-		       -moz-user-select: none;
-		        -ms-user-select: none;
-		            user-select: none;
 	  }
 
 		.prev img,
