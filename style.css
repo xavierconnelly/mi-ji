@@ -308,10 +308,8 @@ footer div p {
 		    font-size: .93em;
 	  }
 
-
-		#gallery{display: none;}
+		#gallery {display: none;}
 		.mobile {display: block;}
-
 
 /***************************************** TOP */
 
@@ -397,7 +395,7 @@ footer div p {
 		/* project container */
 		.mySlides {
 				height: 100%;
-				position: fixed;
+				position: ;
     		background: white;
 			  /* display: none;	/* Hide the images by default */
 			  z-index: -1;
