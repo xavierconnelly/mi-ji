@@ -332,6 +332,11 @@ footer div p {
 /***************************************** BOTTOM */
 
 		footer {
+			display:  none;
+		}
+
+
+		footer {
 				position: fixed;
 				bottom: 30%;
 				height: 100vh;
