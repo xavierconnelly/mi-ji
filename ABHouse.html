@@ -98,6 +98,30 @@
     </a>
 
     <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
-    <script type="text/javascript" src="/scripts/scripts_mobile.js"></script>
+    <script>
+
+      function hideFooter() {
+        document.querySelector("footer").style.bottom = "100%";
+
+      }
+      function showFooter() {
+        document.querySelector("footer").style.bottom = "";
+      }
+
+      const vertical = new Swiper(".vertical", {
+        // styling
+        direction: "vertical",
+        centeredSlides: false,
+        //loop
+        loop: true,
+        slidesPerView: "auto",
+        loopedSlides: 5,
+        allowSlidePrev: true, // can scroll backwards?
+        // speed
+        freeMode: true, // allow/stop scroll momentum
+        longSwipes: true // stop 
+        // setWrapperSize: true
+      });
+    </script>
   </body>
 </html>
