@@ -380,6 +380,7 @@ footer div p {
 				top: unset;
 		    margin: 0px 10px;
 				bottom: 0px;
+				width: calc(100% - 20px);
 		}
 
 		.words {
