@@ -16,7 +16,17 @@
     <link rel="stylesheet" href="/normalize.css">
     <!-- Global site tag (gtag.js) - Google Analytics  CHANGE THIS
     script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-136398833-1"></script> --> 
+ 
+<style type="text/css">
+  .swiper {
+    
+  }
+
+</style>
+
   </head>
+
+
 
   <body>
     <header onclick="showFooter()">
@@ -53,7 +63,7 @@
     <div class="mySlides fade grey">
 
       <!-- Slider main container -->
-      <div class="vertical newswiper">
+      <div class="swiperr">
         <div class="swiper-wrapper">  <!-- Additional required wrapper -->
           <picture class="swiper-slide">
             <source type="image/webp" srcset="./images/ABHouse/01_800.webp">
@@ -107,7 +117,7 @@
         document.querySelector("footer").style.bottom = "";
       }
 
-      const vertical = new Swiper(".vertical", {
+      const swiper = new Swiper(".swiper", {
         // styling
         direction: "vertical",
         centeredSlides: false,
