@@ -115,45 +115,43 @@ for (var i = 0; i < elements.length; i++) {
 
 function hideFooter() {
   document.querySelector("footer").style.bottom = "100%";
-  document.getElementsByClassName("slideshow-container").style.opacity = 1;
 
 }
 function showFooter() {
   document.querySelector("footer").style.bottom = "";
-  document.getElementsByClassName("slideshow-container").style.opacity = 0.5;
 }
 
 
 ////////////////////////////////////////////////////////////////////////////////
 // Mobile — Project nav/slideshow
 
-var slideIndex = 1;
-showSlides(slideIndex);
+// var slideIndex = 1;
+// showSlides(slideIndex);
 
-// Next/previous controls
-function plusSlides(n) {
-  showSlides((slideIndex += n));
-}
+// // Next/previous controls
+// function plusSlides(n) {
+//   showSlides((slideIndex += n));
+// }
 
-// Thumbnail image controls
-function currentSlide(n) {
-  showSlides((slideIndex = n));
-}
+// // Thumbnail image controls
+// function currentSlide(n) {
+//   showSlides((slideIndex = n));
+// }
 
-function showSlides(n) {
-  var i;
-  var slides = document.getElementsByClassName("mySlides");
-  if (n > slides.length) {
-    slideIndex = 1;
-  }
-  if (n < 1) {
-    slideIndex = slides.length;
-  }
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";
-  }
-  slides[slideIndex - 1].style.display = "block";
-}
+// function showSlides(n) {
+//   var i;
+//   var slides = document.getElementsByClassName("mySlides");
+//   if (n > slides.length) {
+//     slideIndex = 1;
+//   }
+//   if (n < 1) {
+//     slideIndex = slides.length;
+//   }
+//   for (i = 0; i < slides.length; i++) {
+//     slides[i].style.display = "none";
+//   }
+//   slides[slideIndex - 1].style.display = "block";
+// }
 
 ////////////////////////////////////////////////////////////////////////////////
 // Mobile — Scrolling
