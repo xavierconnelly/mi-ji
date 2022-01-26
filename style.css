@@ -5,6 +5,21 @@
 * Browsers: last 4 version
 */
 
+
+/***************************************** MEDIA QUERY MOBILE */
+
+#gallery{display: block;}
+.mobile {display:  none;}
+
+@media only screen 
+  and (min-device-width: 200px) 
+  and (max-device-width: 812px) {
+
+		#gallery {display: none;}
+		.mobile {display: block;}
+
+}
+
 /***************************************** GLOBALS */
 
 @font-face {
@@ -54,8 +69,7 @@ img {
   aspect-ratio: attr(width) / attr(height);
 }
 
-#gallery{display: block;}
-.mobile {display:  none;}
+
 
 /***************************************** TOP */
 
@@ -313,9 +327,6 @@ footer div p {
 	  * {
 		    font-size: 11px;
 	  }
-
-		#gallery {display: none;}
-		.mobile {display: block;}
 
       .slideshow-container {
         /*margin: 20px 10px;*/
