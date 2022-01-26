@@ -231,16 +231,16 @@ footer div p {
     position: relative;
     top: -2px;
     z-index: 10;
-    -webkit-box-shadow: rgb(255 255 255) 0px -6px 0px 0px inset;
-		-ms-box-shadow: rgb(255 255 255) 0px -6px 0px 0px inset;
-		-o-box-shadow: rgb(255 255 255) 0px -6px 0px 0px inset;
-    box-shadow: rgb(255 255 255) 0px -6px 0px 0px inset;
+    -webkit-box-shadow: rgb(255 255 255) 0px -14px 0px 0px inset;
+		-ms-box-shadow: rgb(255 255 255) 0px -14px 0px 0px inset;
+		-o-box-shadow: rgb(255 255 255) 0px -14px 0px 0px inset;
+    box-shadow: rgb(255 255 255) 0px -14px 0px 0px inset;
 }
 
 .words {
     width: 100%;
     position: relative;
-    top: -3px;
+    top: -2px;
     z-index: 10;
 }
 
@@ -402,14 +402,14 @@ footer div p {
 		.mySlides {
 				height: 100%;
 				position: ;
-    		background: white;
-			  /* display: none;	/* Hide the images by default */
+    		/*background: white;*/
+			  /* display: none;	/* Hide the images by default  causes bugs with the JS*/
 			  z-index: -1;
 		}
 
 		/* vertical swiper - could possibly merge with mySlides above */
 		.newswiper {
-				height: 100%; /* from 100vh  or 200vh*/ 		   /* transform: translateY(-50vh);  added with above */
+				height: 100%; 
 		    overflow: hidden;
 		    padding: 20px 10px 20px 10px;
 		    z-index: 1;
