@@ -92,6 +92,7 @@ header p {
 header img {
 		float: right;
 		height: 100%;
+		padding: 5px;
 }
 
 /***************************************** BOTTOM */
@@ -350,6 +351,7 @@ footer div p {
 		header img {
 			  float: right;
 			  height: 25px;
+			  padding: 3px;
 		}
 
 /***************************************** BOTTOM */
