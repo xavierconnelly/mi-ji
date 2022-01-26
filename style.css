@@ -392,13 +392,8 @@ footer div p {
 
       .words-box {
         margin:  0;
-        width: calc(100% - 20px);
-      }
-
-		.words-box {
 				position: fixed;
 				top: unset;
-		    margin: 0px 10px;
 				bottom: 0px;
 				width: calc(100% - 20px);
 		    -webkit-box-shadow: rgb(255 255 255) 0px -14px 0px 0px inset;
