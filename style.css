@@ -231,18 +231,21 @@ footer div p {
     position: relative;
     top: -2px;
     z-index: 10;
-    -webkit-box-shadow: rgb(255 255 255) 0px -14px 0px 0px inset;
-		-ms-box-shadow: rgb(255 255 255) 0px -14px 0px 0px inset;
-		-o-box-shadow: rgb(255 255 255) 0px -14px 0px 0px inset;
-    box-shadow: rgb(255 255 255) 0px -14px 0px 0px inset;
+    -webkit-box-shadow: rgb(255 255 255) 0px -6px 0px 0px inset;
+		-ms-box-shadow: rgb(255 255 255) 0px -6px 0px 0px inset;
+		-o-box-shadow: rgb(255 255 255) 0px -6px 0px 0px inset;
+    box-shadow: rgb(255 255 255) 0px -6px 0px 0px inset;
 }
 
 .words {
     width: 100%;
     position: relative;
-    top: -1.3px;
+    top: -2px;
     z-index: 10;
 }
+
+
+
 
 /***************************************** MEDIA QUERY DESKTOP */
 
@@ -381,9 +384,14 @@ footer div p {
 		    margin: 0px 10px;
 				bottom: 0px;
 				width: calc(100% - 20px);
-		}
+		    -webkit-box-shadow: rgb(255 255 255) 0px -14px 0px 0px inset;
+				-ms-box-shadow: rgb(255 255 255) 0px -14px 0px 0px inset;
+				-o-box-shadow: rgb(255 255 255) 0px -14px 0px 0px inset;
+		    box-shadow: rgb(255 255 255) 0px -14px 0px 0px inset;
+			}
 
 		.words {
+    		top: -1.3px;
 				display: block;
 		  	border-bottom: 10px solid white;
 		}
