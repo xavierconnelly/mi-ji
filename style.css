@@ -9,6 +9,7 @@
 /***************************************** MEDIA QUERY MOBILE */
 
 #gallery{display: block;}
+.desktop {display: block;}
 .mobile {display:  none;}
 
 @media only screen 
@@ -16,9 +17,9 @@
   and (max-device-width: 812px) {
 
 		#gallery {display: none;}
+		.desktop {display: none;}
 		.mobile {display: block;}
-
-}
+	}
 
 /***************************************** GLOBALS */
 
@@ -553,6 +554,7 @@ footer div p {
 /***************************************** MEDIA QUERY MOBILE */
 
 #gallery{display: block;}
+.desktop {display: block;}
 .mobile {display:  none;}
 
 @media only screen 
@@ -560,6 +562,7 @@ footer div p {
   and (max-device-width: 812px) {
 
 		#gallery {display: none;}
+		.desktop {display: none;}
 		.mobile {display: block;}
 
 }
