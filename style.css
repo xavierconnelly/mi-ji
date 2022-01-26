@@ -299,6 +299,9 @@ footer div p {
 }
 
 
+      
+
+
 /***************************************** MEDIA QUERY MOBILE */
 
 @media only screen 
@@ -313,6 +316,12 @@ footer div p {
 
 		#gallery {display: none;}
 		.mobile {display: block;}
+
+      .slideshow-container {
+        /*margin: 20px 10px;*/
+        padding: 20px 10px;;
+      } 
+
 
 /***************************************** TOP */
 
@@ -378,6 +387,14 @@ footer div p {
 
 /***************************************** WORDS */
 
+
+
+
+      .words-box {
+        margin:  0;
+        width: calc(100% - 20px);
+      }
+
 		.words-box {
 				position: fixed;
 				top: unset;
@@ -415,6 +432,20 @@ footer div p {
 			  z-index: -1;
 		}
 
+      .mySlides {
+        /*height: calc(100% - 40px);*/
+        background: unset; 
+        z-index: -1;
+        /*margin: 0px 0px 100px 0px;*/
+      }
+
+/*
+      .mySlides .picture:last-child {
+        padding-bottom: 100px;
+      }
+      */
+
+
 		/* vertical swiper - could possibly merge with mySlides above */
 		.newswiper {
 				height: 100%; 
@@ -447,10 +478,20 @@ footer div p {
 	    	padding: 0px 10px;
 		}
 
+    .photo img{
+	      width:  100%;
+	      height: auto;
+    }
+
 		.tina img {
 				width: 100%; 
 				height: auto;
 		}
+
+      picture {
+        display: flex;
+        flex-direction: column;
+      }
 
 		.prev,
 		.next {
