@@ -128,7 +128,7 @@ for (var i = 0; i < elements.length; i++) {
 function footerToggle() {
   var x = document.querySelector("footer");
   if (x.style.bottom === "100%") {
-    x.style.bottom = "30%";
+    x.style.bottom = "70%";
   } else {
     x.style.bottom = "100%";
   }
