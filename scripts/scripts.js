@@ -127,10 +127,10 @@ for (var i = 0; i < elements.length; i++) {
 
 function footerToggle() {
   var x = document.querySelector("footer");
-  if (x.style.display === "100%") {
-    x.style.display = "30%";
+  if (x.style.bottom === "100%") {
+    x.style.bottom = "30%";
   } else {
-    x.style.display = "100%";
+    x.style.bottom = "100%";
   }
 }
 
