@@ -331,12 +331,6 @@ footer div p {
 	  }
 
 
-body {
-	overflow: scroll;
-}
-
-
-
 /***************************************** TOP */
 
 	  header {
@@ -431,7 +425,7 @@ body {
 
 		/* Slideshow container - (flick between project) */
 		.slideshow-container {
-			/*	height: 100%;*/
+				height: 100%;
 			  position: relative;
 				margin: auto;
         /*margin: 20px 10px;*/
@@ -461,6 +455,11 @@ body {
         padding-bottom: 100px;
       }
       */
+
+      .additional {
+      	height: 100%;
+      	overflow: scroll;
+      }
 
 
 		/* vertical swiper - could possibly merge with mySlides above */
