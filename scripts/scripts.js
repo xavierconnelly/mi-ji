@@ -120,7 +120,7 @@ function hideFooter() {
 }
 function showFooter() {
   document.querySelector("footer").style.bottom = "";
-  document.querySelector("header").style.opacity = "1";
+  document.querySelector("header").style.opacity = "0";
 }
 
 
