@@ -114,11 +114,13 @@ for (var i = 0; i < elements.length; i++) {
 // Mobile — Footer Showing
 
 function hideFooter() {
-  document.querySelector("footer").style.bottom = "100%";
+  document.querySelector("footer").style.bottom = "110%";
+  document.querySelector("heaader").style.opacity = "1";
 
 }
 function showFooter() {
   document.querySelector("footer").style.bottom = "";
+  document.querySelector("heaader").style.opacity = "1";
 }
 
 
