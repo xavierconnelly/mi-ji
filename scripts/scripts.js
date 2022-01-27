@@ -113,18 +113,6 @@ for (var i = 0; i < elements.length; i++) {
 ////////////////////////////////////////////////////////////////////////////////
 // Mobile — Footer Showing
 
-// function hideFooter() {
-//   document.querySelector("footer").style.bottom = "110%";
-//   document.querySelector("header>p").style.opacity = "1";
-//   document.querySelector("header>img").style.opacity = "1";
-
-// }
-// function showFooter() {
-//   document.querySelector("footer").style.bottom = "";
-//   document.querySelector("header>p").style.opacity = "0";
-//   document.querySelector("header>img").style.opacity = "0";
-// }
-
 function footerToggle() {
   var x = document.querySelector("footer");
   if (x.style.bottom === "100%") {
@@ -133,6 +121,16 @@ function footerToggle() {
     x.style.bottom = "100%";
   }
 }
+
+function hideFooter() {
+  document.querySelector("footer").style.bottom = "100%";
+}
+
+// function showFooter() {
+//   document.querySelector("footer").style.bottom = "";
+//   document.querySelector("header>p").style.opacity = "0";
+//   document.querySelector("header>img").style.opacity = "0";
+// }
 
 ////////////////////////////////////////////////////////////////////////////////
 // Mobile — Project nav/slideshow
