@@ -437,17 +437,9 @@ footer div p {
 		/* project container */
 		.mySlides {
 				height: 100%;
-				position: ;
-    		/*background: white;*/
-			  /* display: none;	/* Hide the images by default  causes bugs with the JS*/
+			  display: none;	/* Hide the images by default  causes bugs with the JS*/
 			  z-index: -1;
-		}
-
-      .mySlides {
-        /*height: calc(100% - 40px);*/
         background: unset; 
-        z-index: -1;
-        /*margin: 0px 0px 100px 0px;*/
       }
 
 /*
@@ -456,7 +448,7 @@ footer div p {
       }
       */
 
-      .additional {
+      .additonal {
       	height: 100%;
       	overflow: scroll;
       }
