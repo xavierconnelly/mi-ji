@@ -335,7 +335,9 @@ footer div p {
 
 	  header {
 		    height: 40px;
-		    padding: 1px 10px 20px 10px;
+		    padding: 1px 10px 18px 10px;
+		    display: flex;
+		    justify-content: space-between;
 	  }
 
   header p, header img {
@@ -350,12 +352,12 @@ footer div p {
 
 	  header p {
 		    line-height: unset;
-		    width: 80%;
+		   /* width: 80%;*/
 	  }
 
 		header img {
 			  float: right;
-		    height: 92%;
+		    height: 100%;
 		}
 
 /***************************************** BOTTOM */
