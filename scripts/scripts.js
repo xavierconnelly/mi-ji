@@ -115,12 +115,14 @@ for (var i = 0; i < elements.length; i++) {
 
 function hideFooter() {
   document.querySelector("footer").style.bottom = "110%";
-  document.querySelector("header").style.opacity = "1";
+  document.querySelector("header>p").style.opacity = "1";
+  document.querySelector("header>img").style.opacity = "1";
 
 }
 function showFooter() {
   document.querySelector("footer").style.bottom = "";
-  document.querySelector("header").style.opacity = "0";
+  document.querySelector("header>p").style.opacity = "0";
+  document.querySelector("header>img").style.opacity = "0";
 }
 
 
