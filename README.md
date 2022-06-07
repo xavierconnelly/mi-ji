@@ -1,8 +1,8 @@
-Office Mi-Ji
+#Office Mi-Ji
 
 
 For Desktop
---------------------------------
+---
         <div class="swiper-slide column COLOUR">
           <div class="carousel">
             <div class="photo">
@@ -44,44 +44,33 @@ With the above code;
 
 5. Copy and paste code from the first '<div clas....' down
 
---------------------------------
-
-6. Create a new folder in the 'image' folder
+6. In Github create a new folder in the 'image' folder
 
 
 
 For Mobile
---------------------------------
+---
 
-<!-- 1. -->
           <div class="mySlides fade COLOUR">
               <div class="additonal">
-<!-- 2. -->
                   <picture class="clear photo">
                       <source type="image/webp" srcset="./images/PROJECTNAME/01_800.webp">
                       <source type="image/jpg" srcset="./images/PROJECTNAME/01_800.jpg">
                       <img src="./images/PROJECTNAME/01_800.JPG" alt="photo of the PROJECTNAME project">
                   </picture>
-
-<!-- 3. -->
-
-<!-- 2. -->
                   <picture class="clear photo" style="padding-bottom: 100px;">
                       <source type="image/svg" srcset="./images/PROJECTNAME/Plan_800.svg">
                       <img src="./images/PROJECTNAME/Plan_800.svg" alt="plam of the PROJECTNAME project">
                   </picture>
               </div>
-<!-- 4. -->
               <div class="words-box">
                   <p class="words">
                     Insert text here
                   </p>
               </div>
-<!-- 1. -->
               <a class="prev" onclick="plusSlides(-1)">
                   <img src="https://mi-ji.com.au/assets/prev_COLOUR.svg">
               </a>
-<!-- 1. -->  
               <a class="next" onclick="plusSlides(1)">
                   <img src="https://mi-ji.com.au/assets/next_COLOUR.svg">
               </a>
@@ -102,9 +91,7 @@ With the above code;
 
 5. Copy and paste code from the first '<div clas....' down
 
---------------------------------
-
-6. Create a new folder in the 'image' folder
+6. In Github create a new folder in the 'image' folder
 
 
 
