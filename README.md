@@ -3,27 +3,6 @@ Office Mi-Ji
 
 For Desktop
 --------------------------------
-With the below code;
-
-1. Replace 'COLOUR' with the selected colour for the project.
-  a. Choose from; pink | red | yellow | pistacio | grey | green
-
-2. Replace 'PROJECTNAME' with the folder name for the project 
-
-3. Add extra photos as needed by copying the picture section
-  a. change the '01' to '02', '03' etc
-
-4. Insert desired text 
-
-5. Copy and paste code from the first '<div clas....' down
-
---------------------------------
-In Github;
-
-6. Create a new folder in the 'image' folder
-
-Copy from below here
-
         <div class="swiper-slide column COLOUR">
           <div class="carousel">
             <div class="photo">
@@ -51,11 +30,7 @@ Copy from below here
           </div>
         </div>
         
-
-
-For Mobile
---------------------------------
-With the below code;
+With the above code;
 
 1. Replace 'COLOUR' with the selected colour for the project.
   a. Choose from; pink | red | yellow | pistacio | grey | green
@@ -70,10 +45,13 @@ With the below code;
 5. Copy and paste code from the first '<div clas....' down
 
 --------------------------------
-In Github;
 
 6. Create a new folder in the 'image' folder
 
+
+
+For Mobile
+--------------------------------
 
 <!-- 1. -->
           <div class="mySlides fade COLOUR">
@@ -108,4 +86,26 @@ In Github;
                   <img src="https://mi-ji.com.au/assets/next_COLOUR.svg">
               </a>
           </div>
+---
+
+With the above code;
+
+1. Replace 'COLOUR' with the selected colour for the project.
+  a. Choose from; pink | red | yellow | pistacio | grey | green
+
+2. Replace 'PROJECTNAME' with the folder name for the project 
+
+3. Add extra photos as needed by copying the picture section
+  a. change the '01' to '02', '03' etc
+
+4. Insert desired text 
+
+5. Copy and paste code from the first '<div clas....' down
+
+--------------------------------
+
+6. Create a new folder in the 'image' folder
+
+
+
 
