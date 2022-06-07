@@ -1,6 +1,25 @@
 # Office Mi-Ji
 
 
+**Saving images**
+
+1. You need 4 files per image
+2. Blur + Clear
+3. JPeg + Webp
+4. Save at 800px wide
+5. Save with 'projectname_01', 'projectname_02', 'projectname_03' etc.
+6. Save plan as 'projectname_plan'
+
+
+**Adding images to Github**
+---
+1. Save images
+2. In Github create a new folder in the 'image' folder
+3. Make new file name
+4. Upload image
+
+
+
 For Desktop
 ---
         <div class="swiper-slide column COLOUR">
@@ -37,15 +56,17 @@ With the above code;
 
 2. Replace 'PROJECTNAME' with the folder name for the project 
 
-3. Add extra photos as needed by copying the picture section
-  a. change the '01' to '02', '03' etc
+3. Insert desired text 
 
-4. Insert desired text 
+4. Repeat for each project image — changing the '01' succeeding the file name to '02', '03' etc
 
-5. Copy and paste code from the first '<div clas....' down
+5. Copy the code
 
-6. In Github create a new folder in the 'image' folder
+6. Open the index.html file in Github
 
+7. Click the edit button in the top right
+
+8. Paste the text in between the existing photo sections in the top (desktop) section of code
 
 
 For Mobile
@@ -87,12 +108,12 @@ With the above code;
 3. Add extra photos as needed by copying the picture section
   a. change the '01' to '02', '03' etc
 
+                  <picture class="clear photo">
+                      <source type="image/webp" srcset="./images/PROJECTNAME/02_800.webp">
+                      <source type="image/jpg" srcset="./images/PROJECTNAME/02_800.jpg">
+                      <img src="./images/PROJECTNAME/02_800.JPG" alt="photo of the PROJECTNAME project">
+                  </picture>
+
 4. Insert desired text 
 
 5. Copy and paste code from the first '<div clas....' down
-
-6. In Github create a new folder in the 'image' folder
-
-
-
-
