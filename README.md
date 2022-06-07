@@ -1,11 +1,5 @@
 # mi-ji
 Office Mi-Ji
-
-# mi-ji
-Office Mi-Ji
-
-<!-- 
-
 --------------------------------
 With the below code;
 
@@ -25,9 +19,6 @@ With the below code;
 In Github;
 
 6. Create a new folder in the 'image' folder
-
--->
-
 
 Copy from below here
 
