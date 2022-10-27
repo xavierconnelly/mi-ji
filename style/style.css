@@ -127,6 +127,8 @@ footer div p {
 }
 
 #rego a { text-decoration: underline;}
+
+#rego a:hover { color: rgb(255, 80, 0);}
 	
 
 #office {-webkit-box-ordinal-group: 2;-ms-flex-order: 1;order: 1;}
