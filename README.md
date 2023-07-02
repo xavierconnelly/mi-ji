@@ -4,8 +4,10 @@
 **Saving images**
 
 1. You need 4 files per image
-2. Blur + Clear
-3. JPeg + Webp
+   a. Blur JPeg
+   b. Blur Webp
+   c. Clear JPeg
+   d. Clear Webp
 4. Save at 800px wide
 5. Save with 'projectname_01', 'projectname_02', 'projectname_03' etc.
 6. Save plan as 'projectname_plan'
